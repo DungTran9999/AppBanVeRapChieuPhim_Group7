@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace AppBanVeRapChieuPhim_Group7
 {
+    
     public partial class frmSell : Form
     {
         public delegate void ClearData();
         public ClearData ClearChair;
 
         public event Action FormSellEvent;
-       
-        
+        public int soluong;
+        public int totalmoney;
+
 
         public frmSell()
         {
@@ -26,48 +28,50 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void CountChair()
         {
+            
             string chair = txtDataChair.Text;
             
             string[] soghe= chair.Split(',');
             int a = soghe.Length;
             lbNumberOfChair.Text= a.ToString();
-            
+           
+
         }
 
-       
+        List<Film> listItem;
         private void frmSell_Load(object sender, EventArgs e)
         {
             
+            listItem = new List<Film>()
+            {
+                new Film(){Movie = "Ba Con Heo", Price = 99000,  Time = "9h30 - 11h"},
+                new Film(){Movie = "Báo Hồng", Price = 89000,  Time = "13h - 14h30"},
+                new Film(){Movie = "Điệp Viên 069", Price = 95000, Time = "16h - 17h30"},
+                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"}
+            };
+            cbbMovie.DataSource = listItem;
+            cbbMovie.DisplayMember = "Movie";
+
+            
+            
 
 
         }
 
-        public void chooseFilm()
+        public void chooseFilm(object sender)
         {
-            string movie = cbbMovie.Text;
+            //tạo biến cb từ sender ép kiểu qua combox
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedValue != null)
+            {
+                Film data = cb.SelectedValue as Film;
 
-            if (movie == "Tấm Cám Phiêu Lưu Ký")
-            {
-                txtPrice.Text = "100000";
-                txtTime.Text = "14h";
+                txtPrice.Text = data.Price.ToString();
+                txtTime.Text = data.Time.ToString();
             }
-            else if (movie == "Ba Chú Heo")
-            {
-                txtPrice.Text = "120000";
-                txtTime.Text = "17h";
-            }
-            else if (movie == "Báo Hồng")
-            {
-                txtPrice.Text = "150000";
-                txtTime.Text = "9h";
-            }
-            else if (movie == "Điệp Viên 069")
-            {
-                txtPrice.Text = "110000";
-                txtTime.Text = "22h";
-            }
+            
         }
-
+       
 
         private void btnTheater1_Click(object sender, EventArgs e)
         {
@@ -80,7 +84,8 @@ namespace AppBanVeRapChieuPhim_Group7
 
             frmTheater1_View.truyenData += LoadData;
             frmTheater1_View.truyenghe += LoadGhe;
-
+            int a = frmTheater1_View.soluong;
+            this.soluong = a;
 
             this.plLoadForm.Controls.Add(frmTheater1_View);
             frmTheater1_View.Show();
@@ -109,7 +114,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void cbbMovie_SelectedValueChanged(object sender, EventArgs e)
         {
-            chooseFilm();
+            chooseFilm(sender);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -129,5 +134,12 @@ namespace AppBanVeRapChieuPhim_Group7
             txtDataChair.Text = "";
             lbNumberOfChair.Text = "0";
         }
+    }
+    public class Film
+    {
+        public string Movie { get; set; }
+        public string Time { get; set; }
+        public int Price { get; set; }
+
     }
 }

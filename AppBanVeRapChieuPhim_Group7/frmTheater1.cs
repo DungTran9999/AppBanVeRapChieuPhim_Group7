@@ -38,7 +38,6 @@ namespace AppBanVeRapChieuPhim_Group7
                 }
             }
         }
-
         
 
         private void Btn_Click(object sender, EventArgs e)
