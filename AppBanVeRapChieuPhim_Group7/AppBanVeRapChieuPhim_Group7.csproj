@@ -96,9 +96,6 @@
     <EmbeddedResource Include="frmSell.resx">
       <DependentUpon>frmSell.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTheater1.resx">
-      <DependentUpon>frmTheater1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTheater2.resx">
       <DependentUpon>frmTheater2.cs</DependentUpon>
     </EmbeddedResource>
