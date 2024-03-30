@@ -146,15 +146,6 @@ namespace AppBanVeRapChieuPhim_Group7
             lbNumberOfChair.Text = "0";
             lbMoney.Text = "0";
         }
-
-        private void btnAccept_Click(object sender, EventArgs e)
-        {
-
-            string[] data = { cbbMovie.Text ,txtPrice.Text, lbNumberOfChair.Text};
-            frmManager.Instance.AddDataToListView(data);
-            MessageBox.Show("Đã truyền dữ liệu","Thông báo");
-            Clear();
-        }
     }
     public class Film
     {
