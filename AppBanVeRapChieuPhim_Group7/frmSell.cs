@@ -146,6 +146,14 @@ namespace AppBanVeRapChieuPhim_Group7
             lbNumberOfChair.Text = "0";
             lbMoney.Text = "0";
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            string[] data = {cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text};
+            frmManager manager = new frmManager(data);
+            manager.Show();
+            Clear();
+        }
     }
     public class Film
     {

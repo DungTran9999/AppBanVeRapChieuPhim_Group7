@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.plControl = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.plLoadForm = new System.Windows.Forms.Panel();
             this.lbChangeName = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
             this.plControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,18 @@
             this.plControl.Name = "plControl";
             this.plControl.Size = new System.Drawing.Size(231, 869);
             this.plControl.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.Location = new System.Drawing.Point(3, 765);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(225, 101);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // plScroll
             // 
@@ -109,18 +121,6 @@
             this.lbChangeName.Size = new System.Drawing.Size(136, 51);
             this.lbChangeName.TabIndex = 2;
             this.lbChangeName.Text = "label1";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.Location = new System.Drawing.Point(3, 765);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(225, 101);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmGiaoDien
             // 
