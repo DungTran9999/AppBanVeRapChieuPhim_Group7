@@ -46,14 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmGiaoDien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmGiaoDien.Designer.cs">
+      <DependentUpon>frmGiaoDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSell.Designer.cs">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTheater1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheater1.Designer.cs">
+      <DependentUpon>frmTheater1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTheater2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheater2.Designer.cs">
+      <DependentUpon>frmTheater2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGiaoDien.resx">
+      <DependentUpon>frmGiaoDien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSell.resx">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheater1.resx">
+      <DependentUpon>frmTheater1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheater2.resx">
+      <DependentUpon>frmTheater2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
