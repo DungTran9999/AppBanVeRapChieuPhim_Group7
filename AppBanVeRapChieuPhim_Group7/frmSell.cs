@@ -51,9 +51,10 @@ namespace AppBanVeRapChieuPhim_Group7
             };
             cbbMovie.DataSource = listItem;
             cbbMovie.DisplayMember = "Movie";
+            
 
-            
-            
+
+
 
 
         }
@@ -71,7 +72,17 @@ namespace AppBanVeRapChieuPhim_Group7
             }
             
         }
-       
+        public void CalculateTotalMoney()
+        {
+            if (cbbMovie.SelectedItem != null)
+            {
+                Film selectedFilm = cbbMovie.SelectedItem as Film;
+                int price = selectedFilm.Price;
+                int numberOfChair = int.Parse(lbNumberOfChair.Text);
+                totalmoney = price * (numberOfChair+1);
+                lbMoney.Text = totalmoney.ToString();
+            }
+        }
 
         private void btnTheater1_Click(object sender, EventArgs e)
         {
@@ -109,7 +120,7 @@ namespace AppBanVeRapChieuPhim_Group7
             
             txtDataChair.Text = "";
             txtDataChair.Text = string.Join(",", data);
-
+            CalculateTotalMoney();
         }
 
         private void cbbMovie_SelectedValueChanged(object sender, EventArgs e)
@@ -133,6 +144,7 @@ namespace AppBanVeRapChieuPhim_Group7
             cbbMovie.SelectedIndex = -1;
             txtDataChair.Text = "";
             lbNumberOfChair.Text = "0";
+            lbMoney.Text = "0";
         }
     }
     public class Film
