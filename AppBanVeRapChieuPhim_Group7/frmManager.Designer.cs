@@ -28,19 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvManager = new System.Windows.Forms.ListView();
+            this.ttlvMovie = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ttlvPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ttlvNumberOfChair = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // listView1
+            // lvManager
             // 
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, -1);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(973, 728);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvManager.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ttlvMovie,
+            this.ttlvPrice,
+            this.ttlvNumberOfChair});
+            this.lvManager.GridLines = true;
+            this.lvManager.HideSelection = false;
+            this.lvManager.Location = new System.Drawing.Point(0, -1);
+            this.lvManager.Name = "lvManager";
+            this.lvManager.Size = new System.Drawing.Size(973, 728);
+            this.lvManager.TabIndex = 0;
+            this.lvManager.UseCompatibleStateImageBehavior = false;
+            this.lvManager.View = System.Windows.Forms.View.Details;
+            // 
+            // ttlvMovie
+            // 
+            this.ttlvMovie.Text = "Movie";
+            this.ttlvMovie.Width = 267;
+            // 
+            // ttlvPrice
+            // 
+            this.ttlvPrice.Text = "Price";
+            this.ttlvPrice.Width = 146;
+            // 
+            // ttlvNumberOfChair
+            // 
+            this.ttlvNumberOfChair.Text = "Number Of Chair";
+            this.ttlvNumberOfChair.Width = 174;
             // 
             // frmManager
             // 
@@ -48,9 +70,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1299, 729);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmManager";
             this.ResumeLayout(false);
 
@@ -58,6 +81,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvManager;
+        private System.Windows.Forms.ColumnHeader ttlvMovie;
+        private System.Windows.Forms.ColumnHeader ttlvPrice;
+        private System.Windows.Forms.ColumnHeader ttlvNumberOfChair;
     }
 }

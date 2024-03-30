@@ -32,6 +32,7 @@ namespace AppBanVeRapChieuPhim_Group7
             frmSell_View.Show();
         }
 
+
         private void btnManager_Click(object sender, EventArgs e)
         {
             plScroll.Height = btnManager.Height;
@@ -41,10 +42,10 @@ namespace AppBanVeRapChieuPhim_Group7
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear();
-            frmManager frmManager_View = new frmManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmManager_View.FormBorderStyle = FormBorderStyle.None;
-            this.plLoadForm.Controls.Add(frmManager_View);
-            frmManager_View.Show();
+            frmManager.Instance = new frmManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmManager.Instance.FormBorderStyle = FormBorderStyle.None;
+            this.plLoadForm.Controls.Add(frmManager.Instance);
+            frmManager.Instance.Show();
         }
 
         private void btnSell_Leave(object sender, EventArgs e)

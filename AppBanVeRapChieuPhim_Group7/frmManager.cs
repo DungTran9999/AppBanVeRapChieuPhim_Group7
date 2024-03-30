@@ -15,6 +15,29 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmManager()
         {
             InitializeComponent();
+         
+        }
+        private static frmManager instance;
+        public static frmManager Instance 
+        {
+            get
+            {
+                 if(instance == null)
+                 
+                    instance = new frmManager();
+                    return frmManager.instance;
+                 
+            }
+            set
+            {
+                frmManager.instance = value;
+            }
+        }
+        
+        public void AddDataToListView(string[] data)
+        {
+            ListViewItem items = new ListViewItem(data);
+            lvManager.Items.AddRange(new ListViewItem[] { items });
         }
     }
 }
