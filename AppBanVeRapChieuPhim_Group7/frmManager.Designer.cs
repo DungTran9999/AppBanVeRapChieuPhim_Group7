@@ -41,6 +41,7 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.lvManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvManager.GridLines = true;
             this.lvManager.HideSelection = false;
             this.lvManager.Location = new System.Drawing.Point(0, -1);
