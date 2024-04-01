@@ -14,8 +14,11 @@ namespace AppBanVeRapChieuPhim_Group7
     {
         public delegate void delPassData(List<string> value);
         public delPassData truyenData;
+
+        //Nhan su kien tu form sell
         public event Action FormSellEventReceived;
         public int soluong { get; set; }
+
         public delegate void TruyenGhe(int soluong);
         public TruyenGhe truyenghe;
 

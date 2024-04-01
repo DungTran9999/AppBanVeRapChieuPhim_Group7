@@ -17,6 +17,7 @@ namespace AppBanVeRapChieuPhim_Group7
         public ClearData ClearChair;
 
         public event Action FormSellEvent;
+        public event Action FormSellEvent2;
         public int soluong;
         public int totalmoney;
 
@@ -24,19 +25,8 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmSell()
         {
             InitializeComponent();
-          
         }
-        public void CountChair()
-        {
-            
-            string chair = txtDataChair.Text;
-            
-            string[] soghe= chair.Split(',');
-            int a = soghe.Length;
-            lbNumberOfChair.Text= a.ToString();
-           
-
-        }
+      
 
         List<Film> listItem;
         private void frmSell_Load(object sender, EventArgs e)
@@ -51,12 +41,6 @@ namespace AppBanVeRapChieuPhim_Group7
             };
             cbbMovie.DataSource = listItem;
             cbbMovie.DisplayMember = "Movie";
-            
-
-
-
-
-
         }
 
         public void chooseFilm(object sender)
@@ -96,7 +80,7 @@ namespace AppBanVeRapChieuPhim_Group7
             frmTheater1_View.truyenData += LoadData;
             frmTheater1_View.truyenghe += LoadGhe;
             int a = frmTheater1_View.soluong;
-            this.soluong = a;
+            
 
             this.plLoadForm.Controls.Add(frmTheater1_View);
             frmTheater1_View.Show();
@@ -108,6 +92,9 @@ namespace AppBanVeRapChieuPhim_Group7
             this.plLoadForm.Controls.Clear();
             frmTheater2 frmTheater2_View = new frmTheater2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmTheater2_View.FormBorderStyle = FormBorderStyle.None;
+
+            frmTheater2_View.truyenData2 += LoadData;
+            frmTheater2_View.truyenghe2 += LoadGhe;
             this.plLoadForm.Controls.Add(frmTheater2_View);
             frmTheater2_View.Show();
         }
@@ -130,13 +117,10 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-           
-            if(ClearChair != null)
-            {
-                ClearChair();
-            }
             Clear();
             FormSellEvent?.Invoke();
+            FormSellEvent2?.Invoke();
+
         }
         public void Clear()
         {
