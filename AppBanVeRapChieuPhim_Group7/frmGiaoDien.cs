@@ -39,10 +39,16 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Left = btnManager.Left;
             btnManager.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
 
-            lbChangeName.Text = "Sell";
+            lbChangeName.Text = "Manager";
+
             this.plLoadForm.Controls.Clear();
-            frmManager frmManager_View = new frmManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            frmManager frmManager_View = frmManager.GetInstance();
             frmManager_View.FormBorderStyle = FormBorderStyle.None;
+            frmManager_View.Dock = DockStyle.Fill;
+            frmManager_View.TopLevel = false;
+            frmManager_View.TopMost = true;
+
             this.plLoadForm.Controls.Add(frmManager_View);
             frmManager_View.Show();
         }

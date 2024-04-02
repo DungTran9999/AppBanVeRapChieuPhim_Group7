@@ -133,9 +133,11 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            string[] data = {cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text};
-            frmManager manager = new frmManager(data);
-            manager.Show();
+            string[] data = {cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
+            frmManager manager = frmManager.GetInstance();
+            manager.RecieveData(data);
+            FormSellEvent?.Invoke();
+            FormSellEvent2?.Invoke();
             Clear();
         }
     }

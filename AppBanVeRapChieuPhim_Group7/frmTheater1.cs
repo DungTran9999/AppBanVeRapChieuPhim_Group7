@@ -28,6 +28,9 @@ namespace AppBanVeRapChieuPhim_Group7
             xuliBtn();
         }
 
+        private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
+
+
         public List<string> btnNhan = new List<string>();
         public void xuliBtn()
         {
@@ -37,6 +40,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 {
                     Button btn = (Button)item;
                     btn.Click += Btn_Click;
+                    buttonStates.Add(btn, false);
 
                 }
             }
@@ -48,6 +52,15 @@ namespace AppBanVeRapChieuPhim_Group7
 
             Button btn = (Button)sender;
             string btnValue = btn.Text;
+
+            if (!buttonStates[btn])
+            {
+                btn.BackColor = Color.Green;
+                buttonStates[btn] = true;
+
+                //Khi chuyển màu xong thì sẽ loại bỏ sự kiện Btn_Click để chỉ nhấn 1 lần được 1 ghế
+                btn.Click -= Btn_Click;
+            }
 
             // Kiểm tra xem giá trị của button đã tồn tại trong danh sách chưa
 

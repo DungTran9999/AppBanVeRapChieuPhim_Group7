@@ -12,22 +12,26 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmManager : Form
     {
+        private static frmManager instance;
         public frmManager()
         {
             InitializeComponent();
         }
-       
-
-        public frmManager(string[] data)
+       public static frmManager GetInstance()
         {
-            InitializeComponent();
-            ListViewItem items = new ListViewItem(data);
-            lvManager.Items.AddRange(new ListViewItem[] { items });
+            if(instance == null)
+            {
+                instance = new frmManager();
+            }
+            return instance;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public void RecieveData(string[] data)
         {
-            this.Close();
+            ListViewItem infor = new ListViewItem(data);
+            lvManager.Items.Add(infor);
         }
+        
+
+        
     }
 }
