@@ -131,5 +131,14 @@
   <ItemGroup>
     <None Include="Resources\Marvel Avengers1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marvel Avengers11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marvel Avengers12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marvel Avengers13.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
