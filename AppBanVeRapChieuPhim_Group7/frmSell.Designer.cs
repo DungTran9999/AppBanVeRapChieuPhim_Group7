@@ -46,15 +46,11 @@
             this.btnAccept = new System.Windows.Forms.Button();
             this.lbNumberOfChair = new System.Windows.Forms.Label();
             this.lbTheater = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.plLoadForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // plLoadForm
             // 
             this.plLoadForm.BackColor = System.Drawing.Color.Black;
-            this.plLoadForm.Controls.Add(this.pictureBox1);
             this.plLoadForm.Location = new System.Drawing.Point(0, 0);
             this.plLoadForm.Name = "plLoadForm";
             this.plLoadForm.Size = new System.Drawing.Size(1482, 688);
@@ -237,15 +233,6 @@
             this.lbTheater.Size = new System.Drawing.Size(0, 46);
             this.lbTheater.TabIndex = 7;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1458, 663);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmSell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -274,8 +261,6 @@
             this.Name = "frmSell";
             this.Text = "frmSell";
             this.Load += new System.EventHandler(this.frmSell_Load);
-            this.plLoadForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +286,5 @@
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Label lbNumberOfChair;
         private System.Windows.Forms.Label lbTheater;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
