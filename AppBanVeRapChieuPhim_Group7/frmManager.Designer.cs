@@ -37,6 +37,8 @@
             this.txtDoanhThu = new System.Windows.Forms.TextBox();
             this.lb = new System.Windows.Forms.Label();
             this.btnDoanhThu = new System.Windows.Forms.Button();
+            this.txtThinhHanh = new System.Windows.Forms.TextBox();
+            this.lbThinhHanh = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lvManager
@@ -51,8 +53,9 @@
             this.lvManager.GridLines = true;
             this.lvManager.HideSelection = false;
             this.lvManager.Location = new System.Drawing.Point(0, -2);
+            this.lvManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvManager.Name = "lvManager";
-            this.lvManager.Size = new System.Drawing.Size(1094, 987);
+            this.lvManager.Size = new System.Drawing.Size(973, 790);
             this.lvManager.TabIndex = 0;
             this.lvManager.UseCompatibleStateImageBehavior = false;
             this.lvManager.View = System.Windows.Forms.View.Details;
@@ -89,9 +92,10 @@
             // txtDoanhThu
             // 
             this.txtDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoanhThu.Location = new System.Drawing.Point(1156, 299);
+            this.txtDoanhThu.Location = new System.Drawing.Point(1028, 239);
+            this.txtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoanhThu.Name = "txtDoanhThu";
-            this.txtDoanhThu.Size = new System.Drawing.Size(264, 48);
+            this.txtDoanhThu.Size = new System.Drawing.Size(235, 41);
             this.txtDoanhThu.TabIndex = 1;
             this.txtDoanhThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -100,34 +104,59 @@
             this.lb.AutoSize = true;
             this.lb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(1183, 201);
+            this.lb.Location = new System.Drawing.Point(1058, 192);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(204, 40);
+            this.lb.Size = new System.Drawing.Size(172, 36);
             this.lb.TabIndex = 2;
             this.lb.Text = "Doanh Thu";
             // 
             // btnDoanhThu
             // 
             this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnDoanhThu.Location = new System.Drawing.Point(1222, 393);
+            this.btnDoanhThu.Location = new System.Drawing.Point(1076, 649);
+            this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoanhThu.Name = "btnDoanhThu";
-            this.btnDoanhThu.Size = new System.Drawing.Size(139, 60);
+            this.btnDoanhThu.Size = new System.Drawing.Size(124, 48);
             this.btnDoanhThu.TabIndex = 3;
             this.btnDoanhThu.Text = "Tính";
             this.btnDoanhThu.UseVisualStyleBackColor = true;
             this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
+            // txtThinhHanh
+            // 
+            this.txtThinhHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThinhHanh.Location = new System.Drawing.Point(1028, 427);
+            this.txtThinhHanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtThinhHanh.Name = "txtThinhHanh";
+            this.txtThinhHanh.Size = new System.Drawing.Size(235, 41);
+            this.txtThinhHanh.TabIndex = 1;
+            this.txtThinhHanh.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbThinhHanh
+            // 
+            this.lbThinhHanh.AutoSize = true;
+            this.lbThinhHanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbThinhHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThinhHanh.Location = new System.Drawing.Point(1013, 380);
+            this.lbThinhHanh.Name = "lbThinhHanh";
+            this.lbThinhHanh.Size = new System.Drawing.Size(260, 36);
+            this.lbThinhHanh.TabIndex = 2;
+            this.lbThinhHanh.Text = "Phim Thịnh Hành";
+            // 
             // frmManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1461, 988);
+            this.ClientSize = new System.Drawing.Size(1299, 790);
             this.Controls.Add(this.btnDoanhThu);
+            this.Controls.Add(this.lbThinhHanh);
+            this.Controls.Add(this.txtThinhHanh);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.txtDoanhThu);
             this.Controls.Add(this.lvManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmManager";
             this.Text = "frmManager";
             this.ResumeLayout(false);
@@ -146,5 +175,7 @@
         private System.Windows.Forms.TextBox txtDoanhThu;
         private System.Windows.Forms.Label lb;
         private System.Windows.Forms.Button btnDoanhThu;
+        private System.Windows.Forms.TextBox txtThinhHanh;
+        private System.Windows.Forms.Label lbThinhHanh;
     }
 }
