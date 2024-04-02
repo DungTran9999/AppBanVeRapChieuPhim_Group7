@@ -141,6 +141,10 @@ namespace AppBanVeRapChieuPhim_Group7
             FormSellEvent?.Invoke();
             FormSellEvent2?.Invoke();
 
+            frmTheater1 theater1= frmTheater1.GetInStance();
+            theater1.ClearSupport();
+            Clear();
+
         }
         public void Clear()
         {
