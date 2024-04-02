@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.plLoadForm = new System.Windows.Forms.Panel();
-            this.btnTheater1 = new System.Windows.Forms.Button();
-            this.btnTheater2 = new System.Windows.Forms.Button();
             this.txtDataChair = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtTime = new System.Windows.Forms.TextBox();
@@ -55,28 +53,6 @@
             this.plLoadForm.Name = "plLoadForm";
             this.plLoadForm.Size = new System.Drawing.Size(1482, 688);
             this.plLoadForm.TabIndex = 0;
-            // 
-            // btnTheater1
-            // 
-            this.btnTheater1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTheater1.Location = new System.Drawing.Point(1065, 694);
-            this.btnTheater1.Name = "btnTheater1";
-            this.btnTheater1.Size = new System.Drawing.Size(189, 43);
-            this.btnTheater1.TabIndex = 0;
-            this.btnTheater1.Text = "Theater 1";
-            this.btnTheater1.UseVisualStyleBackColor = true;
-            this.btnTheater1.Click += new System.EventHandler(this.btnTheater1_Click);
-            // 
-            // btnTheater2
-            // 
-            this.btnTheater2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTheater2.Location = new System.Drawing.Point(1260, 694);
-            this.btnTheater2.Name = "btnTheater2";
-            this.btnTheater2.Size = new System.Drawing.Size(189, 43);
-            this.btnTheater2.TabIndex = 0;
-            this.btnTheater2.Text = "Theater 2";
-            this.btnTheater2.UseVisualStyleBackColor = true;
-            this.btnTheater2.Click += new System.EventHandler(this.btnTheater2_Click);
             // 
             // txtDataChair
             // 
@@ -254,8 +230,6 @@
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtDataChair);
-            this.Controls.Add(this.btnTheater2);
-            this.Controls.Add(this.btnTheater1);
             this.Controls.Add(this.plLoadForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSell";
@@ -269,8 +243,6 @@
         #endregion
 
         private System.Windows.Forms.Panel plLoadForm;
-        private System.Windows.Forms.Button btnTheater1;
-        private System.Windows.Forms.Button btnTheater2;
         private System.Windows.Forms.TextBox txtDataChair;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtTime;

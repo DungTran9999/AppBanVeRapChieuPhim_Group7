@@ -38,6 +38,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
             xuliBtn();
+          
         }
 
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
@@ -99,7 +100,15 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             // Xóa dữ liệu khi nhận sự kiện từ form Sell
             Clearlist();
+            
         }
+
+       
+
+
+
+
+
     }
 
 }
