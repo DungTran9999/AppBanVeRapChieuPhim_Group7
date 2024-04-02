@@ -36,7 +36,9 @@
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.lb8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.plControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // plLoadForm
@@ -61,6 +63,8 @@
             // plControl
             // 
             this.plControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.plControl.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
+            this.plControl.Controls.Add(this.pictureBox2);
             this.plControl.Controls.Add(this.btnExit);
             this.plControl.Controls.Add(this.plScroll);
             this.plControl.Controls.Add(this.btnManager);
@@ -90,7 +94,7 @@
             // plScroll
             // 
             this.plScroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.plScroll.Location = new System.Drawing.Point(3, 209);
+            this.plScroll.Location = new System.Drawing.Point(3, 252);
             this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plScroll.Name = "plScroll";
             this.plScroll.Size = new System.Drawing.Size(11, 127);
@@ -103,7 +107,7 @@
             this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManager.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnManager.Location = new System.Drawing.Point(3, 274);
+            this.btnManager.Location = new System.Drawing.Point(3, 317);
             this.btnManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManager.Name = "btnManager";
             this.btnManager.Size = new System.Drawing.Size(225, 89);
@@ -120,7 +124,7 @@
             this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSell.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSell.Location = new System.Drawing.Point(3, 180);
+            this.btnSell.Location = new System.Drawing.Point(3, 223);
             this.btnSell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(225, 89);
@@ -142,6 +146,16 @@
             this.lb8.TabIndex = 2;
             this.lb8.Text = "Phim Kaimen Raider 19h đêm nay";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(231, 218);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -159,6 +173,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGiaoDien_FormClosing);
             this.Load += new System.EventHandler(this.frmGiaoDien_Load);
             this.plControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +188,6 @@
         private System.Windows.Forms.Button btnManager;
         private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label lb8;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

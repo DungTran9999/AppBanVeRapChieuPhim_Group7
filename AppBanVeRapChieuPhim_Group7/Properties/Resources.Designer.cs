@@ -63,9 +63,49 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2c4639002f409452699941926c8e9ef8 {
+            get {
+                object obj = ResourceManager.GetObject("2c4639002f409452699941926c8e9ef8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d890a7b047083661a53ba873249f0580 {
+            get {
+                object obj = ResourceManager.GetObject("d890a7b047083661a53ba873249f0580", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d890a7b047083661a53ba873249f05801 {
+            get {
+                object obj = ResourceManager.GetObject("d890a7b047083661a53ba873249f05801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Marvel_Avengers1 {
             get {
                 object obj = ResourceManager.GetObject("Marvel Avengers1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_04_03_004517 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-04-03 004517", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -102,13 +102,9 @@ namespace AppBanVeRapChieuPhim_Group7
                 Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnValue);
                 if (btn != null)
                 {
-                    // Chỉ đổi màu nếu nút không nằm trong danh sách btnMain
-                    if (!btnMain.Contains(btnValue))
-                    {
-                        btn.BackColor = Color.White;
-                        btn.Click += Btn_Click;
-                        buttonStates[btn] = false;
-                    }
+                    btn.BackColor = Color.White;
+                    btn.Click += Btn_Click;
+                    buttonStates[btn] = false;
                 }
             }
             btnSupport.Clear();

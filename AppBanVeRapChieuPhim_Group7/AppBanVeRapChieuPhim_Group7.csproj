@@ -82,6 +82,12 @@
     <Compile Include="frmTheater2.Designer.cs">
       <DependentUpon>frmTheater2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTheater3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheater3.Designer.cs">
+      <DependentUpon>frmTheater3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGiaoDien.resx">
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheater2.resx">
       <DependentUpon>frmTheater2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheater3.resx">
+      <DependentUpon>frmTheater3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +148,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Marvel Avengers1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-03 004517.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c4639002f409452699941926c8e9ef8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d890a7b047083661a53ba873249f0580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d890a7b047083661a53ba873249f05801.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
