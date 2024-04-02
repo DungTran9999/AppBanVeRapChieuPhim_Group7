@@ -239,7 +239,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.CinemaRoom;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1458, 663);
