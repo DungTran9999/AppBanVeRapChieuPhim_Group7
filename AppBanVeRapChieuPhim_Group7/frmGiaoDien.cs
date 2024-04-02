@@ -45,7 +45,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnSell.Height;
             plScroll.Top = btnSell.Top;
             plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear(); 
@@ -60,7 +60,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnManager.Height;
             plScroll.Top = btnManager.Top;
             plScroll.Left = btnManager.Left;
-            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
+            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
 
             lbChangeName.Text = "Manager";
 
@@ -104,7 +104,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnSell.Height;
             plScroll.Top = btnSell.Top;
             plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
+            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear();

@@ -36,6 +36,7 @@ namespace AppBanVeRapChieuPhim_Group7
             listItem = new List<Film>()
             {
                 new Film(){Movie = "Ba Con Heo", Price = 99000,  Time = "9h30 - 11h"},
+                new Film(){Movie = "Báo Hồng", Price = 110000,  Time = "17h - 19h"},
                 
                 new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"}
             };

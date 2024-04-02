@@ -63,6 +63,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2c4639002f409452699941926c8e9ef8 {
+            get {
+                object obj = ResourceManager.GetObject("2c4639002f409452699941926c8e9ef8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6cf4a2130ff7e4d8dd4bcb21195e9601 {
             get {
                 object obj = ResourceManager.GetObject("6cf4a2130ff7e4d8dd4bcb21195e9601", resourceCulture);

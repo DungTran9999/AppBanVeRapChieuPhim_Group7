@@ -72,8 +72,8 @@ namespace AppBanVeRapChieuPhim_Group7
                 btn.BackColor = Color.Green;
                 buttonStates[btn] = true;
 
-                //Khi chuyển màu xong thì sẽ loại bỏ sự kiện Btn_Click để chỉ nhấn 1 lần được 1 ghế
-                btn.Click -= Btn_Click;
+                
+                
 
                 btnMain.Add(btnValue);
             }
@@ -102,13 +102,8 @@ namespace AppBanVeRapChieuPhim_Group7
                 Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnValue);
                 if (btn != null)
                 {
-                    // Chỉ đổi màu nếu nút không nằm trong danh sách btnMain
-                    if (!btnMain.Contains(btnValue))
-                    {
-                        btn.BackColor = Color.White;
-                        btn.Click += Btn_Click;
-                        buttonStates[btn] = false;
-                    }
+                    btn.BackColor = Color.White;
+                    buttonStates[btn] = false;
                 }
             }
             btnSupport.Clear();

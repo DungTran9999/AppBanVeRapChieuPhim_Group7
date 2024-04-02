@@ -30,15 +30,15 @@
         {
             this.plLoadForm = new System.Windows.Forms.Panel();
             this.lbChangeName = new System.Windows.Forms.Label();
+            this.lb8 = new System.Windows.Forms.Label();
             this.plControl = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
-            this.lb8 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.plControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,7 +47,7 @@
             // 
             // plLoadForm
             // 
-            this.plLoadForm.BackColor = System.Drawing.Color.Gray;
+            this.plLoadForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.plLoadForm.Location = new System.Drawing.Point(236, 90);
             this.plLoadForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plLoadForm.Name = "plLoadForm";
@@ -65,9 +65,22 @@
             this.lbChangeName.Size = new System.Drawing.Size(0, 51);
             this.lbChangeName.TabIndex = 2;
             // 
+            // lb8
+            // 
+            this.lb8.AutoSize = true;
+            this.lb8.BackColor = System.Drawing.Color.Red;
+            this.lb8.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb8.ForeColor = System.Drawing.Color.White;
+            this.lb8.Location = new System.Drawing.Point(413, 50);
+            this.lb8.Name = "lb8";
+            this.lb8.Size = new System.Drawing.Size(489, 39);
+            this.lb8.TabIndex = 2;
+            this.lb8.Text = "Phim Kaimen Raider 19h đêm nay";
+            // 
             // plControl
             // 
             this.plControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.plControl.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
             this.plControl.Controls.Add(this.pictureBox3);
             this.plControl.Controls.Add(this.pictureBox1);
             this.plControl.Controls.Add(this.pictureBox2);
@@ -83,76 +96,6 @@
             this.plControl.Size = new System.Drawing.Size(231, 869);
             this.plControl.TabIndex = 4;
             this.plControl.Click += new System.EventHandler(this.btnSell_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.Location = new System.Drawing.Point(3, 766);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(225, 101);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // plScroll
-            // 
-            this.plScroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.plScroll.Location = new System.Drawing.Point(0, 240);
-            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.plScroll.Name = "plScroll";
-            this.plScroll.Size = new System.Drawing.Size(11, 127);
-            this.plScroll.TabIndex = 0;
-            // 
-            // btnManager
-            // 
-            this.btnManager.BackColor = System.Drawing.Color.White;
-            this.btnManager.FlatAppearance.BorderSize = 0;
-            this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManager.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnManager.Location = new System.Drawing.Point(3, 308);
-            this.btnManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnManager.Name = "btnManager";
-            this.btnManager.Size = new System.Drawing.Size(228, 89);
-            this.btnManager.TabIndex = 0;
-            this.btnManager.Text = "Manager";
-            this.btnManager.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnManager.UseVisualStyleBackColor = false;
-            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
-            this.btnManager.Leave += new System.EventHandler(this.btnManager_Leave);
-            // 
-            // btnSell
-            // 
-            this.btnSell.BackColor = System.Drawing.Color.White;
-            this.btnSell.FlatAppearance.BorderSize = 0;
-            this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSell.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSell.Location = new System.Drawing.Point(3, 214);
-            this.btnSell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(225, 89);
-            this.btnSell.TabIndex = 0;
-            this.btnSell.Text = "Sell";
-            this.btnSell.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSell.UseVisualStyleBackColor = false;
-            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
-            this.btnSell.Leave += new System.EventHandler(this.btnSell_Leave);
-            // 
-            // lb8
-            // 
-            this.lb8.AutoSize = true;
-            this.lb8.BackColor = System.Drawing.Color.Red;
-            this.lb8.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb8.ForeColor = System.Drawing.Color.White;
-            this.lb8.Location = new System.Drawing.Point(413, 50);
-            this.lb8.Name = "lb8";
-            this.lb8.Size = new System.Drawing.Size(489, 39);
-            this.lb8.TabIndex = 2;
-            this.lb8.Text = "Phim Kaimen Raider 19h đêm nay";
             // 
             // pictureBox3
             // 
@@ -186,10 +129,69 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.Location = new System.Drawing.Point(3, 766);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(225, 101);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // plScroll
+            // 
+            this.plScroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.plScroll.Location = new System.Drawing.Point(0, 240);
+            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.plScroll.Name = "plScroll";
+            this.plScroll.Size = new System.Drawing.Size(11, 127);
+            this.plScroll.TabIndex = 0;
+            // 
+            // btnManager
+            // 
+            this.btnManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnManager.FlatAppearance.BorderSize = 0;
+            this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManager.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnManager.Location = new System.Drawing.Point(3, 308);
+            this.btnManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnManager.Name = "btnManager";
+            this.btnManager.Size = new System.Drawing.Size(228, 89);
+            this.btnManager.TabIndex = 0;
+            this.btnManager.Text = "Manager";
+            this.btnManager.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnManager.UseVisualStyleBackColor = false;
+            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
+            this.btnManager.Leave += new System.EventHandler(this.btnManager_Leave);
+            // 
+            // btnSell
+            // 
+            this.btnSell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSell.FlatAppearance.BorderSize = 0;
+            this.btnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSell.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnSell.Location = new System.Drawing.Point(3, 214);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSell.Name = "btnSell";
+            this.btnSell.Size = new System.Drawing.Size(228, 89);
+            this.btnSell.TabIndex = 0;
+            this.btnSell.Text = "Sell";
+            this.btnSell.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSell.UseVisualStyleBackColor = false;
+            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
+            this.btnSell.Leave += new System.EventHandler(this.btnSell_Leave);
+            // 
             // frmGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
             this.ClientSize = new System.Drawing.Size(1559, 869);
             this.Controls.Add(this.plControl);
             this.Controls.Add(this.lb8);
