@@ -99,6 +99,21 @@ namespace AppBanVeRapChieuPhim_Group7
                 this.plLoadForm.Controls.Add(frmTheater2_View);
                 frmTheater2_View.Show();
             }
+            else if (checkFilm == "Báo Hồng")
+            {
+                this.plLoadForm.Controls.Clear();
+                frmTheater3 frmTheater3_View = frmTheater3.GetInStance();
+                frmTheater3_View.Dock = DockStyle.Fill;
+                frmTheater3_View.TopLevel = false;
+                frmTheater3_View.TopMost = true;
+                frmTheater3_View.FormBorderStyle = FormBorderStyle.None;
+
+               //
+
+                lbTheater.Text = "THEATER 3";
+                this.plLoadForm.Controls.Add(frmTheater3_View);
+                frmTheater3_View.Show();
+            }
         }
         public void CalculateTotalMoney()
         {
@@ -165,6 +180,7 @@ namespace AppBanVeRapChieuPhim_Group7
             manager.RecieveData(data);
             FormSellEvent?.Invoke();
             FormSellEvent2?.Invoke();
+            frmTheater3.GetInStance().OnBtnAcceptClicked();
             Clear();
         }
     }
