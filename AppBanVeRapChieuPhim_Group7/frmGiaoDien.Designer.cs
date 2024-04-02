@@ -30,12 +30,12 @@
         {
             this.plLoadForm = new System.Windows.Forms.Panel();
             this.lbChangeName = new System.Windows.Forms.Label();
-            this.lb8 = new System.Windows.Forms.Label();
             this.plControl = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
+            this.lb8 = new System.Windows.Forms.Label();
             this.plControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,24 +51,12 @@
             // lbChangeName
             // 
             this.lbChangeName.AutoSize = true;
+            this.lbChangeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbChangeName.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
-            this.lbChangeName.Location = new System.Drawing.Point(247, 9);
+            this.lbChangeName.Location = new System.Drawing.Point(247, 0);
             this.lbChangeName.Name = "lbChangeName";
-            this.lbChangeName.Size = new System.Drawing.Size(136, 51);
+            this.lbChangeName.Size = new System.Drawing.Size(0, 51);
             this.lbChangeName.TabIndex = 2;
-            this.lbChangeName.Text = "label1";
-            // 
-            // lb8
-            // 
-            this.lb8.AutoSize = true;
-            this.lb8.BackColor = System.Drawing.Color.White;
-            this.lb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb8.ForeColor = System.Drawing.Color.Red;
-            this.lb8.Location = new System.Drawing.Point(654, 49);
-            this.lb8.Name = "lb8";
-            this.lb8.Size = new System.Drawing.Size(420, 36);
-            this.lb8.TabIndex = 3;
-            this.lb8.Text = "Phim Chú Bé Tài 19h tối nay";
             // 
             // plControl
             // 
@@ -84,6 +72,7 @@
             this.plControl.Name = "plControl";
             this.plControl.Size = new System.Drawing.Size(231, 869);
             this.plControl.TabIndex = 4;
+            this.plControl.Click += new System.EventHandler(this.btnSell_Click);
             // 
             // btnExit
             // 
@@ -96,6 +85,7 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // plScroll
             // 
@@ -120,6 +110,8 @@
             this.btnManager.TabIndex = 0;
             this.btnManager.Text = "Manager";
             this.btnManager.UseVisualStyleBackColor = false;
+            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
+            this.btnManager.Leave += new System.EventHandler(this.btnManager_Leave);
             // 
             // btnSell
             // 
@@ -135,6 +127,20 @@
             this.btnSell.TabIndex = 0;
             this.btnSell.Text = "Sell";
             this.btnSell.UseVisualStyleBackColor = false;
+            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
+            this.btnSell.Leave += new System.EventHandler(this.btnSell_Leave);
+            // 
+            // lb8
+            // 
+            this.lb8.AutoSize = true;
+            this.lb8.BackColor = System.Drawing.Color.Red;
+            this.lb8.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb8.ForeColor = System.Drawing.Color.White;
+            this.lb8.Location = new System.Drawing.Point(413, 50);
+            this.lb8.Name = "lb8";
+            this.lb8.Size = new System.Drawing.Size(489, 39);
+            this.lb8.TabIndex = 2;
+            this.lb8.Text = "Phim Kaimen Raider 19h đêm nay";
             // 
             // frmGiaoDien
             // 
@@ -161,11 +167,11 @@
         #endregion
         private System.Windows.Forms.Panel plLoadForm;
         private System.Windows.Forms.Label lbChangeName;
-        private System.Windows.Forms.Label lb8;
         private System.Windows.Forms.Panel plControl;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel plScroll;
         private System.Windows.Forms.Button btnManager;
         private System.Windows.Forms.Button btnSell;
+        private System.Windows.Forms.Label lb8;
     }
 }

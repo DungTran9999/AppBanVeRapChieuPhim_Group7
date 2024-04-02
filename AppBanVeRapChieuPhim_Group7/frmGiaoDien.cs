@@ -113,5 +113,7 @@ namespace AppBanVeRapChieuPhim_Group7
             this.plLoadForm.Controls.Add(frmSell_View);
             frmSell_View.Show();
         }
+
+       
     }
 }
