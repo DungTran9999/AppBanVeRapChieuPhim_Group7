@@ -53,7 +53,7 @@
             // 
             // plLoadForm
             // 
-            this.plLoadForm.BackColor = System.Drawing.Color.Gray;
+            this.plLoadForm.BackColor = System.Drawing.Color.Black;
             this.plLoadForm.Controls.Add(this.pictureBox1);
             this.plLoadForm.Location = new System.Drawing.Point(0, 0);
             this.plLoadForm.Name = "plLoadForm";
@@ -239,9 +239,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.CinemaRoom;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1428, 660);
+            this.pictureBox1.Size = new System.Drawing.Size(1458, 663);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
