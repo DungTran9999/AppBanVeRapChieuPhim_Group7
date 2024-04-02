@@ -43,8 +43,9 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
 
-
-        public List<string> btnNhan = new List<string>();
+        
+        public List<string> btnSupport = new List<string>();
+        public List<string> btnMain = new List<string>();
         public void xuliBtn()
         {
             foreach (Control item in this.plChairTheater1.Controls)
@@ -78,14 +79,14 @@ namespace AppBanVeRapChieuPhim_Group7
             // Kiểm tra xem giá trị của button đã tồn tại trong danh sách chưa
 
 
-            if (!btnNhan.Contains(btnValue))
+            if (!btnSupport.Contains(btnValue))
             {
-                btnNhan.Add(btnValue);
+                btnSupport.Add(btnValue);
 
                 if (truyenData != null)
                 {
-                    truyenData(btnNhan);
-                    this.soluong=btnNhan.Count;
+                    truyenData(btnSupport);
+                    this.soluong=btnSupport.Count;
                     truyenghe(soluong);
                 }
             }
@@ -94,7 +95,7 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void Clearlist()
         {
-            btnNhan.Clear();
+            btnSupport.Clear();
         }
         public void OnFormSellEventReceived()
         {

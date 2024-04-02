@@ -34,6 +34,9 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ttlv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtDoanhThu = new System.Windows.Forms.TextBox();
+            this.lb = new System.Windows.Forms.Label();
+            this.btnDoanhThu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvManager
@@ -83,17 +86,52 @@
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 150;
             // 
+            // txtDoanhThu
+            // 
+            this.txtDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDoanhThu.Location = new System.Drawing.Point(1156, 299);
+            this.txtDoanhThu.Name = "txtDoanhThu";
+            this.txtDoanhThu.Size = new System.Drawing.Size(264, 48);
+            this.txtDoanhThu.TabIndex = 1;
+            this.txtDoanhThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lb
+            // 
+            this.lb.AutoSize = true;
+            this.lb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb.Location = new System.Drawing.Point(1183, 201);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(204, 40);
+            this.lb.TabIndex = 2;
+            this.lb.Text = "Doanh Thu";
+            // 
+            // btnDoanhThu
+            // 
+            this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.btnDoanhThu.Location = new System.Drawing.Point(1222, 393);
+            this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.Size = new System.Drawing.Size(139, 60);
+            this.btnDoanhThu.TabIndex = 3;
+            this.btnDoanhThu.Text = "Tính";
+            this.btnDoanhThu.UseVisualStyleBackColor = true;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
+            // 
             // frmManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1461, 988);
+            this.Controls.Add(this.btnDoanhThu);
+            this.Controls.Add(this.lb);
+            this.Controls.Add(this.txtDoanhThu);
             this.Controls.Add(this.lvManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManager";
             this.Text = "frmManager";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -105,5 +143,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader ttlv;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.TextBox txtDoanhThu;
+        private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Button btnDoanhThu;
     }
 }
