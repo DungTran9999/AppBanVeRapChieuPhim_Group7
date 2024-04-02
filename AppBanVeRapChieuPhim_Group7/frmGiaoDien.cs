@@ -15,6 +15,29 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmGiaoDien()
         {
             InitializeComponent();
+            automatic();
+        }
+        private Timer timer;
+        private int currentPosition = 0;
+        private const int speed = 5; // Tốc độ chạy của văn bản
+        public void automatic()
+        {
+            timer = new Timer();
+            timer.Interval = 50; // Đặt tần suất cập nhật (milliseconds)
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Cập nhật vị trí của văn bản
+            currentPosition += speed;
+            if (currentPosition > this.Width)
+            {
+                currentPosition = -lb8.Width;
+            }
+
+            // Đặt vị trí mới cho văn bản
+            lb8.Location = new System.Drawing.Point(currentPosition, lb8.Location.Y);
         }
 
         private void btnSell_Click(object sender, EventArgs e)

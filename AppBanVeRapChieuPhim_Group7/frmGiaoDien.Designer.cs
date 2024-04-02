@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.plControl = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.plLoadForm = new System.Windows.Forms.Panel();
             this.lbChangeName = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.lb8 = new System.Windows.Forms.Label();
             this.plControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +52,18 @@
             this.plControl.Name = "plControl";
             this.plControl.Size = new System.Drawing.Size(231, 869);
             this.plControl.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.Location = new System.Drawing.Point(3, 765);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(225, 101);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // plScroll
             // 
@@ -110,23 +123,21 @@
             this.lbChangeName.TabIndex = 2;
             this.lbChangeName.Text = "label1";
             // 
-            // btnExit
+            // lb8
             // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.Location = new System.Drawing.Point(3, 765);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(225, 101);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.lb8.AutoSize = true;
+            this.lb8.Location = new System.Drawing.Point(565, 32);
+            this.lb8.Name = "lb8";
+            this.lb8.Size = new System.Drawing.Size(197, 16);
+            this.lb8.TabIndex = 3;
+            this.lb8.Text = "Phim Siêu Nhân Gao tối mai 19h";
             // 
             // frmGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1559, 869);
+            this.Controls.Add(this.lb8);
             this.Controls.Add(this.lbChangeName);
             this.Controls.Add(this.plLoadForm);
             this.Controls.Add(this.plControl);
@@ -151,5 +162,6 @@
         private System.Windows.Forms.Button btnManager;
         private System.Windows.Forms.Panel plScroll;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lb8;
     }
 }

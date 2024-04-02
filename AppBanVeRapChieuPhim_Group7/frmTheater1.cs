@@ -12,10 +12,25 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmTheater1 : Form
     {
+
+        private static frmTheater1 instance;
+
+        public static frmTheater1 GetInStance()
+        {
+            if (instance == null)
+            {
+                instance = new frmTheater1();
+            }
+            return instance;
+        }
+
         public delegate void delPassData(List<string> value);
         public delPassData truyenData;
+
+        //Nhan su kien tu form sell
         public event Action FormSellEventReceived;
         public int soluong { get; set; }
+
         public delegate void TruyenGhe(int soluong);
         public TruyenGhe truyenghe;
 
@@ -23,9 +38,14 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
             xuliBtn();
+
         }
 
-        public List<string> btnNhan = new List<string>();
+        private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
+
+
+        public List<string> btnSupport = new List<string>();
+        public List<string> btnMain = new List<string>();
         public void xuliBtn()
         {
             foreach (Control item in this.plChairTheater1.Controls)
@@ -34,11 +54,12 @@ namespace AppBanVeRapChieuPhim_Group7
                 {
                     Button btn = (Button)item;
                     btn.Click += Btn_Click;
+                    buttonStates.Add(btn, false);
 
                 }
             }
         }
-        
+
 
         private void Btn_Click(object sender, EventArgs e)
         {
@@ -46,32 +67,53 @@ namespace AppBanVeRapChieuPhim_Group7
             Button btn = (Button)sender;
             string btnValue = btn.Text;
 
+            if (!buttonStates[btn])
+            {
+                btn.BackColor = Color.Green;
+                buttonStates[btn] = true;
+
+                //Khi chuyển màu xong thì sẽ loại bỏ sự kiện Btn_Click để chỉ nhấn 1 lần được 1 ghế
+                btn.Click -= Btn_Click;
+
+                btnMain.Add(btnValue);
+            }
+
             // Kiểm tra xem giá trị của button đã tồn tại trong danh sách chưa
 
 
-            if (!btnNhan.Contains(btnValue))
+            if (!btnSupport.Contains(btnValue))
             {
-                btnNhan.Add(btnValue);
+                btnSupport.Add(btnValue);
 
                 if (truyenData != null)
                 {
-                    truyenData(btnNhan);
-                    this.soluong=btnNhan.Count;
+                    truyenData(btnSupport);
+                    this.soluong = btnSupport.Count;
                     truyenghe(soluong);
                 }
             }
 
 
         }
+        
         public void Clearlist()
         {
-            btnNhan.Clear();
+            btnSupport.Clear();
         }
         public void OnFormSellEventReceived()
         {
             // Xóa dữ liệu khi nhận sự kiện từ form Sell
             Clearlist();
+
         }
+
+
+
+
+
+
+
+
     }
 
 }
