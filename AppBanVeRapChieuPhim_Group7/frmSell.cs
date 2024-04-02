@@ -72,7 +72,10 @@ namespace AppBanVeRapChieuPhim_Group7
         {
            
             this.plLoadForm.Controls.Clear();
-            frmTheater1 frmTheater1_View = new frmTheater1() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmTheater1 frmTheater1_View = frmTheater1.GetInStance();
+            frmTheater1_View.Dock = DockStyle.Fill;
+            frmTheater1_View.TopLevel = false;
+            frmTheater1_View.TopMost = true;
             frmTheater1_View.FormBorderStyle = FormBorderStyle.None;
            
             FormSellEvent += frmTheater1_View.OnFormSellEventReceived;
@@ -80,8 +83,8 @@ namespace AppBanVeRapChieuPhim_Group7
             frmTheater1_View.truyenData += LoadData;
             frmTheater1_View.truyenghe += LoadGhe;
             int a = frmTheater1_View.soluong;
-            
 
+            lbTheater.Text = "THEATER 1";
             this.plLoadForm.Controls.Add(frmTheater1_View);
             frmTheater1_View.Show();
         }
@@ -90,11 +93,16 @@ namespace AppBanVeRapChieuPhim_Group7
         private void btnTheater2_Click(object sender, EventArgs e)
         {
             this.plLoadForm.Controls.Clear();
-            frmTheater2 frmTheater2_View = new frmTheater2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmTheater2 frmTheater2_View = frmTheater2.GetInStance();
+            frmTheater2_View.Dock = DockStyle.Fill;
+            frmTheater2_View.TopLevel = false;
+            frmTheater2_View.TopMost = true;
             frmTheater2_View.FormBorderStyle = FormBorderStyle.None;
 
             frmTheater2_View.truyenData2 += LoadData;
             frmTheater2_View.truyenghe2 += LoadGhe;
+
+            lbTheater.Text = "THEATER 2";
             this.plLoadForm.Controls.Add(frmTheater2_View);
             frmTheater2_View.Show();
         }
@@ -133,7 +141,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            string[] data = {cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
+            string[] data = {cbbMovie.Text,lbTheater.Text ,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
             frmManager manager = frmManager.GetInstance();
             manager.RecieveData(data);
             FormSellEvent?.Invoke();

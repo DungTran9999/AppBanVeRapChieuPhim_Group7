@@ -12,6 +12,18 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmTheater1 : Form
     {
+
+        private static frmTheater1 instance;
+        
+        public static frmTheater1 GetInStance()
+        {
+            if( instance == null)
+            {
+                instance = new frmTheater1();
+            }
+            return instance;
+        }
+
         public delegate void delPassData(List<string> value);
         public delPassData truyenData;
 

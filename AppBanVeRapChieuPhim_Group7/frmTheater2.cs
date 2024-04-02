@@ -12,6 +12,18 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmTheater2 : Form
     {
+
+        private static frmTheater2 instance;
+
+        public static frmTheater2 GetInStance()
+        {
+            if (instance == null)
+            {
+                instance = new frmTheater2();
+            }
+            return instance;
+        }
+
         public delegate void delPassData(List<string> value);
         public delPassData truyenData2;
 
@@ -28,6 +40,8 @@ namespace AppBanVeRapChieuPhim_Group7
             xuliBtn2();
         }
 
+        private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
+
         public List<string> btnNhan2 = new List<string>();
         public void xuliBtn2()
         {
@@ -37,7 +51,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 {
                     Button btn = (Button)item;
                     btn.Click += Btn_Click2;
-
+                    buttonStates.Add(btn, false);
                 }
             }
         }
@@ -48,6 +62,16 @@ namespace AppBanVeRapChieuPhim_Group7
 
             Button btn = (Button)sender;
             string btnValue2 = btn.Text;
+
+            if (!buttonStates[btn])
+            {
+                btn.BackColor = Color.Green;
+                buttonStates[btn] = true;
+
+                //Khi chuyển màu xong thì sẽ loại bỏ sự kiện Btn_Click để chỉ nhấn 1 lần được 1 ghế
+                btn.Click -= Btn_Click2;
+            }
+
 
             // Kiểm tra xem giá trị của button đã tồn tại trong danh sách chưa
 

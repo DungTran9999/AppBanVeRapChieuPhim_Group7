@@ -32,7 +32,8 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ttlvTotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ttlv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lvManager
@@ -41,7 +42,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.ttlvTotal});
+            this.ttlv,
+            this.columnHeader4});
             this.lvManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvManager.GridLines = true;
             this.lvManager.HideSelection = false;
@@ -54,23 +56,28 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Phim";
-            this.columnHeader1.Width = 262;
+            this.columnHeader1.Text = "Movie";
+            this.columnHeader1.Width = 150;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Gia";
-            this.columnHeader2.Width = 263;
+            this.columnHeader2.Text = "Theater";
+            this.columnHeader2.Width = 120;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "So ghe";
-            this.columnHeader3.Width = 243;
+            this.columnHeader3.Text = "Price";
+            this.columnHeader3.Width = 150;
             // 
-            // ttlvTotal
+            // ttlv
             // 
-            this.ttlvTotal.Text = "Total";
-            this.ttlvTotal.Width = 244;
+            this.ttlv.Text = "Number of Chairs";
+            this.ttlv.Width = 160;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Total";
+            this.columnHeader4.Width = 150;
             // 
             // frmManager
             // 
@@ -92,6 +99,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader ttlvTotal;
+        private System.Windows.Forms.ColumnHeader ttlv;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
