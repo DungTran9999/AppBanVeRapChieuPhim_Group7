@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PnLogin = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,38 +43,63 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Marvel_Avengers1;
+            this.pictureBox1.Location = new System.Drawing.Point(1, -13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(322, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // PnLogin
             // 
             this.PnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PnLogin.BackColor = System.Drawing.Color.White;
+            this.PnLogin.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.d890a7b047083661a53ba873249f0580;
+            this.PnLogin.Controls.Add(this.pictureBox2);
             this.PnLogin.Controls.Add(this.panel5);
             this.PnLogin.Controls.Add(this.panel3);
             this.PnLogin.Controls.Add(this.panel2);
             this.PnLogin.Controls.Add(this.panel4);
             this.PnLogin.Controls.Add(this.label3);
             this.PnLogin.Controls.Add(this.label2);
-            this.PnLogin.Location = new System.Drawing.Point(370, 12);
+            this.PnLogin.Location = new System.Drawing.Point(321, 3);
+            this.PnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PnLogin.Name = "PnLogin";
-            this.PnLogin.Size = new System.Drawing.Size(571, 534);
+            this.PnLogin.Size = new System.Drawing.Size(558, 447);
             this.PnLogin.TabIndex = 7;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
+            this.pictureBox2.Location = new System.Drawing.Point(61, 45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(116, 106);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel5.Controls.Add(this.btnExit);
-            this.panel5.Location = new System.Drawing.Point(330, 402);
+            this.panel5.Location = new System.Drawing.Point(293, 322);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(186, 63);
+            this.panel5.Size = new System.Drawing.Size(165, 50);
             this.panel5.TabIndex = 5;
             // 
             // btnExit
@@ -80,9 +107,10 @@
             this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.Font = new System.Drawing.Font("Javanese Text", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnExit.Location = new System.Drawing.Point(10, 3);
+            this.btnExit.Location = new System.Drawing.Point(9, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(177, 60);
+            this.btnExit.Size = new System.Drawing.Size(157, 48);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -92,9 +120,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.btnLogin);
-            this.panel3.Location = new System.Drawing.Point(69, 402);
+            this.panel3.Location = new System.Drawing.Point(61, 322);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(186, 63);
+            this.panel3.Size = new System.Drawing.Size(165, 50);
             this.panel3.TabIndex = 5;
             // 
             // btnLogin
@@ -102,9 +131,10 @@
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.Font = new System.Drawing.Font("Javanese Text", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLogin.Location = new System.Drawing.Point(10, 3);
+            this.btnLogin.Location = new System.Drawing.Point(9, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(177, 60);
+            this.btnLogin.Size = new System.Drawing.Size(157, 48);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -114,9 +144,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.txtPassWord);
-            this.panel2.Location = new System.Drawing.Point(237, 296);
+            this.panel2.Location = new System.Drawing.Point(264, 237);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(282, 43);
+            this.panel2.Size = new System.Drawing.Size(251, 34);
             this.panel2.TabIndex = 4;
             // 
             // txtPassWord
@@ -126,18 +157,20 @@
             this.txtPassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtPassWord.Location = new System.Drawing.Point(3, 6);
+            this.txtPassWord.Location = new System.Drawing.Point(3, 5);
+            this.txtPassWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.Size = new System.Drawing.Size(276, 32);
+            this.txtPassWord.Size = new System.Drawing.Size(245, 27);
             this.txtPassWord.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.txtUserName);
-            this.panel4.Location = new System.Drawing.Point(237, 226);
+            this.panel4.Location = new System.Drawing.Point(264, 181);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(282, 43);
+            this.panel4.Size = new System.Drawing.Size(251, 34);
             this.panel4.TabIndex = 4;
             // 
             // txtUserName
@@ -147,9 +180,10 @@
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtUserName.Location = new System.Drawing.Point(3, 6);
+            this.txtUserName.Location = new System.Drawing.Point(3, 5);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(276, 32);
+            this.txtUserName.Size = new System.Drawing.Size(245, 27);
             this.txtUserName.TabIndex = 3;
             // 
             // label3
@@ -158,9 +192,9 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(53, 297);
+            this.label3.Location = new System.Drawing.Point(65, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 32);
+            this.label3.Size = new System.Drawing.Size(159, 29);
             this.label3.TabIndex = 1;
             this.label3.Text = "PASSWORD";
             // 
@@ -170,36 +204,29 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(53, 233);
+            this.label2.Location = new System.Drawing.Point(65, 186);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 32);
+            this.label2.Size = new System.Drawing.Size(156, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "USERNAME";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Marvel_Avengers1;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 533);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 563);
+            this.ClientSize = new System.Drawing.Size(882, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PnLogin.ResumeLayout(false);
             this.PnLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -207,7 +234,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,6 +253,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

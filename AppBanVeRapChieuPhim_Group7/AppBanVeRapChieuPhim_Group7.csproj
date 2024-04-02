@@ -140,5 +140,23 @@
   <ItemGroup>
     <None Include="Resources\Marvel Avengers1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d890a7b047083661a53ba873249f0580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-03 004517.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6cf4a2130ff7e4d8dd4bcb21195e9601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.psd %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
