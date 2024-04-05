@@ -139,6 +139,7 @@
             // 
             // plChairTheater3
             // 
+            this.plChairTheater3.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.baohong;
             this.plChairTheater3.Controls.Add(this.btnE13);
             this.plChairTheater3.Controls.Add(this.btnE5);
             this.plChairTheater3.Controls.Add(this.btnE9);

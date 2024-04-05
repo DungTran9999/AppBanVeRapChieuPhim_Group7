@@ -173,5 +173,17 @@
   <ItemGroup>
     <None Include="Resources\maxresdefault.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-05 214045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avt-chu---n-min-1567047809-250-width640height480_schema_article.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avt-chu---n-min-1567047809-250-width640height480_schema_article1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baohong.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

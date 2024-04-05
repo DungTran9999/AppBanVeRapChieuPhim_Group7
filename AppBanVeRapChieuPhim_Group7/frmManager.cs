@@ -25,6 +25,9 @@ namespace AppBanVeRapChieuPhim_Group7
             }
             return instance;
         }
+
+
+        //
         public void RecieveData(string[] data)
         {
             ListViewItem infor = new ListViewItem(data);

@@ -24,94 +24,123 @@ namespace AppBanVeRapChieuPhim_Group7
         }
 
         public delegate void delPassData(List<string> value);
-        public delPassData truyenData;
+        public delPassData truyenData3;
 
-        //Nhan su kien tu form sell
-        public event Action FormSellEventReceived;
         public int soluong { get; set; }
 
-        public delegate void TruyenGhe(int soluong);
-        public TruyenGhe truyenghe;
+        public delegate void TruyenGhe(int ghe);
+        public TruyenGhe truyenghe3;
+
         public frmTheater3()
         {
             InitializeComponent();
+            xuliBtn();
+
         }
+
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
 
 
-        public List<string> btnSupport = new List<string>();
-        public List<string> btnMain = new List<string>();
-        private void Btn_Click(object sender, EventArgs e)
+        public List<string> listSupport = new List<string>();
+        public List<string> listMain = new List<string>();
+        public void xuliBtn()
         {
-            Button btn = (Button)sender;
-            string btnValue = btn.Text;
-
-            // Add the button to btnSupport if it's not already in there
-            if (!btnSupport.Contains(btnValue))
-            {
-                btnSupport.Add(btnValue);
-                btn.BackColor = Color.Green;
-
-                if (truyenData != null)
-                {
-                    truyenData(btnSupport);
-                    this.soluong = btnSupport.Count;
-                    truyenghe(soluong);
-                }
-            }
-        }
-
-        public void ClearSupport()
-        {
-            foreach (string btnValue in btnSupport)
-            {
-                Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnValue);
-                if (btn != null)
-                {
-                    // Change the button color back to white if it's not in btnMain
-                    if (!btnMain.Contains(btnValue))
-                    {
-                        btn.BackColor = Color.White;
-                    }
-                }
-            }
-            btnSupport.Clear();
-            this.soluong = btnSupport.Count;
-            truyenghe(soluong);
-        }
-
-        public void OnFormSellEventReceived()
-        {
-            ClearSupport();
-            btnMain.Clear();
-            // Change the button status back to false
             foreach (Control item in this.plChairTheater3.Controls)
             {
                 if (item is Button)
                 {
                     Button btn = (Button)item;
-                    
-                    btn.BackColor = Color.White;
                     btn.Click += Btn_Click;
-                    buttonStates[btn] = false;
+                    buttonStates.Add(btn, false);
+
                 }
             }
         }
 
-        public void OnBtnAcceptClicked()
+
+        private void Btn_Click(object sender, EventArgs e)
         {
-            // Check if the conditions are met to save to btnMain
-            // If so, save it and change the button colors and text accordingly
-            foreach (string btnValue in btnSupport)
+            Button btn = (Button)sender;
+            string btnText = btn.Text;
+
+            if (listMain.Contains(btnText))
             {
-                Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnValue);
+                // Nếu nút đã được chọn nằm trong listMain, không thực hiện gì cả
+                return;
+            }
+
+            // Đảo ngược trạng thái của ghế
+            buttonStates[btn] = !buttonStates[btn];
+
+            if (buttonStates[btn])
+            {
+                btn.BackColor = Color.Green;
+                listSupport.Add(btnText);
+
+                if (listSupport.Contains(btnText))
+                {
+
+
+                    if (truyenData3 != null)
+                    {
+
+                        truyenData3(listSupport);
+                        this.soluong = listSupport.Count;
+                        truyenghe3(soluong);
+                    }
+                }
+            }
+            else
+            {
+                btn.BackColor = DefaultBackColor;
+                listSupport.Remove(btnText);
+            }
+        }
+        public void HandleAcceptEvent()
+        {
+            // Lưu trạng thái màu của các ghế trong listSupport
+            Dictionary<string, Color> buttonColors = new Dictionary<string, Color>();
+            foreach (string btnText in listSupport)
+            {
+                Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
                 if (btn != null)
                 {
-                    btnMain.Add(btnValue);
-                    btn.BackColor = Color.Green;
-                   
+                    buttonColors.Add(btnText, btn.BackColor);
+                }
+            }
+
+            listMain.AddRange(listSupport); // Thêm danh sách ghế được chọn vào listMain
+            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+
+            // Tái áp dụng màu cho các ghế tương ứng trong listSupport
+            foreach (var kvp in buttonColors)
+            {
+                Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == kvp.Key);
+                if (btn != null)
+                {
+                    btn.BackColor = kvp.Value;
                 }
             }
         }
+        public void HandleCancelEvent()
+        {
+            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+        }
+        private void ClearListSupport()
+        {
+            foreach (string btnText in listSupport)
+            {
+                Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
+                if (btn != null)
+                {
+                    btn.BackColor = DefaultBackColor;
+                    buttonStates[btn] = false;
+                }
+            }
+            listSupport.Clear();
+        }
+
+
     }
+
 }

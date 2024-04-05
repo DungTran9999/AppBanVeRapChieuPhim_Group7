@@ -13,11 +13,15 @@ namespace AppBanVeRapChieuPhim_Group7
     
     public partial class frmSell : Form
     {
-        
+        public event Action theater1CancelEvent;
+        public event Action theater1AcceptEvent;
 
-        
+        public event Action theater2CancelEvent;
+        public event Action theater2AcceptEvent;
 
-        
+        public event Action theater3CancelEvent;
+        public event Action theater3AcceptEvent;
+
         public int soluong;
         public int totalmoney;
 
@@ -25,6 +29,8 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmSell()
         {
             InitializeComponent();
+           
+           
         }
       
 
@@ -36,9 +42,10 @@ namespace AppBanVeRapChieuPhim_Group7
             {
                 new Film(){Movie = "Ba Con Heo", Price = 99000,  Time = "9h30 - 11h"},
                 new Film(){Movie = "Báo Hồng", Price = 110000,  Time = "17h - 19h"},
-                
                 new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"}
             };
+            
+            // cbbmovie lấy data từ listItems
             cbbMovie.DataSource = listItem;
             cbbMovie.DisplayMember = "Movie";
         }
@@ -49,20 +56,19 @@ namespace AppBanVeRapChieuPhim_Group7
             ComboBox cb = sender as ComboBox;
             if (cb.SelectedValue != null)
             {
+                //chuyển cb sang Film để sử dụng thuộc tính của Film
                 Film data = cb.SelectedValue as Film;
-
-               
 
                 txtPrice.Text = data.Price.ToString();
                 txtTime.Text = data.Time.ToString();
             }
-
-
-            
+             
         }
+        // mở rạp theo tên phim
         public void openTheater()
         {
             string checkFilm = cbbMovie.Text;
+            //
             if(checkFilm =="Ba Con Heo")
             {
                 this.plLoadForm.Controls.Clear();
@@ -72,11 +78,16 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater1_View.TopMost = true;
                 frmTheater1_View.FormBorderStyle = FormBorderStyle.None;
 
-                
+                // thêm hàm HandleCancelEvent từ frmTheater1 vào theater1CancelEvent
+                theater1CancelEvent += frmTheater1_View.HandleCancelEvent;
+                // thêm hàm HandleAcceptEvent từ frmTheater1 vào theater1AcceptEvent
+                theater1AcceptEvent += frmTheater1_View.HandleAcceptEvent;
+
 
                 frmTheater1_View.truyenData += LoadData;
+
                 frmTheater1_View.truyenghe += LoadGhe;
-                int a = frmTheater1_View.soluong;
+                
 
                 lbTheater.Text = "THEATER 1";
                 this.plLoadForm.Controls.Add(frmTheater1_View);
@@ -90,6 +101,11 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater2_View.TopLevel = false;
                 frmTheater2_View.TopMost = true;
                 frmTheater2_View.FormBorderStyle = FormBorderStyle.None;
+
+                // thêm hàm HandleCancelEvent từ frmTheater2 vào theater1CancelEvent
+                theater2CancelEvent += frmTheater2_View.HandleCancelEvent;
+                // thêm hàm HandleAcceptEvent từ frmTheater2 vào theater1AcceptEvent
+                theater2AcceptEvent += frmTheater2_View.HandleAcceptEvent;
 
                 frmTheater2_View.truyenData2 += LoadData;
                 frmTheater2_View.truyenghe2 += LoadGhe;
@@ -107,8 +123,14 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater3_View.TopMost = true;
                 frmTheater3_View.FormBorderStyle = FormBorderStyle.None;
 
-               //
-               
+                // thêm hàm HandleCancelEvent từ frmTheater3 vào theater1CancelEvent
+                theater3CancelEvent += frmTheater3_View.HandleCancelEvent;
+                // thêm hàm HandleAcceptEvent từ frmTheater3 vào theater1AcceptEvent
+                theater3AcceptEvent += frmTheater3_View.HandleAcceptEvent;
+
+                frmTheater3_View.truyenData3 += LoadData;
+                frmTheater3_View.truyenghe3 += LoadGhe;
+
                 lbTheater.Text = "THEATER 3";
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
@@ -121,7 +143,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 Film selectedFilm = cbbMovie.SelectedItem as Film;
                 int price = selectedFilm.Price;
                 int numberOfChair = int.Parse(lbNumberOfChair.Text);
-                totalmoney = price * (numberOfChair+1);
+                totalmoney = price * (numberOfChair + 1);
                 lbMoney.Text = totalmoney.ToString();
             }
         }
@@ -158,14 +180,15 @@ namespace AppBanVeRapChieuPhim_Group7
             lbNumberOfChair.Text = "0";
             lbMoney.Text = "0";
         }
-        private frmTheater1 theater1;
+        
         
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            //lấy hàm đã lưu trong theater1CancelEvent
+            theater1CancelEvent?.Invoke();
+            theater2CancelEvent?.Invoke();
+            theater3CancelEvent?.Invoke();
             
-            
-
-           
             Clear();
 
         }
@@ -175,16 +198,20 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
+            // tạo mảng frmSell để truyền data vô frmManager
             string[] data = { lbTheater.Text, cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
             frmManager manager = frmManager.GetInstance();
             manager.RecieveData(data);
-            
 
-
-           
+            //lấy hàm đã lưu trong theater1AcceptEvent
+            theater1AcceptEvent?.Invoke();     
+            theater2AcceptEvent?.Invoke();     
+            theater3AcceptEvent?.Invoke();     
             Clear();
         }
     }
+
+    //tạo class film để lưu data
     public class Film
     {
         public string Movie { get; set; }

@@ -139,7 +139,7 @@
             // 
             // plChairTheater1
             // 
-            this.plChairTheater1.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.maxresdefault;
+            this.plChairTheater1.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_05_214045;
             this.plChairTheater1.Controls.Add(this.btnE13);
             this.plChairTheater1.Controls.Add(this.btnE5);
             this.plChairTheater1.Controls.Add(this.btnE9);

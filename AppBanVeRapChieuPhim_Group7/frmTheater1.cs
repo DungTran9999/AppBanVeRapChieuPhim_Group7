@@ -11,9 +11,7 @@ using System.Windows.Forms;
 namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmTheater1 : Form
-    {
-        public event Action AcceptEvent;
-        public event Action CancelEvent;
+    { 
         private static frmTheater1 instance;
         
         public static frmTheater1 GetInStance()
@@ -30,7 +28,7 @@ namespace AppBanVeRapChieuPhim_Group7
        
         public int soluong { get; set; }
 
-        public delegate void TruyenGhe(int soluong);
+        public delegate void TruyenGhe(int ghe);
         public TruyenGhe truyenghe;
 
         public frmTheater1()
@@ -65,6 +63,12 @@ namespace AppBanVeRapChieuPhim_Group7
             Button btn = (Button)sender;
             string btnText = btn.Text;
 
+            if (listMain.Contains(btnText))
+            {
+                // Nếu nút đã được chọn nằm trong listMain, không thực hiện gì cả
+                return;
+            }
+
             // Đảo ngược trạng thái của ghế
             buttonStates[btn] = !buttonStates[btn];
 
@@ -94,8 +98,29 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void HandleAcceptEvent()
         {
+            // Lưu trạng thái màu của các ghế trong listSupport
+            Dictionary<string, Color> buttonColors = new Dictionary<string, Color>();
+            foreach (string btnText in listSupport)
+            {
+                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
+                if (btn != null)
+                {
+                    buttonColors.Add(btnText, btn.BackColor);
+                }
+            }
+
             listMain.AddRange(listSupport); // Thêm danh sách ghế được chọn vào listMain
             ClearListSupport(); // Xóa danh sách ghế đang được chọn
+
+            // Tái áp dụng màu cho các ghế tương ứng trong listSupport
+            foreach (var kvp in buttonColors)
+            {
+                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == kvp.Key);
+                if (btn != null)
+                {
+                    btn.BackColor = kvp.Value;
+                }
+            }
         }
         public void HandleCancelEvent()
         {
