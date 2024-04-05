@@ -38,6 +38,7 @@ namespace AppBanVeRapChieuPhim_Group7
           
         }
 
+        
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
 
         

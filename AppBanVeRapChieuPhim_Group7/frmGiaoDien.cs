@@ -45,7 +45,8 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnSell.Height;
             plScroll.Top = btnSell.Top;
             plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            
+            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear(); 
@@ -60,7 +61,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnManager.Height;
             plScroll.Top = btnManager.Top;
             plScroll.Left = btnManager.Left;
-            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 255,255);
 
             lbChangeName.Text = "Manager";
 
@@ -78,7 +79,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnSell_Leave(object sender, EventArgs e)
         {
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255,255);
         }
 
         private void btnManager_Leave(object sender, EventArgs e)
@@ -101,17 +102,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void frmGiaoDien_Load(object sender, EventArgs e)
         {
-            plScroll.Height = btnSell.Height;
-            plScroll.Top = btnSell.Top;
-            plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-
-            lbChangeName.Text = "Sell";
-            this.plLoadForm.Controls.Clear();
-            frmSell frmSell_View = new frmSell() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmSell_View.FormBorderStyle = FormBorderStyle.None;
-            this.plLoadForm.Controls.Add(frmSell_View);
-            frmSell_View.Show();
+            
         }
 
        

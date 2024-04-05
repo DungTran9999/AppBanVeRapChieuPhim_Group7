@@ -110,7 +110,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater2_View.truyenData2 += LoadData;
                 frmTheater2_View.truyenghe2 += LoadGhe;
 
-                lbTheater.Text = "THEATER 2";
+                lbTheater.Text = "THEATER 3";
                 this.plLoadForm.Controls.Add(frmTheater2_View);
                 frmTheater2_View.Show();
             }
@@ -131,7 +131,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater3_View.truyenData3 += LoadData;
                 frmTheater3_View.truyenghe3 += LoadGhe;
 
-                lbTheater.Text = "THEATER 3";
+                lbTheater.Text = "THEATER 2";
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
             }
@@ -157,7 +157,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             
             txtDataChair.Text = "";
-            txtDataChair.Text = string.Join(",", data);
+            txtDataChair.Text = string.Join(",  ", data);
             CalculateTotalMoney();
         }
 
@@ -165,13 +165,18 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             chooseFilm(sender);
             openTheater();
-            
-
-           
-
 
         }
 
+        private bool kiemTracbbMovieTruocKhiAnfrmTheater()
+        {
+            if (string.IsNullOrEmpty(cbbMovie.Text))
+            {
+                MessageBox.Show("Vui lòng chọn thêm phim", "Thông Báo");
+                return true;
+            }
+            return false;
+        }
         public void Clear()
         {
             txtTime.Text = txtPrice.Text = "";
@@ -184,30 +189,42 @@ namespace AppBanVeRapChieuPhim_Group7
         
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            //lấy hàm đã lưu trong theater1CancelEvent
-            theater1CancelEvent?.Invoke();
-            theater2CancelEvent?.Invoke();
-            theater3CancelEvent?.Invoke();
-            
-            Clear();
+            if (kiemTracbbMovieTruocKhiAnfrmTheater())
+            {
+                return;
+            }
+            else
+            {
+                //lấy hàm đã lưu trong theater1CancelEvent
+                theater1CancelEvent?.Invoke();
+                theater2CancelEvent?.Invoke();
+                theater3CancelEvent?.Invoke();
 
+                Clear();
+            }
         }
         
 
-
-
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            // tạo mảng frmSell để truyền data vô frmManager
-            string[] data = { lbTheater.Text, cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
-            frmManager manager = frmManager.GetInstance();
-            manager.RecieveData(data);
+            if (kiemTracbbMovieTruocKhiAnfrmTheater())
+            {
+                return;
+            }
+            else
+            {
+                // tạo mảng frmSell để truyền data vô frmManager
+                string[] data = { lbTheater.Text, cbbMovie.Text, txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text };
+                frmManager manager = frmManager.GetInstance();
+                manager.RecieveData(data);
 
-            //lấy hàm đã lưu trong theater1AcceptEvent
-            theater1AcceptEvent?.Invoke();     
-            theater2AcceptEvent?.Invoke();     
-            theater3AcceptEvent?.Invoke();     
-            Clear();
+
+                //lấy hàm đã lưu trong theater1AcceptEvent
+                theater1AcceptEvent?.Invoke();
+                theater2AcceptEvent?.Invoke();
+                theater3AcceptEvent?.Invoke();
+                Clear();
+            }
         }
     }
 

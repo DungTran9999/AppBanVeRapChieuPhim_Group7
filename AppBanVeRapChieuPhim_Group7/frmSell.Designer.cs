@@ -50,99 +50,106 @@
             // 
             this.plLoadForm.BackColor = System.Drawing.Color.Black;
             this.plLoadForm.Location = new System.Drawing.Point(0, 0);
+            this.plLoadForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plLoadForm.Name = "plLoadForm";
-            this.plLoadForm.Size = new System.Drawing.Size(1482, 688);
+            this.plLoadForm.Size = new System.Drawing.Size(1317, 550);
             this.plLoadForm.TabIndex = 0;
             // 
             // txtDataChair
             // 
             this.txtDataChair.Enabled = false;
-            this.txtDataChair.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.txtDataChair.Location = new System.Drawing.Point(651, 889);
+            this.txtDataChair.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataChair.Location = new System.Drawing.Point(578, 680);
+            this.txtDataChair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDataChair.Multiline = true;
             this.txtDataChair.Name = "txtDataChair";
-            this.txtDataChair.Size = new System.Drawing.Size(333, 38);
+            this.txtDataChair.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtDataChair.Size = new System.Drawing.Size(296, 84);
             this.txtDataChair.TabIndex = 1;
             // 
             // txtPrice
             // 
             this.txtPrice.Enabled = false;
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPrice.Location = new System.Drawing.Point(154, 891);
+            this.txtPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(136, 682);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(340, 38);
+            this.txtPrice.Size = new System.Drawing.Size(296, 34);
             this.txtPrice.TabIndex = 1;
             // 
             // txtTime
             // 
             this.txtTime.Enabled = false;
-            this.txtTime.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTime.Location = new System.Drawing.Point(651, 823);
+            this.txtTime.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Location = new System.Drawing.Point(578, 627);
+            this.txtTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(333, 38);
+            this.txtTime.Size = new System.Drawing.Size(296, 34);
             this.txtTime.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(45, 825);
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(39, 629);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 31);
+            this.label1.Size = new System.Drawing.Size(80, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Movie";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(45, 896);
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(39, 686);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 31);
+            this.label2.Size = new System.Drawing.Size(66, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Price";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(557, 823);
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(494, 627);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 31);
+            this.label3.Size = new System.Drawing.Size(66, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Time";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(557, 894);
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(494, 684);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 31);
+            this.label4.Size = new System.Drawing.Size(69, 29);
             this.label4.TabIndex = 2;
             this.label4.Text = "Seats";
             // 
             // cbbMovie
             // 
-            this.cbbMovie.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbMovie.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMovie.FormattingEnabled = true;
             this.cbbMovie.Items.AddRange(new object[] {
             "Tấm Cám Phiêu Lưu Ký",
             "Ba Chú Heo",
             "Báo Hồng",
             "Điệp Viên 069"});
-            this.cbbMovie.Location = new System.Drawing.Point(154, 820);
+            this.cbbMovie.Location = new System.Drawing.Point(136, 625);
+            this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";
-            this.cbbMovie.Size = new System.Drawing.Size(340, 34);
+            this.cbbMovie.Size = new System.Drawing.Size(296, 33);
             this.cbbMovie.TabIndex = 3;
             this.cbbMovie.SelectedValueChanged += new System.EventHandler(this.cbbMovie_SelectedValueChanged);
             // 
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
-            this.lbTotal.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.lbTotal.Location = new System.Drawing.Point(1124, 822);
+            this.lbTotal.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotal.Location = new System.Drawing.Point(971, 622);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(86, 31);
+            this.lbTotal.Size = new System.Drawing.Size(80, 29);
             this.lbTotal.TabIndex = 4;
             this.lbTotal.Text = "Total :";
             // 
@@ -150,53 +157,61 @@
             // 
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.lbMoney.Location = new System.Drawing.Point(1351, 822);
+            this.lbMoney.Location = new System.Drawing.Point(1207, 622);
             this.lbMoney.Name = "lbMoney";
-            this.lbMoney.Size = new System.Drawing.Size(28, 31);
+            this.lbMoney.Size = new System.Drawing.Size(24, 26);
             this.lbMoney.TabIndex = 4;
             this.lbMoney.Text = "0";
+            this.lbMoney.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.label111.Location = new System.Drawing.Point(1124, 770);
+            this.label111.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(971, 580);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(208, 31);
+            this.label111.Size = new System.Drawing.Size(217, 29);
             this.label111.TabIndex = 4;
-            this.label111.Text = "NumberOfChair :";
+            this.label111.Text = "Number Of Chairs :";
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.Location = new System.Drawing.Point(1108, 875);
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(976, 708);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(147, 52);
+            this.btnCancel.Size = new System.Drawing.Size(131, 54);
             this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAccept
             // 
-            this.btnAccept.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.btnAccept.Location = new System.Drawing.Point(1293, 875);
+            this.btnAccept.BackColor = System.Drawing.Color.Lime;
+            this.btnAccept.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccept.ForeColor = System.Drawing.Color.White;
+            this.btnAccept.Location = new System.Drawing.Point(1124, 691);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(147, 52);
+            this.btnAccept.Size = new System.Drawing.Size(181, 71);
             this.btnAccept.TabIndex = 6;
-            this.btnAccept.Text = "Accept";
-            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Text = "ACCEPT";
+            this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // lbNumberOfChair
             // 
             this.lbNumberOfChair.AutoSize = true;
             this.lbNumberOfChair.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.lbNumberOfChair.Location = new System.Drawing.Point(1351, 770);
+            this.lbNumberOfChair.Location = new System.Drawing.Point(1207, 580);
             this.lbNumberOfChair.Name = "lbNumberOfChair";
-            this.lbNumberOfChair.Size = new System.Drawing.Size(28, 31);
+            this.lbNumberOfChair.Size = new System.Drawing.Size(24, 26);
             this.lbNumberOfChair.TabIndex = 4;
             this.lbNumberOfChair.Text = "0";
+            this.lbNumberOfChair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbTheater
             // 
@@ -204,17 +219,17 @@
             this.lbTheater.BackColor = System.Drawing.Color.Red;
             this.lbTheater.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTheater.ForeColor = System.Drawing.Color.White;
-            this.lbTheater.Location = new System.Drawing.Point(12, 694);
+            this.lbTheater.Location = new System.Drawing.Point(11, 555);
             this.lbTheater.Name = "lbTheater";
-            this.lbTheater.Size = new System.Drawing.Size(0, 46);
+            this.lbTheater.Size = new System.Drawing.Size(0, 39);
             this.lbTheater.TabIndex = 7;
             // 
             // frmSell
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1482, 969);
+            this.ClientSize = new System.Drawing.Size(1317, 775);
             this.Controls.Add(this.lbTheater);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
@@ -232,6 +247,7 @@
             this.Controls.Add(this.txtDataChair);
             this.Controls.Add(this.plLoadForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmSell";
             this.Text = "frmSell";
             this.Load += new System.EventHandler(this.frmSell_Load);
