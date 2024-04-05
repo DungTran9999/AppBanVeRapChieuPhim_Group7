@@ -22,6 +22,9 @@ namespace AppBanVeRapChieuPhim_Group7
         public event Action theater3CancelEvent;
         public event Action theater3AcceptEvent;
 
+        public event Action theater4CancelEvent;
+        public event Action theater4AcceptEvent;
+
         public int soluong;
         public int totalmoney;
 
@@ -42,7 +45,9 @@ namespace AppBanVeRapChieuPhim_Group7
             {
                 new Film(){Movie = "Ba Con Heo", Price = 99000,  Time = "9h30 - 11h"},
                 new Film(){Movie = "Báo Hồng", Price = 110000,  Time = "17h - 19h"},
-                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"}
+                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"},
+                new Film(){Movie = "Conan: Đám cưới", Price = 200000,  Time = "11h30 - 13h30"}
+
             };
             
             // cbbmovie lấy data từ listItems
@@ -90,6 +95,8 @@ namespace AppBanVeRapChieuPhim_Group7
                 
 
                 lbTheater.Text = "THEATER 1";
+                lbTheater.BackColor = Color.FromArgb(192, 255, 192);
+
                 this.plLoadForm.Controls.Add(frmTheater1_View);
                 frmTheater1_View.Show();
             }   
@@ -111,6 +118,8 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater2_View.truyenghe2 += LoadGhe;
 
                 lbTheater.Text = "THEATER 3";
+                lbTheater.BackColor = Color.FromArgb(192, 255, 255);
+
                 this.plLoadForm.Controls.Add(frmTheater2_View);
                 frmTheater2_View.Show();
             }
@@ -132,8 +141,33 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater3_View.truyenghe3 += LoadGhe;
 
                 lbTheater.Text = "THEATER 2";
+                lbTheater.BackColor = Color.FromArgb(255, 192, 255);
+
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
+            }
+            else if (checkFilm == "Conan: Đám cưới")
+            {
+                this.plLoadForm.Controls.Clear();
+                frmTheater4 frmTheater4_View = frmTheater4.GetInStance();
+                frmTheater4_View.Dock = DockStyle.Fill;
+                frmTheater4_View.TopLevel = false;
+                frmTheater4_View.TopMost = true;
+                frmTheater4_View.FormBorderStyle = FormBorderStyle.None;
+
+                // thêm hàm HandleCancelEvent từ frmTheater4 vào theater1CancelEvent
+                theater4CancelEvent += frmTheater4_View.HandleCancelEvent;
+                // thêm hàm HandleAcceptEvent từ frmTheater4 vào theater1AcceptEvent
+                theater4AcceptEvent += frmTheater4_View.HandleAcceptEvent;
+
+                frmTheater4_View.truyenData4 += LoadData;
+                frmTheater4_View.truyenghe4 += LoadGhe;
+
+                lbTheater.Text = "THEATER 4";
+                lbTheater.BackColor = Color.FromArgb(255, 128, 0);
+
+                this.plLoadForm.Controls.Add(frmTheater4_View);
+                frmTheater4_View.Show();
             }
         }
         public void CalculateTotalMoney()
@@ -199,6 +233,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 theater1CancelEvent?.Invoke();
                 theater2CancelEvent?.Invoke();
                 theater3CancelEvent?.Invoke();
+                theater4CancelEvent?.Invoke();
 
                 Clear();
             }
@@ -223,6 +258,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 theater1AcceptEvent?.Invoke();
                 theater2AcceptEvent?.Invoke();
                 theater3AcceptEvent?.Invoke();
+                theater4AcceptEvent?.Invoke();
                 Clear();
             }
         }

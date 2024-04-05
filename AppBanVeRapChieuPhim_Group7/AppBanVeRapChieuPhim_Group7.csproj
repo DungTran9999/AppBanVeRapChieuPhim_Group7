@@ -70,6 +70,12 @@
     <Compile Include="frmSell.Designer.cs">
       <DependentUpon>frmSell.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTheater1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="frmTheater3.Designer.cs">
       <DependentUpon>frmTheater3.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTheater4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTheater4.Designer.cs">
+      <DependentUpon>frmTheater4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGiaoDien.resx">
@@ -102,6 +114,9 @@
     <EmbeddedResource Include="frmSell.resx">
       <DependentUpon>frmSell.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTheater1.resx">
       <DependentUpon>frmTheater1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheater3.resx">
       <DependentUpon>frmTheater3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTheater4.resx">
+      <DependentUpon>frmTheater4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -184,6 +202,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\baohong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cavoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nenhong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.psd %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

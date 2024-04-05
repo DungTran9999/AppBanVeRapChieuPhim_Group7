@@ -135,7 +135,7 @@
             "Tấm Cám Phiêu Lưu Ký",
             "Ba Chú Heo",
             "Báo Hồng",
-            "Điệp Viên 069"});
+            "Conan: Đám cưới"});
             this.cbbMovie.Location = new System.Drawing.Point(136, 625);
             this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";
@@ -218,8 +218,8 @@
             this.lbTheater.AutoSize = true;
             this.lbTheater.BackColor = System.Drawing.Color.Red;
             this.lbTheater.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTheater.ForeColor = System.Drawing.Color.White;
-            this.lbTheater.Location = new System.Drawing.Point(11, 555);
+            this.lbTheater.ForeColor = System.Drawing.Color.Black;
+            this.lbTheater.Location = new System.Drawing.Point(0, 550);
             this.lbTheater.Name = "lbTheater";
             this.lbTheater.Size = new System.Drawing.Size(0, 39);
             this.lbTheater.TabIndex = 7;

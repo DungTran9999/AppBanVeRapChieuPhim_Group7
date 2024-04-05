@@ -76,6 +76,27 @@ namespace AppBanVeRapChieuPhim_Group7
             this.plLoadForm.Controls.Add(frmManager_View);
             frmManager_View.Show();
         }
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            plScroll.Height = btnManager.Height;
+            plScroll.Top = btnManager.Top;
+            plScroll.Left = btnManager.Left;
+            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+
+            lbChangeName.Text = "Setting";
+
+            this.plLoadForm.Controls.Clear();
+
+            frmSetting frmSetting_View = frmSetting.GetInStance();
+            frmSetting_View.FormBorderStyle = FormBorderStyle.None;
+            frmSetting_View.Dock = DockStyle.Fill;
+            frmSetting_View.TopLevel = false;
+            frmSetting_View.TopMost = true;
+
+            this.plLoadForm.Controls.Add(frmSetting_View);
+            frmSetting_View.Show();
+
+        }
 
         private void btnSell_Leave(object sender, EventArgs e)
         {
@@ -86,7 +107,10 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
         }
-
+        private void btnSetting_Leave(object sender, EventArgs e)
+        {
+            btnSetting.BackColor = System.Drawing.Color.FromArgb(255, 192,192);
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -99,12 +123,12 @@ namespace AppBanVeRapChieuPhim_Group7
                 e.Cancel = true;
             }
         }
-
+        
         private void frmGiaoDien_Load(object sender, EventArgs e)
         {
             
         }
 
-       
+        
     }
 }
