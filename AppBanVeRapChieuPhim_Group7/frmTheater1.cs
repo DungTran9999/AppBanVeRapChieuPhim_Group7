@@ -12,7 +12,8 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmTheater1 : Form
     {
-
+        public event Action AcceptEvent;
+        public event Action CancelEvent;
         private static frmTheater1 instance;
         
         public static frmTheater1 GetInStance()
@@ -26,9 +27,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         public delegate void delPassData(List<string> value);
         public delPassData truyenData;
-
-        //Nhan su kien tu form sell
-        public event Action FormSellEventReceived;
+       
         public int soluong { get; set; }
 
         public delegate void TruyenGhe(int soluong);
@@ -44,8 +43,8 @@ namespace AppBanVeRapChieuPhim_Group7
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
 
         
-        public List<string> btnSupport = new List<string>();
-        public List<string> btnMain = new List<string>();
+        public List<string> listSupport = new List<string>();
+        public List<string> listMain = new List<string>();
         public void xuliBtn()
         {
             foreach (Control item in this.plChairTheater1.Controls)
@@ -63,66 +62,58 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void Btn_Click(object sender, EventArgs e)
         {
-
             Button btn = (Button)sender;
-            string btnValue = btn.Text;
+            string btnText = btn.Text;
 
-            if (!buttonStates[btn])
+            // Đảo ngược trạng thái của ghế
+            buttonStates[btn] = !buttonStates[btn];
+
+            if (buttonStates[btn])
             {
                 btn.BackColor = Color.Green;
-                buttonStates[btn] = true;
+                listSupport.Add(btnText);
 
-                
-                
-
-                btnMain.Add(btnValue);
-            }
-
-            // Kiểm tra xem giá trị của button đã tồn tại trong danh sách chưa
-
-
-            if (!btnSupport.Contains(btnValue))
-            {
-                btnSupport.Add(btnValue);
-
-                if (truyenData != null)
+                if (listSupport.Contains(btnText))
                 {
-                    truyenData(btnSupport);
-                    this.soluong=btnSupport.Count;
-                    truyenghe(soluong);
+                    
+
+                    if (truyenData != null)
+                    {
+                       
+                        truyenData(listSupport);
+                        this.soluong = listSupport.Count;
+                        truyenghe(soluong);
+                    }
                 }
             }
-
-
-        }
-        public void ClearSupport()
-        {
-            foreach (string btnValue in btnSupport)
+            else
             {
-                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnValue);
+                btn.BackColor = DefaultBackColor;
+                listSupport.Remove(btnText);
+            }
+        }
+        public void HandleAcceptEvent()
+        {
+            listMain.AddRange(listSupport); // Thêm danh sách ghế được chọn vào listMain
+            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+        }
+        public void HandleCancelEvent()
+        {
+            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+        }
+        private void ClearListSupport()
+        {
+            foreach (string btnText in listSupport)
+            {
+                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
                 if (btn != null)
                 {
-                    btn.BackColor = Color.White;
+                    btn.BackColor = DefaultBackColor;
                     buttonStates[btn] = false;
                 }
             }
-            btnSupport.Clear();
+            listSupport.Clear();
         }
-        public void Clearlist()
-        {
-            btnSupport.Clear();
-        }
-        public void OnFormSellEventReceived()
-        {
-            // Xóa dữ liệu khi nhận sự kiện từ form Sell
-            Clearlist();
-            
-        }
-
-       
-
-
-
 
 
     }

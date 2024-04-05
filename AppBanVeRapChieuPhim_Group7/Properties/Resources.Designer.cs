@@ -123,6 +123,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_04_03_004517 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-04-03 004517", resourceCulture);

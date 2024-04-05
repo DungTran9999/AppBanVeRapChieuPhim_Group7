@@ -17,8 +17,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         
 
-        public event Action FormSellEvent;
-        public event Action FormSellEvent2;
+        
         public int soluong;
         public int totalmoney;
 
@@ -73,7 +72,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater1_View.TopMost = true;
                 frmTheater1_View.FormBorderStyle = FormBorderStyle.None;
 
-                FormSellEvent += frmTheater1_View.OnFormSellEventReceived;
+                
 
                 frmTheater1_View.truyenData += LoadData;
                 frmTheater1_View.truyenghe += LoadGhe;
@@ -109,7 +108,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmTheater3_View.FormBorderStyle = FormBorderStyle.None;
 
                //
-
+               
                 lbTheater.Text = "THEATER 3";
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
@@ -151,17 +150,6 @@ namespace AppBanVeRapChieuPhim_Group7
 
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Clear();
-            FormSellEvent?.Invoke();
-            FormSellEvent2?.Invoke();
-
-            frmTheater1 theater1= frmTheater1.GetInStance();
-            theater1.ClearSupport();
-            Clear();
-
-        }
         public void Clear()
         {
             txtTime.Text = txtPrice.Text = "";
@@ -170,17 +158,30 @@ namespace AppBanVeRapChieuPhim_Group7
             lbNumberOfChair.Text = "0";
             lbMoney.Text = "0";
         }
+        private frmTheater1 theater1;
+        
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            
+            
+
+           
+            Clear();
+
+        }
+        
+
+
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            
-
             string[] data = { lbTheater.Text, cbbMovie.Text,txtPrice.Text, lbNumberOfChair.Text, lbMoney.Text};
             frmManager manager = frmManager.GetInstance();
             manager.RecieveData(data);
-            FormSellEvent?.Invoke();
-            FormSellEvent2?.Invoke();
-            frmTheater3.GetInStance().OnBtnAcceptClicked();
+            
+
+
+           
             Clear();
         }
     }

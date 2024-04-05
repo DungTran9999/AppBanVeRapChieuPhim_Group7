@@ -139,6 +139,7 @@
             // 
             // plChairTheater1
             // 
+            this.plChairTheater1.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.maxresdefault;
             this.plChairTheater1.Controls.Add(this.btnE13);
             this.plChairTheater1.Controls.Add(this.btnE5);
             this.plChairTheater1.Controls.Add(this.btnE9);
