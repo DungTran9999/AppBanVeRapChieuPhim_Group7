@@ -124,11 +124,7 @@ namespace AppBanVeRapChieuPhim_Group7
             }
         }
         
-        private void frmGiaoDien_Load(object sender, EventArgs e)
-        {
-            
-        }
-
+       
         
     }
 }

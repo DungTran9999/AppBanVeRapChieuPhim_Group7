@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AppBanVeRapChieuPhim_Group7
 {
@@ -26,6 +27,11 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
         }
+        public void loadData()
+        {
+           
+        }
+      
     }
     
 }
