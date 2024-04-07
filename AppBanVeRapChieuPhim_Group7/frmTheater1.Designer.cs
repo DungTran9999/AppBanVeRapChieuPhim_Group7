@@ -134,12 +134,15 @@
             this.btnA14 = new System.Windows.Forms.Button();
             this.btnB1 = new System.Windows.Forms.Button();
             this.btnA1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.plChairTheater1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plChairTheater1
             // 
-            this.plChairTheater1.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_05_214045;
+            this.plChairTheater1.Controls.Add(this.label2);
+            this.plChairTheater1.Controls.Add(this.label1);
             this.plChairTheater1.Controls.Add(this.btnE13);
             this.plChairTheater1.Controls.Add(this.btnE5);
             this.plChairTheater1.Controls.Add(this.btnE9);
@@ -1300,6 +1303,30 @@
             this.btnA1.Text = "A1";
             this.btnA1.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(219, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(869, 27);
+            this.label1.TabIndex = 211;
+            this.label1.Text = "MÀN HÌNH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Yellow;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 40);
+            this.label2.TabIndex = 212;
+            this.label2.Text = "LỐI VÀO";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmTheater1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1423,5 +1450,7 @@
         private System.Windows.Forms.Button btnA14;
         private System.Windows.Forms.Button btnB1;
         private System.Windows.Forms.Button btnA1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
