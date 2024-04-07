@@ -29,7 +29,18 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void loadData()
         {
-           
+            foreach (Film film in listItem)
+            {
+                // Tạo một ListViewItem mới
+                ListViewItem item = new ListViewItem(film.Movie); // Cột đầu tiên là Movie
+
+                // Thêm các sub-items (các cột còn lại) cho ListViewItem
+                item.SubItems.Add(film.Price.ToString()); // Cột thứ hai là Price
+                item.SubItems.Add(film.Time); // Cột thứ ba là Time
+
+                // Thêm ListViewItem vào ListView
+                lvSetting.Items.Add(item);
+            }
         }
       
     }
