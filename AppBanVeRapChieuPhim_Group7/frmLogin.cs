@@ -29,7 +29,7 @@ namespace AppBanVeRapChieuPhim_Group7
             {
                 frmGiaoDien f = new frmGiaoDien();
                 this.Hide();
-
+                txtPassWord.Text = txtUserName.Text = "";
                 f.ShowDialog();
                 this.Show();
             }
@@ -48,7 +48,7 @@ namespace AppBanVeRapChieuPhim_Group7
             }
             else
             {
-                MessageBox.Show("ĐĂNG NHẬP THẤT BẠI", "THONG BÁO");
+                MessageBox.Show("TÀI KHOẢN HOẶC MẬT KHẨU SAI, VUI LÒNG NHẬP LẠI", "THONG BÁO");
                 return false;
             }
            

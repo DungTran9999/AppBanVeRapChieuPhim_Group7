@@ -259,6 +259,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 theater2AcceptEvent?.Invoke();
                 theater3AcceptEvent?.Invoke();
                 theater4AcceptEvent?.Invoke();
+                MessageBox.Show("Cập nhật Thành Công!","THÔNG BÁO");
                 Clear();
             }
         }

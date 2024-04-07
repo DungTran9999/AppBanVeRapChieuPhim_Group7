@@ -168,9 +168,9 @@
             this.label111.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label111.Location = new System.Drawing.Point(967, 594);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(192, 25);
+            this.label111.Size = new System.Drawing.Size(201, 25);
             this.label111.TabIndex = 4;
-            this.label111.Text = "NumberOfChair :";
+            this.label111.Text = "NumberOfChairs :";
             // 
             // btnCancel
             // 
