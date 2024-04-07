@@ -84,7 +84,6 @@
             this.plControl.Controls.Add(this.pictureBox3);
             this.plControl.Controls.Add(this.pictureBox1);
             this.plControl.Controls.Add(this.pictureBox2);
-            this.plControl.Controls.Add(this.btnExit);
             this.plControl.Controls.Add(this.plScroll);
             this.plControl.Controls.Add(this.btnManager);
             this.plControl.Controls.Add(this.btnSell);
@@ -131,12 +130,12 @@
             // 
             // btnExit
             // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.Location = new System.Drawing.Point(3, 766);
+            this.btnExit.Location = new System.Drawing.Point(1458, 0);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(225, 101);
+            this.btnExit.Size = new System.Drawing.Size(98, 42);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -193,6 +192,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
             this.ClientSize = new System.Drawing.Size(1559, 869);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.plControl);
             this.Controls.Add(this.lb8);
             this.Controls.Add(this.lbChangeName);

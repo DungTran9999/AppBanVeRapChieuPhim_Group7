@@ -65,11 +65,11 @@ namespace AppBanVeRapChieuPhim_Group7
 
             if (listMain.Contains(btnText))
             {
-                // Nếu nút đã được chọn nằm trong listMain, không thực hiện gì cả
+                
                 return;
             }
 
-            // Đảo ngược trạng thái của ghế
+            
             buttonStates[btn] = !buttonStates[btn];
 
             if (buttonStates[btn])
@@ -98,7 +98,7 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void HandleAcceptEvent()
         {
-            // Lưu trạng thái màu của các ghế trong listSupport
+            
             Dictionary<string, Color> buttonColors = new Dictionary<string, Color>();
             foreach (string btnText in listSupport)
             {
@@ -109,10 +109,10 @@ namespace AppBanVeRapChieuPhim_Group7
                 }
             }
 
-            listMain.AddRange(listSupport); // Thêm danh sách ghế được chọn vào listMain
-            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+            listMain.AddRange(listSupport); 
+            ClearListSupport(); 
 
-            // Tái áp dụng màu cho các ghế tương ứng trong listSupport
+         
             foreach (var kvp in buttonColors)
             {
                 Button btn = plChairTheater3.Controls.OfType<Button>().FirstOrDefault(b => b.Text == kvp.Key);
@@ -124,7 +124,7 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void HandleCancelEvent()
         {
-            ClearListSupport(); // Xóa danh sách ghế đang được chọn
+            ClearListSupport();
         }
         private void ClearListSupport()
         {

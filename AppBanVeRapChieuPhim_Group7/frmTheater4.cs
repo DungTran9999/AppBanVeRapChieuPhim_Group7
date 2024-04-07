@@ -10,42 +10,42 @@ using System.Windows.Forms;
 
 namespace AppBanVeRapChieuPhim_Group7
 {
-    public partial class frmTheater1 : Form
-    { 
-        private static frmTheater1 instance;
-        
-        public static frmTheater1 GetInStance()
+    public partial class frmTheater4 : Form
+    {
+        private static frmTheater4 instance;
+
+        public static frmTheater4 GetInStance()
         {
-            if( instance == null)
+            if (instance == null)
             {
-                instance = new frmTheater1();
+                instance = new frmTheater4();
             }
             return instance;
         }
 
         public delegate void delPassData(List<string> value);
-        public delPassData truyenData;
-       
+        public delPassData truyenData4;
+
         public int soluong { get; set; }
 
         public delegate void TruyenGhe(int ghe);
-        public TruyenGhe truyenghe;
+        public TruyenGhe truyenghe4;
 
-        public frmTheater1()
+        public frmTheater4()
         {
             InitializeComponent();
             xuliBtn();
-          
+
         }
 
         private Dictionary<Button, bool> buttonStates = new Dictionary<Button, bool>();
 
-        
+
         public List<string> listSupport = new List<string>();
         public List<string> listMain = new List<string>();
         public void xuliBtn()
         {
-            foreach (Control item in this.plChairTheater1.Controls)
+            foreach (Control item in this.plChairTheater4.Controls)
             {
                 if (item is Button)
                 {
@@ -56,7 +56,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 }
             }
         }
-        
+
 
         private void Btn_Click(object sender, EventArgs e)
         {
@@ -65,11 +65,11 @@ namespace AppBanVeRapChieuPhim_Group7
 
             if (listMain.Contains(btnText))
             {
-               
+                
                 return;
             }
 
-           
+         
             buttonStates[btn] = !buttonStates[btn];
 
             if (buttonStates[btn])
@@ -79,14 +79,14 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 if (listSupport.Contains(btnText))
                 {
-                    
 
-                    if (truyenData != null)
+
+                    if (truyenData4 != null)
                     {
-                       
-                        truyenData(listSupport);
+
+                        truyenData4(listSupport);
                         this.soluong = listSupport.Count;
-                        truyenghe(soluong);
+                        truyenghe4(soluong);
                     }
                 }
             }
@@ -98,24 +98,24 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void HandleAcceptEvent()
         {
-            
+           
             Dictionary<string, Color> buttonColors = new Dictionary<string, Color>();
             foreach (string btnText in listSupport)
             {
-                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
+                Button btn = plChairTheater4.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
                 if (btn != null)
                 {
                     buttonColors.Add(btnText, btn.BackColor);
                 }
             }
 
-            listMain.AddRange(listSupport); 
+            listMain.AddRange(listSupport);
             ClearListSupport(); 
 
-            
+          
             foreach (var kvp in buttonColors)
             {
-                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == kvp.Key);
+                Button btn = plChairTheater4.Controls.OfType<Button>().FirstOrDefault(b => b.Text == kvp.Key);
                 if (btn != null)
                 {
                     btn.BackColor = kvp.Value;
@@ -130,7 +130,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             foreach (string btnText in listSupport)
             {
-                Button btn = plChairTheater1.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
+                Button btn = plChairTheater4.Controls.OfType<Button>().FirstOrDefault(b => b.Text == btnText);
                 if (btn != null)
                 {
                     btn.BackColor = DefaultBackColor;

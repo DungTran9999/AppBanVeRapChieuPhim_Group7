@@ -37,6 +37,8 @@
             this.txtDoanhThu = new System.Windows.Forms.TextBox();
             this.lb = new System.Windows.Forms.Label();
             this.btnDoanhThu = new System.Windows.Forms.Button();
+            this.lbRank = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lvManager
@@ -91,7 +93,7 @@
             // 
             this.txtDoanhThu.Enabled = false;
             this.txtDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoanhThu.Location = new System.Drawing.Point(1025, 129);
+            this.txtDoanhThu.Location = new System.Drawing.Point(1023, 596);
             this.txtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoanhThu.Name = "txtDoanhThu";
             this.txtDoanhThu.Size = new System.Drawing.Size(235, 41);
@@ -103,31 +105,55 @@
             this.lb.AutoSize = true;
             this.lb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(1049, 51);
+            this.lb.Location = new System.Drawing.Point(1017, 518);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(172, 36);
+            this.lb.Size = new System.Drawing.Size(254, 36);
             this.lb.TabIndex = 2;
-            this.lb.Text = "Doanh Thu";
+            this.lb.Text = "Tổng Doanh Thu";
             // 
             // btnDoanhThu
             // 
             this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnDoanhThu.Location = new System.Drawing.Point(1078, 203);
+            this.btnDoanhThu.Location = new System.Drawing.Point(1065, 671);
             this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoanhThu.Name = "btnDoanhThu";
-            this.btnDoanhThu.Size = new System.Drawing.Size(124, 48);
+            this.btnDoanhThu.Size = new System.Drawing.Size(154, 48);
             this.btnDoanhThu.TabIndex = 3;
-            this.btnDoanhThu.Text = "Tính";
+            this.btnDoanhThu.Text = "Refresh";
             this.btnDoanhThu.UseVisualStyleBackColor = true;
             this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
+            // 
+            // lbRank
+            // 
+            this.lbRank.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRank.FormattingEnabled = true;
+            this.lbRank.ItemHeight = 20;
+            this.lbRank.Location = new System.Drawing.Point(1006, 114);
+            this.lbRank.Name = "lbRank";
+            this.lbRank.Size = new System.Drawing.Size(281, 204);
+            this.lbRank.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(979, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(328, 36);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Bảng Xếp Hạng Phim ";
             // 
             // frmManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.nenhong;
             this.ClientSize = new System.Drawing.Size(1299, 790);
+            this.Controls.Add(this.lbRank);
             this.Controls.Add(this.btnDoanhThu);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.txtDoanhThu);
             this.Controls.Add(this.lvManager);
@@ -151,5 +177,7 @@
         private System.Windows.Forms.TextBox txtDoanhThu;
         private System.Windows.Forms.Label lb;
         private System.Windows.Forms.Button btnDoanhThu;
+        private System.Windows.Forms.ListBox lbRank;
+        private System.Windows.Forms.Label label1;
     }
 }

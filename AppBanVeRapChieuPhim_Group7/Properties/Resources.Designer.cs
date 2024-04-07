@@ -113,6 +113,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap conan {
+            get {
+                object obj = ResourceManager.GetObject("conan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap d890a7b047083661a53ba873249f0580 {
             get {
                 object obj = ResourceManager.GetObject("d890a7b047083661a53ba873249f0580", resourceCulture);
@@ -156,6 +166,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         internal static System.Drawing.Bitmap maxresdefault {
             get {
                 object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nenhong {
+            get {
+                object obj = ResourceManager.GetObject("nenhong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
