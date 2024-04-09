@@ -12,17 +12,19 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmLogin : Form
     {
+
         public frmLogin()
         {
             InitializeComponent();
             txtPassWord.UseSystemPasswordChar = true;
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(dangnhap()==false)
+            if (dangnhap() == false)
             {
-              
+
             }
 
             else
@@ -41,7 +43,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THONG BÁO");
                 return true;
             }
-            else if(txtUserName.Text == "a" && txtPassWord.Text == "a")
+            else if (txtUserName.Text == "a" && txtPassWord.Text == "a")
             {
                 MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THONG BÁO");
                 return true;
@@ -51,7 +53,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 MessageBox.Show("TÀI KHOẢN HOẶC MẬT KHẨU SAI, VUI LÒNG NHẬP LẠI", "THONG BÁO");
                 return false;
             }
-           
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -75,9 +77,10 @@ namespace AppBanVeRapChieuPhim_Group7
             }
             else
             {
-                
+
                 txtPassWord.UseSystemPasswordChar = false;
             }
         }
     }
-}
+    }
+
