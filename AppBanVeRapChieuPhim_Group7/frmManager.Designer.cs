@@ -93,7 +93,7 @@
             // 
             this.txtDoanhThu.Enabled = false;
             this.txtDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoanhThu.Location = new System.Drawing.Point(1023, 596);
+            this.txtDoanhThu.Location = new System.Drawing.Point(1033, 596);
             this.txtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoanhThu.Name = "txtDoanhThu";
             this.txtDoanhThu.Size = new System.Drawing.Size(235, 41);
@@ -105,7 +105,7 @@
             this.lb.AutoSize = true;
             this.lb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(1017, 518);
+            this.lb.Location = new System.Drawing.Point(1008, 519);
             this.lb.Name = "lb";
             this.lb.Size = new System.Drawing.Size(254, 36);
             this.lb.TabIndex = 2;

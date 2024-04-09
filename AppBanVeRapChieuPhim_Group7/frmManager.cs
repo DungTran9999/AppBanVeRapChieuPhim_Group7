@@ -23,6 +23,7 @@ namespace AppBanVeRapChieuPhim_Group7
             if (instance == null)
             {
                 instance = new frmManager();
+              
             }
             return instance;
         }
@@ -60,8 +61,8 @@ namespace AppBanVeRapChieuPhim_Group7
             // Lặp qua mỗi dòng trong ListView để tính tổng số ghế đã chọn cho mỗi bộ phim
             foreach (ListViewItem item in lvManager.Items)
             {
-                string movieName = item.SubItems[1].Text; // Lấy tên phim từ cột 0
-                int seatCount = int.Parse(item.SubItems[3].Text); // Lấy số ghế đã chọn từ cột 2
+                string movieName = item.SubItems[1].Text; // Lấy tên phim từ cột 1
+                int seatCount = int.Parse(item.SubItems[3].Text); // Lấy số ghế đã chọn từ cột 3
 
                 // Cộng dồn số lượng ghế đã chọn cho mỗi bộ phim
                 if (movieSeatCounts.ContainsKey(movieName))

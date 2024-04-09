@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBanVeRapChieuPhim_Group7", "AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7.csproj", "{E63DE9E9-D5DE-4239-BF78-2A83B96332CC}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Ứng Dụng Bán Vé Rạp Chiếu Phim - Group 07", "Ứng Dụng Bán Vé Rạp Chiếu Phim - Group 07\Ứng Dụng Bán Vé Rạp Chiếu Phim - Group 07.vdproj", "{E6820EA6-463E-422D-A23D-9B9D18DB9905}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{E63DE9E9-D5DE-4239-BF78-2A83B96332CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E63DE9E9-D5DE-4239-BF78-2A83B96332CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E63DE9E9-D5DE-4239-BF78-2A83B96332CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6820EA6-463E-422D-A23D-9B9D18DB9905}.Debug|Any CPU.ActiveCfg = Debug
+		{E6820EA6-463E-422D-A23D-9B9D18DB9905}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

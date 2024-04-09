@@ -19,7 +19,7 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         private Timer timer;
         private int currentPosition = 0;
-        private const int speed = 4; // Tốc độ chạy của văn bản
+        private const int speed = 10; // Tốc độ chạy của văn bản
         public void automatic()
         {
             timer = new Timer();
@@ -60,7 +60,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnManager.Height;
             plScroll.Top = btnManager.Top;
             plScroll.Left = btnManager.Left;
-            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
 
             lbChangeName.Text = "Manager";
 

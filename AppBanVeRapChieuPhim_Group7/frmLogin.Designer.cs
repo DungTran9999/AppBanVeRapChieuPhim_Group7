@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbAnh = new System.Windows.Forms.PictureBox();
             this.PnLogin = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -37,14 +37,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.checkBoxShowPassword = new System.Windows.Forms.CheckBox();
             this.txtPassWord = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.checkBoxShowPassword = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).BeginInit();
             this.PnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
@@ -54,16 +55,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // ptbAnh
             // 
-            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Marvel_Avengers1;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 479);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.ptbAnh.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Marvel_Avengers1;
+            this.ptbAnh.Location = new System.Drawing.Point(1, -13);
+            this.ptbAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbAnh.Name = "ptbAnh";
+            this.ptbAnh.Size = new System.Drawing.Size(322, 479);
+            this.ptbAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbAnh.TabIndex = 8;
+            this.ptbAnh.TabStop = false;
             // 
             // PnLogin
             // 
@@ -152,6 +153,19 @@
             this.panel2.Size = new System.Drawing.Size(251, 34);
             this.panel2.TabIndex = 4;
             // 
+            // checkBoxShowPassword
+            // 
+            this.checkBoxShowPassword.AutoSize = true;
+            this.checkBoxShowPassword.Checked = true;
+            this.checkBoxShowPassword.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxShowPassword.Location = new System.Drawing.Point(190, 10);
+            this.checkBoxShowPassword.Name = "checkBoxShowPassword";
+            this.checkBoxShowPassword.Size = new System.Drawing.Size(58, 20);
+            this.checkBoxShowPassword.TabIndex = 7;
+            this.checkBoxShowPassword.Text = "Hide";
+            this.checkBoxShowPassword.UseVisualStyleBackColor = true;
+            this.checkBoxShowPassword.CheckedChanged += new System.EventHandler(this.checkBoxShowPassword_CheckedChanged);
+            // 
             // txtPassWord
             // 
             this.txtPassWord.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -212,25 +226,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "USERNAME";
             // 
-            // checkBoxShowPassword
+            // timer1
             // 
-            this.checkBoxShowPassword.AutoSize = true;
-            this.checkBoxShowPassword.Checked = true;
-            this.checkBoxShowPassword.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxShowPassword.Location = new System.Drawing.Point(190, 10);
-            this.checkBoxShowPassword.Name = "checkBoxShowPassword";
-            this.checkBoxShowPassword.Size = new System.Drawing.Size(58, 20);
-            this.checkBoxShowPassword.TabIndex = 7;
-            this.checkBoxShowPassword.Text = "Hide";
-            this.checkBoxShowPassword.UseVisualStyleBackColor = true;
-            this.checkBoxShowPassword.CheckedChanged += new System.EventHandler(this.checkBoxShowPassword_CheckedChanged);
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ptbAnh);
             this.Controls.Add(this.PnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -238,7 +244,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).EndInit();
             this.PnLogin.ResumeLayout(false);
             this.PnLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -267,9 +273,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbAnh;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox checkBoxShowPassword;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

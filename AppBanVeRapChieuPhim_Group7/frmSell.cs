@@ -33,7 +33,6 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
 
-
         }
 
 
@@ -50,14 +49,14 @@ namespace AppBanVeRapChieuPhim_Group7
 
             };
 
-            // cbbmovie lấy data từ listItems
+            
             cbbMovie.DataSource = listItem;
             cbbMovie.DisplayMember = "Movie";
         }
 
         public void chooseFilm(object sender)
         {
-            //tạo biến cb từ sender ép kiểu qua combox
+            
             ComboBox cb = sender as ComboBox;
             if (cb.SelectedValue != null)
             {
@@ -183,9 +182,9 @@ namespace AppBanVeRapChieuPhim_Group7
         }
 
 
-        public void LoadGhe(int data)
+        public void LoadGhe(int ghe)
         {
-            lbNumberOfChair.Text = data.ToString();
+            lbNumberOfChair.Text = ghe.ToString();
         }
         public void LoadData(List<string> data)
         {

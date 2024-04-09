@@ -12,10 +12,20 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmLogin : Form
     {
+        private string[] imagePaths = { @"C:\\Users\\ASUS\\source\\repos\\DungTran9999\\AppBanVeRapChieuPhim_Group7\\AppBanVeRapChieuPhim_Group7\\Resources\\chienbinhavenger.jpg", @"C:\\Users\\ASUS\\source\\repos\\DungTran9999\\AppBanVeRapChieuPhim_Group7\\AppBanVeRapChieuPhim_Group7\\Resources\\Marvel Avengers1.jpg" }; // Thay đổi đường dẫn của ảnh của bạn
+        private int currentIndex = 0;
+        private Timer timer;
+        
+       
+
         public frmLogin()
         {
             InitializeComponent();
             txtPassWord.UseSystemPasswordChar = true;
+            timer = new Timer();
+            timer.Interval = 1000; // 5 giây
+            timer.Tick += timer1_Tick;
+            timer.Start();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -78,6 +88,22 @@ namespace AppBanVeRapChieuPhim_Group7
                 
                 txtPassWord.UseSystemPasswordChar = false;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Đảm bảo rằng chỉ số không vượt quá số lượng ảnh
+            if (currentIndex >= imagePaths.Length)
+            {
+                currentIndex = 0; // Quay lại ảnh đầu tiên nếu đã hiển thị hết tất cả ảnh
+            }
+
+            // Hiển thị ảnh tiếp theo trong PictureBox
+            ptbAnh.Image = Image.FromFile(imagePaths[currentIndex]);
+
+            // Tăng chỉ số để hiển thị ảnh tiếp theo trong lần kích hoạt tiếp theo của Timer
+            currentIndex++;
+
         }
     }
 }
