@@ -270,6 +270,7 @@ namespace AppBanVeRapChieuPhim_Group7
         public string Movie { get; set; }
         public string Time { get; set; }
         public int Price { get; set; }
+        public string ID { get; set; }
 
     }
 }
