@@ -57,7 +57,6 @@
             // 
             // ptbAnh
             // 
-            this.ptbAnh.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Marvel_Avengers1;
             this.ptbAnh.Location = new System.Drawing.Point(1, -13);
             this.ptbAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbAnh.Name = "ptbAnh";
@@ -70,7 +69,6 @@
             // 
             this.PnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PnLogin.BackColor = System.Drawing.Color.White;
-            this.PnLogin.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.d890a7b047083661a53ba873249f0580;
             this.PnLogin.Controls.Add(this.pictureBox2);
             this.PnLogin.Controls.Add(this.panel5);
             this.PnLogin.Controls.Add(this.panel3);
@@ -86,7 +84,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
             this.pictureBox2.Location = new System.Drawing.Point(61, 45);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(116, 106);

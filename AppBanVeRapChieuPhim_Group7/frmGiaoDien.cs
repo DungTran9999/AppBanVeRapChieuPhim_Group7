@@ -77,16 +77,16 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            plScroll.Height = btnSetting.Height;
-            plScroll.Top = btnSetting.Top;
-            plScroll.Left = btnSetting.Left;
-            btnSetting.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            plScroll.Height = btnTicket.Height;
+            plScroll.Top = btnTicket.Top;
+            plScroll.Left = btnTicket.Left;
+            btnTicket.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
 
             lbChangeName.Text = "Setting";
 
             this.plLoadForm.Controls.Clear();
 
-            frmSetting frmSetting_View = frmSetting.GetInStance();
+            frmBill frmSetting_View = frmBill.GetInStance();
             frmSetting_View.FormBorderStyle = FormBorderStyle.None;
             frmSetting_View.Dock = DockStyle.Fill;
             frmSetting_View.TopLevel = false;
@@ -104,6 +104,11 @@ namespace AppBanVeRapChieuPhim_Group7
         private void btnManager_Leave(object sender, EventArgs e)
         {
             btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+        }
+
+        private void btnSetting_Leave(object sender, EventArgs e)
+        {
+            btnTicket.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

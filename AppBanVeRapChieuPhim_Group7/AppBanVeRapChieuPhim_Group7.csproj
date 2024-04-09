@@ -70,11 +70,11 @@
     <Compile Include="frmSell.Designer.cs">
       <DependentUpon>frmSell.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSetting.cs">
+    <Compile Include="frmBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSetting.Designer.cs">
-      <DependentUpon>frmSetting.cs</DependentUpon>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTheater1.cs">
       <SubType>Form</SubType>
@@ -114,8 +114,8 @@
     <EmbeddedResource Include="frmSell.resx">
       <DependentUpon>frmSell.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSetting.resx">
-      <DependentUpon>frmSetting.cs</DependentUpon>
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheater1.resx">
       <DependentUpon>frmTheater1.cs</DependentUpon>
@@ -208,6 +208,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nenhong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ve xem phim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen gach cheo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_bautroi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket.psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_thanos1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,6 +32,8 @@
             this.lbChangeName = new System.Windows.Forms.Label();
             this.lb8 = new System.Windows.Forms.Label();
             this.plControl = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnTicket = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,13 +41,11 @@
             this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.plControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // plLoadForm
@@ -83,9 +83,8 @@
             // plControl
             // 
             this.plControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.plControl.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
             this.plControl.Controls.Add(this.pictureBox4);
-            this.plControl.Controls.Add(this.btnSetting);
+            this.plControl.Controls.Add(this.btnTicket);
             this.plControl.Controls.Add(this.btnExit);
             this.plControl.Controls.Add(this.pictureBox3);
             this.plControl.Controls.Add(this.pictureBox1);
@@ -102,23 +101,49 @@
             this.plControl.TabIndex = 4;
             this.plControl.Click += new System.EventHandler(this.btnSell_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 403);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(86, 88);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnTicket
+            // 
+            this.btnTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTicket.FlatAppearance.BorderSize = 0;
+            this.btnTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnTicket.Location = new System.Drawing.Point(0, 402);
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.Size = new System.Drawing.Size(228, 89);
+            this.btnTicket.TabIndex = 9;
+            this.btnTicket.Text = "Ticket";
+            this.btnTicket.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTicket.UseVisualStyleBackColor = false;
+            this.btnTicket.Click += new System.EventHandler(this.btnSetting_Click);
+            this.btnTicket.Leave += new System.EventHandler(this.btnSetting_Leave);
+            // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnExit.Location = new System.Drawing.Point(0, 785);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(228, 82);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox3.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.image_psd__1_;
             this.pictureBox3.Location = new System.Drawing.Point(12, 308);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(86, 88);
@@ -129,7 +154,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.image_psd;
             this.pictureBox1.Location = new System.Drawing.Point(12, 213);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 89);
@@ -139,7 +163,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
             this.pictureBox2.Location = new System.Drawing.Point(-1, -10);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(231, 219);
@@ -192,34 +215,10 @@
             this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             this.btnSell.Leave += new System.EventHandler(this.btnSell_Leave);
             // 
-            // btnSetting
-            // 
-            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnSetting.Location = new System.Drawing.Point(0, 402);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(228, 89);
-            this.btnSetting.TabIndex = 9;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSetting.UseVisualStyleBackColor = false;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox4.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.image_psd__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 403);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(86, 88);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
             // frmGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources._2c4639002f409452699941926c8e9ef8;
             this.ClientSize = new System.Drawing.Size(1559, 869);
             this.Controls.Add(this.plControl);
             this.Controls.Add(this.lb8);
@@ -233,10 +232,10 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGiaoDien_FormClosing);
             this.Load += new System.EventHandler(this.frmGiaoDien_Load);
             this.plControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,6 +254,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.Button btnTicket;
     }
 }

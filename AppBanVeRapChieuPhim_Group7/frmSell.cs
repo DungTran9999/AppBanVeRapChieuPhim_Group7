@@ -42,10 +42,10 @@ namespace AppBanVeRapChieuPhim_Group7
 
             listItem = new List<Film>()
             {
-                new Film(){Movie = "Ba Con Heo", Price = 99000,  Time = "9h30 - 11h"},
-                new Film(){Movie = "Báo Hồng", Price = 110000,  Time = "17h - 19h"},
-                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000,  Time = "19h - 20h30"},
-                new Film(){Movie = "Conan: Đám Cưới", Price = 200000,  Time = "11h30 - 13h30"}
+                new Film(){Movie = "Ba Con Heo", Price = 99000 },
+                new Film(){Movie = "Báo Hồng", Price = 110000},
+                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000},
+                new Film(){Movie = "Conan: Đám Cưới", Price = 200000}
 
             };
 
@@ -64,7 +64,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 Film data = cb.SelectedValue as Film;
 
                 txtPrice.Text = data.Price.ToString();
-                txtTime.Text = data.Time.ToString();
+               
             }
 
         }
@@ -181,7 +181,7 @@ namespace AppBanVeRapChieuPhim_Group7
             }
         }
 
-
+        
         public void LoadGhe(int ghe)
         {
             lbNumberOfChair.Text = ghe.ToString();
@@ -208,11 +208,16 @@ namespace AppBanVeRapChieuPhim_Group7
                 MessageBox.Show("Vui lòng chọn thêm phim", "Thông Báo");
                 return true;
             }
+            else if(string.IsNullOrEmpty(cbbTime.Text))
+            {
+                MessageBox.Show("Vui lòng chọn Thời gian", "Thông Báo");
+                return true;
+            }
             return false;
         }
         public void Clear()
         {
-            txtTime.Text = txtPrice.Text = "";
+            cbbTime.Text = txtPrice.Text = "";
             cbbMovie.SelectedIndex = -1;
             txtDataChair.Text = "";
             lbNumberOfChair.Text = "0";
@@ -252,6 +257,9 @@ namespace AppBanVeRapChieuPhim_Group7
                 frmManager manager = frmManager.GetInstance();
                 manager.RecieveData(data);
 
+                frmBill Setting = frmBill.GetInStance();
+                Setting.RecieveData(lbTheater.Text,cbbMovie.Text, txtPrice.Text,cbbTime.Text, lbNumberOfChair.Text);
+
 
                 //lấy hàm đã lưu trong theater1AcceptEvent
                 theater1AcceptEvent?.Invoke();
@@ -268,7 +276,7 @@ namespace AppBanVeRapChieuPhim_Group7
     public class Film
     {
         public string Movie { get; set; }
-        public string Time { get; set; }
+        
         public int Price { get; set; }
         public string ID { get; set; }
 

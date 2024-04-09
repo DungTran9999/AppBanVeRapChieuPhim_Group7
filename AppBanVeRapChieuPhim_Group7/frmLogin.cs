@@ -12,7 +12,7 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmLogin : Form
     {
-        private string[] imagePaths = { @"C:\\Users\\ASUS\\source\\repos\\DungTran9999\\AppBanVeRapChieuPhim_Group7\\AppBanVeRapChieuPhim_Group7\\Resources\\chienbinhavenger.jpg", @"C:\\Users\\ASUS\\source\\repos\\DungTran9999\\AppBanVeRapChieuPhim_Group7\\AppBanVeRapChieuPhim_Group7\\Resources\\Marvel Avengers1.jpg" }; // Thay đổi đường dẫn của ảnh của bạn
+        private string[] imagePaths = { @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\Marvel Avengers1.jpg", @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_thanos.jpg" }; // Thay đổi đường dẫn của ảnh của bạn
         private int currentIndex = 0;
         private Timer timer;
         

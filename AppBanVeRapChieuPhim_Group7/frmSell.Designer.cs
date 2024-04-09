@@ -31,7 +31,6 @@
             this.plLoadForm = new System.Windows.Forms.Panel();
             this.txtDataChair = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtTime = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.btnAccept = new System.Windows.Forms.Button();
             this.lbNumberOfChair = new System.Windows.Forms.Label();
             this.lbTheater = new System.Windows.Forms.Label();
+            this.cbbTime = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // plLoadForm
@@ -75,16 +75,6 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(303, 34);
             this.txtPrice.TabIndex = 1;
-            // 
-            // txtTime
-            // 
-            this.txtTime.Enabled = false;
-            this.txtTime.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime.Location = new System.Drawing.Point(602, 614);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(308, 34);
-            this.txtTime.TabIndex = 1;
             // 
             // label1
             // 
@@ -219,12 +209,29 @@
             this.lbTheater.Size = new System.Drawing.Size(0, 39);
             this.lbTheater.TabIndex = 7;
             // 
+            // cbbTime
+            // 
+            this.cbbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbTime.FormattingEnabled = true;
+            this.cbbTime.Items.AddRange(new object[] {
+            "10:00 đến 12:00",
+            "12:30 đến 14:30",
+            "15:00 đến 17:00",
+            "17:30 đến 19:30",
+            "20:00 đến 22:00",
+            "22:30 đến 00:30"});
+            this.cbbTime.Location = new System.Drawing.Point(602, 614);
+            this.cbbTime.Name = "cbbTime";
+            this.cbbTime.Size = new System.Drawing.Size(308, 37);
+            this.cbbTime.TabIndex = 8;
+            // 
             // frmSell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1317, 775);
+            this.Controls.Add(this.cbbTime);
             this.Controls.Add(this.lbTheater);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
@@ -237,7 +244,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtDataChair);
             this.Controls.Add(this.plLoadForm);
@@ -256,7 +262,6 @@
         private System.Windows.Forms.Panel plLoadForm;
         private System.Windows.Forms.TextBox txtDataChair;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -269,5 +274,6 @@
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Label lbNumberOfChair;
         private System.Windows.Forms.Label lbTheater;
+        private System.Windows.Forms.ComboBox cbbTime;
     }
 }
