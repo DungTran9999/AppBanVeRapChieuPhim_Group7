@@ -153,58 +153,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Screenshot 2024-04-02 151334.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot 2024-04-02 151639.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CinemaRoom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\abc.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Marvel Avengers1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\d890a7b047083661a53ba873249f0580.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Screenshot 2024-04-03 004517.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sell.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6cf4a2130ff7e4d8dd4bcb21195e9601.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image.psd.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image.psd %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2c4639002f409452699941926c8e9ef8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maxresdefault.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot 2024-04-05 214045.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\avt-chu---n-min-1567047809-250-width640height480_schema_article.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\avt-chu---n-min-1567047809-250-width640height480_schema_article1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baohong.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\conan.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nenhong.jpg" />
@@ -220,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1nen_logiinnnnn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_khung_loginnnn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

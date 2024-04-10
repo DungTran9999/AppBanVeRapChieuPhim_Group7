@@ -63,79 +63,9 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2c4639002f409452699941926c8e9ef8 {
-            get {
-                object obj = ResourceManager.GetObject("2c4639002f409452699941926c8e9ef8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _6cf4a2130ff7e4d8dd4bcb21195e9601 {
-            get {
-                object obj = ResourceManager.GetObject("6cf4a2130ff7e4d8dd4bcb21195e9601", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap avt_chu___n_min_1567047809_250_width640height480_schema_article {
-            get {
-                object obj = ResourceManager.GetObject("avt-chu---n-min-1567047809-250-width640height480_schema_article", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap avt_chu___n_min_1567047809_250_width640height480_schema_article1 {
-            get {
-                object obj = ResourceManager.GetObject("avt-chu---n-min-1567047809-250-width640height480_schema_article1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap baohong {
-            get {
-                object obj = ResourceManager.GetObject("baohong", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bautroisao {
             get {
                 object obj = ResourceManager.GetObject("bautroisao", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap conan {
-            get {
-                object obj = ResourceManager.GetObject("conan", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap d890a7b047083661a53ba873249f0580 {
-            get {
-                object obj = ResourceManager.GetObject("d890a7b047083661a53ba873249f0580", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,16 +103,6 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maxresdefault {
-            get {
-                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap nenhong {
             get {
                 object obj = ResourceManager.GetObject("nenhong", resourceCulture);
@@ -203,29 +123,29 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1nen_logiinnnnn {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1nen_logiinnnnn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_khung_loginnnn {
+            get {
+                object obj = ResourceManager.GetObject("rsz_khung_loginnnn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_04_03_004517 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-04-03 004517", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2024_04_05_214045 {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot 2024-04-05 214045", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sell {
-            get {
-                object obj = ResourceManager.GetObject("sell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
