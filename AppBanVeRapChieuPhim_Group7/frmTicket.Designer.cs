@@ -166,9 +166,9 @@
             // 
             this.lbMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(218)))));
             this.lbMovie.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMovie.Location = new System.Drawing.Point(941, 385);
+            this.lbMovie.Location = new System.Drawing.Point(931, 385);
             this.lbMovie.Name = "lbMovie";
-            this.lbMovie.Size = new System.Drawing.Size(279, 164);
+            this.lbMovie.Size = new System.Drawing.Size(313, 164);
             this.lbMovie.TabIndex = 107;
             this.lbMovie.Text = ".";
             this.lbMovie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

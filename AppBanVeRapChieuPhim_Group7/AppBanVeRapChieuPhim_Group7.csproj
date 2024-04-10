@@ -188,5 +188,26 @@
   <ItemGroup>
     <None Include="Resources\rsz_khung_loginnnn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1spiderman_movieee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1spiderman_movieee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_thorrrrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1screenshot_2024-04-11_031419.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2024-04-11_032240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1screenshot_2024-04-11_032607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_screenshot_2024-04-11_034333.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

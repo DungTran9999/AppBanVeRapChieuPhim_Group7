@@ -43,10 +43,10 @@ namespace AppBanVeRapChieuPhim_Group7
 
             listItem = new List<Film>()
             {
-                new Film(){Movie = "Ba Con Heo", Price = 99000},
-                new Film(){Movie = "Báo Hồng", Price = 110000},
-                new Film(){Movie = "Tấm cám phiêu lưu kí", Price = 125000},
-                new Film(){Movie = "Conan: Đám Cưới", Price = 200000}
+                new Film(){Movie = "Harry Potter: Dark Witch", Price = 99000},
+                new Film(){Movie = "SPIDER-MAN: No Way Home", Price = 110000},
+                new Film(){Movie = "THOR: The Dark World", Price = 125000},
+                new Film(){Movie = "Fast And Furious", Price = 200000}
 
             };
 
@@ -74,7 +74,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             string checkFilm = cbbMovie.Text;
             //
-            if (checkFilm == "Ba Con Heo")
+            if (checkFilm == "Harry Potter: Dark Witch")
             {
                 this.plLoadForm.Controls.Clear();
                 frmTheater1 frmTheater1_View = frmTheater1.GetInStance();
@@ -96,12 +96,12 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 1";
                 lblTheater.Text = "1";
-                lbTheater.BackColor = Color.FromArgb(192, 255, 192);
+                lbTheater.BackColor = Color.Indigo;
 
                 this.plLoadForm.Controls.Add(frmTheater1_View);
                 frmTheater1_View.Show();
             }
-            else if (checkFilm == "Tấm cám phiêu lưu kí")
+            else if (checkFilm == "SPIDER-MAN: No Way Home")
             {
                 this.plLoadForm.Controls.Clear();
                 frmTheater2 frmTheater2_View = frmTheater2.GetInStance();
@@ -120,12 +120,12 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 3";
                 lblTheater.Text = "3";
-                lbTheater.BackColor = Color.FromArgb(192, 255, 255);
+                lbTheater.BackColor = Color.Black;
 
                 this.plLoadForm.Controls.Add(frmTheater2_View);
                 frmTheater2_View.Show();
             }
-            else if (checkFilm == "Báo Hồng")
+            else if (checkFilm == "THOR: The Dark World")
             {
                 this.plLoadForm.Controls.Clear();
                 frmTheater3 frmTheater3_View = frmTheater3.GetInStance();
@@ -144,12 +144,12 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 2";
                 lblTheater.Text = "2";
-                lbTheater.BackColor = Color.FromArgb(255, 192, 255);
+                lbTheater.BackColor = Color.FromArgb(64, 64, 64);
 
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
             }
-            else if (checkFilm == "Conan: Đám Cưới")
+            else if (checkFilm == "Fast And Furious")
             {
                 this.plLoadForm.Controls.Clear();
                 frmTheater4 frmTheater4_View = frmTheater4.GetInStance();

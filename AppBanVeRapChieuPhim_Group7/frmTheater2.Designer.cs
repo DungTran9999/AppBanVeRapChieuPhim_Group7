@@ -142,7 +142,8 @@
             // 
             // plChairTheater2
             // 
-            this.plChairTheater2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.plChairTheater2.BackColor = System.Drawing.Color.Black;
+            this.plChairTheater2.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_1spiderman_movieee;
             this.plChairTheater2.Controls.Add(this.label2);
             this.plChairTheater2.Controls.Add(this.label3);
             this.plChairTheater2.Controls.Add(this.label1);
@@ -261,7 +262,7 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(164, 1);
+            this.label2.Location = new System.Drawing.Point(164, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(967, 25);
             this.label2.TabIndex = 211;
@@ -1292,13 +1293,14 @@
             // 
             // btnF1
             // 
+            this.btnF1.BackColor = System.Drawing.Color.Black;
             this.btnF1.Location = new System.Drawing.Point(33, 378);
             this.btnF1.Margin = new System.Windows.Forms.Padding(5);
             this.btnF1.Name = "btnF1";
             this.btnF1.Size = new System.Drawing.Size(63, 53);
             this.btnF1.TabIndex = 135;
             this.btnF1.Text = "F1";
-            this.btnF1.UseVisualStyleBackColor = true;
+            this.btnF1.UseVisualStyleBackColor = false;
             // 
             // btnB14
             // 
@@ -1344,7 +1346,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1317, 550);
             this.Controls.Add(this.plChairTheater2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

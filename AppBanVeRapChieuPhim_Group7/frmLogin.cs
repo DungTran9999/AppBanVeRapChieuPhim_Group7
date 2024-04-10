@@ -17,6 +17,8 @@ namespace AppBanVeRapChieuPhim_Group7
             @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_1ironnn.png",
             @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_1spidermann.png",
             @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_thorr.png",
+            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\harry login.png",
+            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\fastandfurious.png",
             @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_captain_american.png",
             @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\Marvel Avengers1.jpg"
 

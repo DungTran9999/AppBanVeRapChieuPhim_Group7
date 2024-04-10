@@ -133,9 +133,79 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1screenshot_2024_04_11_031419 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1screenshot_2024-04-11_031419", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1screenshot_2024_04_11_032607 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1screenshot_2024-04-11_032607", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1spiderman_movieee {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1spiderman_movieee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_1spiderman_movieee1 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1spiderman_movieee1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_khung_loginnnn {
             get {
                 object obj = ResourceManager.GetObject("rsz_khung_loginnnn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_screenshot_2024_04_11_032240 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_screenshot_2024-04-11_032240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_screenshot_2024_04_11_034333 {
+            get {
+                object obj = ResourceManager.GetObject("rsz_screenshot_2024-04-11_034333", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_thorrrrr {
+            get {
+                object obj = ResourceManager.GetObject("rsz_thorrrrr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

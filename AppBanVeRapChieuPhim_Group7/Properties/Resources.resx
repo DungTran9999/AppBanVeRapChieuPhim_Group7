@@ -118,37 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="image.psd (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.psd (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot 2024-04-03 004517" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2024-04-03 004517.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_1screenshot_2024-04-11_032607" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1screenshot_2024-04-11_032607.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ticket.psd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ticket.psd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image.psd (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.psd (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ve xem phim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ve xem phim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image.psd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.psd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nenhong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nenhong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rsz_1nen_logiinnnnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rsz_1nen_logiinnnnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Marvel Avengers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marvel Avengers1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bautroisao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bautroisao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rsz_1spiderman_movieee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1spiderman_movieee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_1nen_logiinnnnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1nen_logiinnnnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rsz_khung_loginnnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rsz_khung_loginnnn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_1screenshot_2024-04-11_031419" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1screenshot_2024-04-11_031419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nenhong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nenhong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_screenshot_2024-04-11_032240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_screenshot_2024-04-11_032240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.psd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.psd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_thorrrrr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_thorrrrr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot 2024-04-03 004517" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-04-03 004517.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_1spiderman_movieee1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_1spiderman_movieee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bautroisao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bautroisao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rsz_screenshot_2024-04-11_034333" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rsz_screenshot_2024-04-11_034333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

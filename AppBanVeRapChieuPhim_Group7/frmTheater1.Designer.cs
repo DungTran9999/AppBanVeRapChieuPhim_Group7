@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.plChairTheater1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnE13 = new System.Windows.Forms.Button();
             this.btnE5 = new System.Windows.Forms.Button();
             this.btnE9 = new System.Windows.Forms.Button();
@@ -134,15 +137,13 @@
             this.btnA14 = new System.Windows.Forms.Button();
             this.btnB1 = new System.Windows.Forms.Button();
             this.btnA1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.plChairTheater1.SuspendLayout();
             this.SuspendLayout();
             // 
             // plChairTheater1
             // 
             this.plChairTheater1.BackColor = System.Drawing.Color.Red;
+            this.plChairTheater1.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_screenshot_2024_04_11_032240;
             this.plChairTheater1.Controls.Add(this.label2);
             this.plChairTheater1.Controls.Add(this.label3);
             this.plChairTheater1.Controls.Add(this.label1);
@@ -255,6 +256,40 @@
             this.plChairTheater1.Name = "plChairTheater1";
             this.plChairTheater1.Size = new System.Drawing.Size(1301, 525);
             this.plChairTheater1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(164, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(967, 25);
+            this.label2.TabIndex = 211;
+            this.label2.Text = "Screen";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Yellow;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1180, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 37);
+            this.label3.TabIndex = 211;
+            this.label3.Text = "Exit";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Yellow;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 37);
+            this.label1.TabIndex = 211;
+            this.label1.Text = "Entrance";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnE13
             // 
@@ -1306,45 +1341,11 @@
             this.btnA1.Text = "A1";
             this.btnA1.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Yellow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 37);
-            this.label1.TabIndex = 211;
-            this.label1.Text = "Entrance";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(164, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(967, 25);
-            this.label2.TabIndex = 211;
-            this.label2.Text = "Screen";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Yellow;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1180, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 37);
-            this.label3.TabIndex = 211;
-            this.label3.Text = "Exit";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmTheater1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1325, 550);
             this.Controls.Add(this.plChairTheater1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

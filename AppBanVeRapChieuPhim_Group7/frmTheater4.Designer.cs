@@ -143,6 +143,7 @@
             // plChairTheater4
             // 
             this.plChairTheater4.BackColor = System.Drawing.Color.DarkGray;
+            this.plChairTheater4.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_screenshot_2024_04_11_034333;
             this.plChairTheater4.Controls.Add(this.label2);
             this.plChairTheater4.Controls.Add(this.label3);
             this.plChairTheater4.Controls.Add(this.label1);
@@ -261,7 +262,7 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(164, 1);
+            this.label2.Location = new System.Drawing.Point(164, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(967, 25);
             this.label2.TabIndex = 211;
@@ -1344,11 +1345,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(1317, 550);
             this.Controls.Add(this.plChairTheater4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTheater4";
+            this.ShowIcon = false;
             this.Text = "frmTheater4";
             this.plChairTheater4.ResumeLayout(false);
             this.ResumeLayout(false);

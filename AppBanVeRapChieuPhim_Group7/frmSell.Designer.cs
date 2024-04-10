@@ -85,17 +85,17 @@
             // 
             this.txtPrice.Enabled = false;
             this.txtPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(133, 671);
+            this.txtPrice.Location = new System.Drawing.Point(123, 669);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(303, 34);
+            this.txtPrice.Size = new System.Drawing.Size(340, 34);
             this.txtPrice.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 618);
+            this.label1.Location = new System.Drawing.Point(26, 616);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 35);
             this.label1.TabIndex = 2;
@@ -105,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 675);
+            this.label2.Location = new System.Drawing.Point(26, 673);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 35);
             this.label2.TabIndex = 2;
@@ -115,7 +115,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(491, 616);
+            this.label3.Location = new System.Drawing.Point(516, 616);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 35);
             this.label3.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(491, 673);
+            this.label4.Location = new System.Drawing.Point(516, 673);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 35);
             this.label4.TabIndex = 2;
@@ -136,14 +136,14 @@
             this.cbbMovie.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMovie.FormattingEnabled = true;
             this.cbbMovie.Items.AddRange(new object[] {
-            "Tấm Cám Phiêu Lưu Ký",
-            "Ba Chú Heo",
-            "Báo Hồng",
-            "Conan: Đám Cưới"});
-            this.cbbMovie.Location = new System.Drawing.Point(133, 614);
+            "SPIDER-MAN: No Way Home",
+            "THOR: The Dark World",
+            "Harry Potter: Dark Witch",
+            "Fast And Furious"});
+            this.cbbMovie.Location = new System.Drawing.Point(123, 612);
             this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";
-            this.cbbMovie.Size = new System.Drawing.Size(303, 33);
+            this.cbbMovie.Size = new System.Drawing.Size(340, 33);
             this.cbbMovie.TabIndex = 3;
             this.cbbMovie.SelectedValueChanged += new System.EventHandler(this.cbbMovie_SelectedValueChanged);
             // 
