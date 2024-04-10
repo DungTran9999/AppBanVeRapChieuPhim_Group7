@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,10 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmManager()
         {
             InitializeComponent();
+            lblDoanhThu.BackColor = Color.Transparent;
+            lblRank.BackColor = Color.Transparent;
+            
+            
         }
         public static frmManager GetInstance()
         {

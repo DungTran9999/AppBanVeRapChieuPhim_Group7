@@ -126,6 +126,9 @@
     <EmbeddedResource Include="frmTheater4.resx">
       <DependentUpon>frmTheater4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTicket.resx">
+      <DependentUpon>frmTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -205,6 +208,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nenhong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ve xem phim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bautroisao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket.psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

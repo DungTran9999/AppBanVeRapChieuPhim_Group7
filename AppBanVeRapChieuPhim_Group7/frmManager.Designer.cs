@@ -35,10 +35,12 @@
             this.ttlv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtDoanhThu = new System.Windows.Forms.TextBox();
-            this.lb = new System.Windows.Forms.Label();
+            this.lblDoanhThu = new System.Windows.Forms.Label();
             this.btnDoanhThu = new System.Windows.Forms.Button();
             this.lbRank = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRank = new System.Windows.Forms.Label();
+            this.ptbRefresh = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // lvManager
@@ -100,27 +102,29 @@
             this.txtDoanhThu.TabIndex = 1;
             this.txtDoanhThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lb
+            // lblDoanhThu
             // 
-            this.lb.AutoSize = true;
-            this.lb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(1017, 518);
-            this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(254, 36);
-            this.lb.TabIndex = 2;
-            this.lb.Text = "Tổng Doanh Thu";
+            this.lblDoanhThu.AutoSize = true;
+            this.lblDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoanhThu.Location = new System.Drawing.Point(1017, 518);
+            this.lblDoanhThu.Name = "lblDoanhThu";
+            this.lblDoanhThu.Size = new System.Drawing.Size(254, 36);
+            this.lblDoanhThu.TabIndex = 2;
+            this.lblDoanhThu.Text = "Tổng Doanh Thu";
             // 
             // btnDoanhThu
             // 
+            this.btnDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnDoanhThu.Location = new System.Drawing.Point(1065, 671);
+            this.btnDoanhThu.Location = new System.Drawing.Point(1035, 671);
             this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoanhThu.Name = "btnDoanhThu";
-            this.btnDoanhThu.Size = new System.Drawing.Size(154, 48);
+            this.btnDoanhThu.Size = new System.Drawing.Size(211, 73);
             this.btnDoanhThu.TabIndex = 3;
             this.btnDoanhThu.Text = "Refresh";
-            this.btnDoanhThu.UseVisualStyleBackColor = true;
+            this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDoanhThu.UseVisualStyleBackColor = false;
             this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // lbRank
@@ -133,16 +137,27 @@
             this.lbRank.Size = new System.Drawing.Size(281, 204);
             this.lbRank.TabIndex = 4;
             // 
-            // label1
+            // lblRank
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(979, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 36);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bảng Xếp Hạng Phim ";
+            this.lblRank.AutoSize = true;
+            this.lblRank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRank.Location = new System.Drawing.Point(979, 38);
+            this.lblRank.Name = "lblRank";
+            this.lblRank.Size = new System.Drawing.Size(328, 36);
+            this.lblRank.TabIndex = 2;
+            this.lblRank.Text = "Bảng Xếp Hạng Phim ";
+            // 
+            // ptbRefresh
+            // 
+            this.ptbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ptbRefresh.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.refresh;
+            this.ptbRefresh.Location = new System.Drawing.Point(1044, 677);
+            this.ptbRefresh.Name = "ptbRefresh";
+            this.ptbRefresh.Size = new System.Drawing.Size(60, 60);
+            this.ptbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbRefresh.TabIndex = 5;
+            this.ptbRefresh.TabStop = false;
             // 
             // frmManager
             // 
@@ -151,16 +166,18 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.nenhong;
             this.ClientSize = new System.Drawing.Size(1299, 790);
+            this.Controls.Add(this.ptbRefresh);
             this.Controls.Add(this.lbRank);
             this.Controls.Add(this.btnDoanhThu);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lb);
+            this.Controls.Add(this.lblRank);
+            this.Controls.Add(this.lblDoanhThu);
             this.Controls.Add(this.txtDoanhThu);
             this.Controls.Add(this.lvManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmManager";
             this.Text = "frmManager";
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRefresh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,9 +192,10 @@
         private System.Windows.Forms.ColumnHeader ttlv;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.TextBox txtDoanhThu;
-        private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Label lblDoanhThu;
         private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.ListBox lbRank;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRank;
+        private System.Windows.Forms.PictureBox ptbRefresh;
     }
 }

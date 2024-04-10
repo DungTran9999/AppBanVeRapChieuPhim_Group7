@@ -113,6 +113,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bautroisao {
+            get {
+                object obj = ResourceManager.GetObject("bautroisao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap conan {
             get {
                 object obj = ResourceManager.GetObject("conan", resourceCulture);
@@ -183,6 +193,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refresh {
+            get {
+                object obj = ResourceManager.GetObject("refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2024_04_03_004517 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-04-03 004517", resourceCulture);
@@ -206,6 +226,26 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         internal static System.Drawing.Bitmap sell {
             get {
                 object obj = ResourceManager.GetObject("sell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ticket_psd {
+            get {
+                object obj = ResourceManager.GetObject("ticket.psd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ve_xem_phim {
+            get {
+                object obj = ResourceManager.GetObject("ve xem phim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -45,7 +45,6 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnSell.Height;
             plScroll.Top = btnSell.Top;
             plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear(); 
@@ -60,7 +59,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnManager.Height;
             plScroll.Top = btnManager.Top;
             plScroll.Left = btnManager.Left;
-            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
+            
 
             lbChangeName.Text = "Manager";
 
@@ -76,24 +75,36 @@ namespace AppBanVeRapChieuPhim_Group7
             frmManager_View.Show();
         }
 
-        private void btnSell_Leave(object sender, EventArgs e)
+        private void btnTicket_Click(object sender, EventArgs e)
         {
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
-        }
+            plScroll.Height = btnTicket.Height;
+            plScroll.Top = btnTicket.Top;
+            plScroll.Left = btnTicket.Left;
+            
 
-        private void btnManager_Leave(object sender, EventArgs e)
-        {
-            btnManager.BackColor = System.Drawing.Color.FromArgb(255, 192, 192);
-        }
+            lbChangeName.Text = "Ticket";
 
+            this.plLoadForm.Controls.Clear();
+
+            frmTicket frmTicket_View = frmTicket.GetInStance();
+            frmTicket_View.FormBorderStyle = FormBorderStyle.None;
+            frmTicket_View.Dock = DockStyle.Fill;
+            frmTicket_View.TopLevel = false;
+            frmTicket_View.TopMost = true;
+
+            this.plLoadForm.Controls.Add(frmTicket_View);
+            frmTicket_View.Show();
+        }
+       
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+
         private void frmGiaoDien_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("ban co muon thoat khong?", "Thong bao", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if (MessageBox.Show("Bạn Có Muốn Thoát Không?", "Thong bao", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
             }
@@ -104,7 +115,7 @@ namespace AppBanVeRapChieuPhim_Group7
             plScroll.Height = btnSell.Height;
             plScroll.Top = btnSell.Top;
             plScroll.Left = btnSell.Left;
-            btnSell.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            
 
             lbChangeName.Text = "Sell";
             this.plLoadForm.Controls.Clear();
@@ -114,6 +125,9 @@ namespace AppBanVeRapChieuPhim_Group7
             frmSell_View.Show();
         }
 
-       
+        private void plScroll_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
