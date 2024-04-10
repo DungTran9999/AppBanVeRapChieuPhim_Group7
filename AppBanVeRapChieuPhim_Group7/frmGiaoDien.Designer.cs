@@ -32,13 +32,13 @@
             this.lbChangeName = new System.Windows.Forms.Label();
             this.lb8 = new System.Windows.Forms.Label();
             this.plControl = new System.Windows.Forms.Panel();
+            this.plScroll = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnTicket = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.plScroll = new System.Windows.Forms.Panel();
             this.btnManager = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.plControl.SuspendLayout();
@@ -51,10 +51,10 @@
             // plLoadForm
             // 
             this.plLoadForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.plLoadForm.Location = new System.Drawing.Point(236, 90);
+            this.plLoadForm.Location = new System.Drawing.Point(231, 90);
             this.plLoadForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plLoadForm.Name = "plLoadForm";
-            this.plLoadForm.Size = new System.Drawing.Size(1317, 775);
+            this.plLoadForm.Size = new System.Drawing.Size(1325, 775);
             this.plLoadForm.TabIndex = 1;
             // 
             // lbChangeName
@@ -101,6 +101,16 @@
             this.plControl.Size = new System.Drawing.Size(231, 869);
             this.plControl.TabIndex = 4;
             this.plControl.Click += new System.EventHandler(this.btnSell_Click);
+            // 
+            // plScroll
+            // 
+            this.plScroll.BackColor = System.Drawing.Color.Red;
+            this.plScroll.Location = new System.Drawing.Point(0, 214);
+            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.plScroll.Name = "plScroll";
+            this.plScroll.Size = new System.Drawing.Size(10, 274);
+            this.plScroll.TabIndex = 0;
+            this.plScroll.Paint += new System.Windows.Forms.PaintEventHandler(this.plScroll_Paint);
             // 
             // pictureBox4
             // 
@@ -169,20 +179,10 @@
             this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
             this.pictureBox2.Location = new System.Drawing.Point(-1, -10);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(231, 219);
+            this.pictureBox2.Size = new System.Drawing.Size(232, 228);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
-            // 
-            // plScroll
-            // 
-            this.plScroll.BackColor = System.Drawing.Color.Red;
-            this.plScroll.Location = new System.Drawing.Point(0, 214);
-            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.plScroll.Name = "plScroll";
-            this.plScroll.Size = new System.Drawing.Size(10, 274);
-            this.plScroll.TabIndex = 0;
-            this.plScroll.Paint += new System.Windows.Forms.PaintEventHandler(this.plScroll_Paint);
             // 
             // btnManager
             // 

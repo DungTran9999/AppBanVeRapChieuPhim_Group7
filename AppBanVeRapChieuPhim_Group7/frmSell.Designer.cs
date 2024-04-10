@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.plLoadForm = new System.Windows.Forms.Panel();
+            this.lblTheater = new System.Windows.Forms.Label();
             this.txtDataChair = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.lbNumberOfChair = new System.Windows.Forms.Label();
             this.lbTheater = new System.Windows.Forms.Label();
             this.cbbTime = new System.Windows.Forms.ComboBox();
-            this.lblTheater = new System.Windows.Forms.Label();
             this.plLoadForm.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,8 +55,20 @@
             this.plLoadForm.Location = new System.Drawing.Point(0, 0);
             this.plLoadForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plLoadForm.Name = "plLoadForm";
-            this.plLoadForm.Size = new System.Drawing.Size(1317, 550);
+            this.plLoadForm.Size = new System.Drawing.Size(1325, 550);
             this.plLoadForm.TabIndex = 0;
+            // 
+            // lblTheater
+            // 
+            this.lblTheater.AutoSize = true;
+            this.lblTheater.BackColor = System.Drawing.Color.Red;
+            this.lblTheater.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTheater.ForeColor = System.Drawing.Color.Black;
+            this.lblTheater.Location = new System.Drawing.Point(115, 454);
+            this.lblTheater.Name = "lblTheater";
+            this.lblTheater.Size = new System.Drawing.Size(34, 39);
+            this.lblTheater.TabIndex = 7;
+            this.lblTheater.Text = "0";
             // 
             // txtDataChair
             // 
@@ -228,24 +240,12 @@
             this.cbbTime.Size = new System.Drawing.Size(308, 37);
             this.cbbTime.TabIndex = 41;
             // 
-            // lblTheater
-            // 
-            this.lblTheater.AutoSize = true;
-            this.lblTheater.BackColor = System.Drawing.Color.Red;
-            this.lblTheater.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTheater.ForeColor = System.Drawing.Color.Black;
-            this.lblTheater.Location = new System.Drawing.Point(115, 454);
-            this.lblTheater.Name = "lblTheater";
-            this.lblTheater.Size = new System.Drawing.Size(34, 39);
-            this.lblTheater.TabIndex = 7;
-            this.lblTheater.Text = "0";
-            // 
             // frmSell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1317, 775);
+            this.ClientSize = new System.Drawing.Size(1325, 775);
             this.Controls.Add(this.cbbTime);
             this.Controls.Add(this.lbTheater);
             this.Controls.Add(this.btnAccept);
