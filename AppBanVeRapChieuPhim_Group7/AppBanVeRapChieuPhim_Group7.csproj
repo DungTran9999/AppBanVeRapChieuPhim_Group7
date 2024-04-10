@@ -94,6 +94,12 @@
     <Compile Include="frmTheater4.Designer.cs">
       <DependentUpon>frmTheater4.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicket.Designer.cs">
+      <DependentUpon>frmTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGiaoDien.resx">
