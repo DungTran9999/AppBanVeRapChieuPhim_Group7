@@ -53,11 +53,12 @@
             this.lbnumberSeats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.lbnumberSeats.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnumberSeats.ForeColor = System.Drawing.Color.White;
-            this.lbnumberSeats.Location = new System.Drawing.Point(278, 523);
+            this.lbnumberSeats.Location = new System.Drawing.Point(278, 520);
             this.lbnumberSeats.Name = "lbnumberSeats";
             this.lbnumberSeats.Size = new System.Drawing.Size(44, 68);
             this.lbnumberSeats.TabIndex = 97;
             this.lbnumberSeats.Text = ".";
+            this.lbnumberSeats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbTime
             // 
@@ -212,11 +213,12 @@
             this.lbSeats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.lbSeats.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSeats.ForeColor = System.Drawing.Color.White;
-            this.lbSeats.Location = new System.Drawing.Point(406, 525);
+            this.lbSeats.Location = new System.Drawing.Point(406, 490);
             this.lbSeats.Name = "lbSeats";
-            this.lbSeats.Size = new System.Drawing.Size(429, 93);
+            this.lbSeats.Size = new System.Drawing.Size(429, 128);
             this.lbSeats.TabIndex = 97;
             this.lbSeats.Text = ".";
+            this.lbSeats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmTicket
             // 

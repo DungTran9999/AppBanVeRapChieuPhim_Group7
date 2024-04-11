@@ -73,6 +73,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dau_X {
+            get {
+                object obj = ResourceManager.GetObject("dau X", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap galaxy2_pink {
             get {
                 object obj = ResourceManager.GetObject("galaxy2 pink", resourceCulture);
@@ -203,6 +213,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_dau_x {
+            get {
+                object obj = ResourceManager.GetObject("rsz_dau_x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_khung_loginnnn {
             get {
                 object obj = ResourceManager.GetObject("rsz_khung_loginnnn", resourceCulture);
@@ -236,6 +256,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         internal static System.Drawing.Bitmap rsz_thorrrrr {
             get {
                 object obj = ResourceManager.GetObject("rsz_thorrrrr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rsz_x_vuong {
+            get {
+                object obj = ResourceManager.GetObject("rsz_x_vuong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

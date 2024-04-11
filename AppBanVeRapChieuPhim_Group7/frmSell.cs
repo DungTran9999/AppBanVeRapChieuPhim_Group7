@@ -281,8 +281,14 @@ namespace AppBanVeRapChieuPhim_Group7
     public class Film
     {
         public string Movie { get; set; }
-        
+        public string ID { get; set; }
         public int Price { get; set; }
 
+        /*public Film(string id, string movie, int price)
+        {
+            this.ID= id;
+            this.Movie= movie;
+            this.Price = price;
+        }*/
     }
 }

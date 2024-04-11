@@ -76,7 +76,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            txtPassWord.Text=txtUserName.Text="";
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -114,5 +114,12 @@ namespace AppBanVeRapChieuPhim_Group7
             // Tăng chỉ số để hiển thị ảnh tiếp theo trong lần kích hoạt tiếp theo của Timer
             currentIndex++;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
     }
 }

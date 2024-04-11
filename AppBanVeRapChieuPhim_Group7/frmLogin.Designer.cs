@@ -32,9 +32,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ptbAnh = new System.Windows.Forms.PictureBox();
             this.PnLogin = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -75,6 +76,7 @@
             this.PnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PnLogin.BackColor = System.Drawing.Color.White;
             this.PnLogin.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_khung_loginnnn;
+            this.PnLogin.Controls.Add(this.button1);
             this.PnLogin.Controls.Add(this.pictureBox2);
             this.PnLogin.Controls.Add(this.panel5);
             this.PnLogin.Controls.Add(this.panel3);
@@ -89,6 +91,16 @@
             this.PnLogin.Size = new System.Drawing.Size(558, 447);
             this.PnLogin.TabIndex = 7;
             // 
+            // button1
+            // 
+            this.button1.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_x_vuong;
+            this.button1.Location = new System.Drawing.Point(494, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 50);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.Screenshot_2024_04_03_004517;
@@ -102,26 +114,26 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel5.Controls.Add(this.btnExit);
-            this.panel5.Location = new System.Drawing.Point(281, 336);
+            this.panel5.Controls.Add(this.btnCancel);
+            this.panel5.Location = new System.Drawing.Point(298, 336);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(165, 50);
+            this.panel5.Size = new System.Drawing.Size(200, 50);
             this.panel5.TabIndex = 5;
             // 
-            // btnExit
+            // btnCancel
             // 
-            this.btnExit.BackColor = System.Drawing.Color.White;
-            this.btnExit.Font = new System.Drawing.Font("Javanese Text", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnExit.Location = new System.Drawing.Point(9, 2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(157, 48);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "EXIT";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.Font = new System.Drawing.Font("Javanese Text", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCancel.Location = new System.Drawing.Point(8, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(192, 48);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel3
             // 
@@ -130,7 +142,7 @@
             this.panel3.Location = new System.Drawing.Point(49, 336);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 50);
+            this.panel3.Size = new System.Drawing.Size(200, 50);
             this.panel3.TabIndex = 5;
             // 
             // btnLogin
@@ -141,7 +153,7 @@
             this.btnLogin.Location = new System.Drawing.Point(9, 2);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(157, 48);
+            this.btnLogin.Size = new System.Drawing.Size(192, 48);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -263,7 +275,7 @@
 
         private System.Windows.Forms.Panel PnLogin;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel2;
@@ -277,6 +289,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox checkBoxShowPassword;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

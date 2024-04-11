@@ -117,10 +117,7 @@ namespace AppBanVeRapChieuPhim_Group7
             frmSetting_View.Show();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
 
         private void frmGiaoDien_FormClosing(object sender, FormClosingEventArgs e)
@@ -146,11 +143,11 @@ namespace AppBanVeRapChieuPhim_Group7
             frmSell_View.Show();
         }
 
-        private void plScroll_Paint(object sender, PaintEventArgs e)
+       
+
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
-
-        
     }
 }
