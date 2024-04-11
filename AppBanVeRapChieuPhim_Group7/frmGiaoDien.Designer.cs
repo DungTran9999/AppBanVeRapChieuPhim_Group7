@@ -32,9 +32,9 @@
             this.lbChangeName = new System.Windows.Forms.Label();
             this.lb8 = new System.Windows.Forms.Label();
             this.plControl = new System.Windows.Forms.Panel();
+            this.plScroll = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnSetting = new System.Windows.Forms.Button();
-            this.plScroll = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnTicket = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -64,11 +64,11 @@
             // 
             this.lbChangeName.AutoSize = true;
             this.lbChangeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbChangeName.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold);
+            this.lbChangeName.Font = new System.Drawing.Font("Microsoft Tai Le", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbChangeName.ForeColor = System.Drawing.Color.Red;
-            this.lbChangeName.Location = new System.Drawing.Point(831, 1);
+            this.lbChangeName.Location = new System.Drawing.Point(831, -4);
             this.lbChangeName.Name = "lbChangeName";
-            this.lbChangeName.Size = new System.Drawing.Size(45, 51);
+            this.lbChangeName.Size = new System.Drawing.Size(52, 60);
             this.lbChangeName.TabIndex = 2;
             this.lbChangeName.Text = "0";
             this.lbChangeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,9 +89,9 @@
             // 
             this.plControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.plControl.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.galaxy2_pink;
+            this.plControl.Controls.Add(this.plScroll);
             this.plControl.Controls.Add(this.pictureBox5);
             this.plControl.Controls.Add(this.btnSetting);
-            this.plControl.Controls.Add(this.plScroll);
             this.plControl.Controls.Add(this.pictureBox4);
             this.plControl.Controls.Add(this.btnTicket);
             this.plControl.Controls.Add(this.btnExit);
@@ -109,10 +109,19 @@
             this.plControl.TabIndex = 4;
             this.plControl.Click += new System.EventHandler(this.btnSell_Click);
             // 
+            // plScroll
+            // 
+            this.plScroll.BackColor = System.Drawing.Color.Red;
+            this.plScroll.Location = new System.Drawing.Point(3, 222);
+            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.plScroll.Name = "plScroll";
+            this.plScroll.Size = new System.Drawing.Size(10, 371);
+            this.plScroll.TabIndex = 19;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pictureBox5.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.image_psd__1_;
+            this.pictureBox5.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.setting;
             this.pictureBox5.Location = new System.Drawing.Point(11, 507);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(80, 80);
@@ -135,16 +144,6 @@
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSetting.UseVisualStyleBackColor = false;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
-            // plScroll
-            // 
-            this.plScroll.BackColor = System.Drawing.Color.Red;
-            this.plScroll.Location = new System.Drawing.Point(0, 221);
-            this.plScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.plScroll.Name = "plScroll";
-            this.plScroll.Size = new System.Drawing.Size(10, 371);
-            this.plScroll.TabIndex = 0;
-            this.plScroll.Paint += new System.Windows.Forms.PaintEventHandler(this.plScroll_Paint);
             // 
             // pictureBox4
             // 
@@ -288,7 +287,6 @@
         private System.Windows.Forms.Label lbChangeName;
         private System.Windows.Forms.Panel plControl;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Panel plScroll;
         private System.Windows.Forms.Button btnManager;
         private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label lb8;
@@ -299,5 +297,6 @@
         private System.Windows.Forms.Button btnTicket;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.Panel plScroll;
     }
 }

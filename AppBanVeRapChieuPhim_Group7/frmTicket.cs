@@ -25,13 +25,14 @@ namespace AppBanVeRapChieuPhim_Group7
             return instance;
         }
 
-        public void RecieveData(string theater, string movie, string price, string time, string seats)
+        public void RecieveData(string theater, string movie, string price, string time, string seats, string seat)
         {
             lbTheater.Text = theater;
             lbMovie.Text = movie;
             lbPrice.Text = price;
             lbTime.Text = time;
-            lbSeats.Text = seats;
+            lbnumberSeats.Text = seats;
+            lbSeats.Text = seat;
 
             DateTime gio = DateTime.Now;
             lbTimeBuy.Text = gio.ToString();

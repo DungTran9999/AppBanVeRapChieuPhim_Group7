@@ -120,7 +120,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 3";
                 lblTheater.Text = "3";
-                lbTheater.BackColor = Color.Black;
+                lbTheater.BackColor = Color.FromArgb(192, 0, 0);
 
                 this.plLoadForm.Controls.Add(frmTheater2_View);
                 frmTheater2_View.Show();
@@ -144,7 +144,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 2";
                 lblTheater.Text = "2";
-                lbTheater.BackColor = Color.FromArgb(64, 64, 64);
+                lbTheater.BackColor = Color.White;
 
                 this.plLoadForm.Controls.Add(frmTheater3_View);
                 frmTheater3_View.Show();
@@ -168,7 +168,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
                 lbTheater.Text = "THEATER 4";
                 lblTheater.Text = "4";
-                lbTheater.BackColor = Color.FromArgb(255, 128, 0);
+                lbTheater.BackColor = Color.Cyan;
 
                 this.plLoadForm.Controls.Add(frmTheater4_View);
                 frmTheater4_View.Show();
@@ -263,7 +263,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 manager.RecieveData(data);
 
                 frmTicket ticket = frmTicket.GetInStance();
-                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, txtPrice.Text, cbbTime.Text, lbNumberOfChair.Text);
+                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, txtPrice.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
 
 
                 //lấy hàm đã lưu trong theater1AcceptEvent

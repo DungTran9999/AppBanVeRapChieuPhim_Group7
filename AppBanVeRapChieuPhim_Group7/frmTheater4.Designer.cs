@@ -1345,7 +1345,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(1317, 550);
             this.Controls.Add(this.plChairTheater4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

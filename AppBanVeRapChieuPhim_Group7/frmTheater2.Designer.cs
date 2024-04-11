@@ -1293,7 +1293,7 @@
             // 
             // btnF1
             // 
-            this.btnF1.BackColor = System.Drawing.Color.Black;
+            this.btnF1.BackColor = System.Drawing.Color.Transparent;
             this.btnF1.Location = new System.Drawing.Point(33, 378);
             this.btnF1.Margin = new System.Windows.Forms.Padding(5);
             this.btnF1.Name = "btnF1";
@@ -1346,7 +1346,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1317, 550);
             this.Controls.Add(this.plChairTheater2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

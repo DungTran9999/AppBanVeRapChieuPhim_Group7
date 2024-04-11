@@ -58,17 +58,17 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             if (txtUserName.Text == "NhomD3T" && txtPassWord.Text == "11111")
             {
-                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THONG BÁO");
+                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THÔNG BÁO");
                 return true;
             }
             else if(txtUserName.Text == "a" && txtPassWord.Text == "a")
             {
-                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THONG BÁO");
+                MessageBox.Show("ĐĂNG NHẬP THÀNH CÔNG", "THÔNG BÁO");
                 return true;
             }
             else
             {
-                MessageBox.Show("TÀI KHOẢN HOẶC MẬT KHẨU SAI, VUI LÒNG NHẬP LẠI", "THONG BÁO");
+                MessageBox.Show("TÀI KHOẢN HOẶC MẬT KHẨU SAI, VUI LÒNG NHẬP LẠI", "THÔNG BÁO");
                 return false;
             }
            
@@ -81,7 +81,7 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("ban co muon thoat khong?", "Thong bao", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if (MessageBox.Show("Bạn Có Muốn Thoát Không?", "THÔNG BÁO", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
             }

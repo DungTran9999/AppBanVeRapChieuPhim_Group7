@@ -85,10 +85,10 @@
             // 
             this.txtPrice.Enabled = false;
             this.txtPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(123, 669);
+            this.txtPrice.Location = new System.Drawing.Point(137, 669);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(340, 34);
+            this.txtPrice.Size = new System.Drawing.Size(356, 34);
             this.txtPrice.TabIndex = 1;
             // 
             // label1
@@ -115,7 +115,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(516, 616);
+            this.label3.Location = new System.Drawing.Point(528, 616);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 35);
             this.label3.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(516, 673);
+            this.label4.Location = new System.Drawing.Point(528, 673);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 35);
             this.label4.TabIndex = 2;
@@ -140,10 +140,10 @@
             "THOR: The Dark World",
             "Harry Potter: Dark Witch",
             "Fast And Furious"});
-            this.cbbMovie.Location = new System.Drawing.Point(123, 612);
+            this.cbbMovie.Location = new System.Drawing.Point(137, 612);
             this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";
-            this.cbbMovie.Size = new System.Drawing.Size(340, 33);
+            this.cbbMovie.Size = new System.Drawing.Size(356, 33);
             this.cbbMovie.TabIndex = 3;
             this.cbbMovie.SelectedValueChanged += new System.EventHandler(this.cbbMovie_SelectedValueChanged);
             // 
@@ -235,7 +235,7 @@
             "17:30 đến 19:30",
             "20:00 đến 22:00",
             "22:30 đến 00:30"});
-            this.cbbTime.Location = new System.Drawing.Point(622, 609);
+            this.cbbTime.Location = new System.Drawing.Point(622, 614);
             this.cbbTime.Name = "cbbTime";
             this.cbbTime.Size = new System.Drawing.Size(308, 37);
             this.cbbTime.TabIndex = 41;

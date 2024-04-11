@@ -227,5 +227,8 @@
   <ItemGroup>
     <None Include="Resources\khung cinema.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -76,7 +76,7 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Price";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnHeader3.Width = 100;
             // 
             // ttlv
@@ -88,7 +88,7 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Total";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnHeader4.Width = 100;
             // 
             // txtDoanhThu

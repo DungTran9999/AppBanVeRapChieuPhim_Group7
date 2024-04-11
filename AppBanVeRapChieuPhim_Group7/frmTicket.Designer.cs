@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbSeats = new System.Windows.Forms.Label();
+            this.lbnumberSeats = new System.Windows.Forms.Label();
             this.lbTime = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbTimeBuy = new System.Windows.Forms.Label();
@@ -42,21 +42,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbSeats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbSeats
+            // lbnumberSeats
             // 
-            this.lbSeats.AutoSize = true;
-            this.lbSeats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
-            this.lbSeats.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSeats.ForeColor = System.Drawing.Color.White;
-            this.lbSeats.Location = new System.Drawing.Point(425, 531);
-            this.lbSeats.Name = "lbSeats";
-            this.lbSeats.Size = new System.Drawing.Size(27, 42);
-            this.lbSeats.TabIndex = 97;
-            this.lbSeats.Text = ".";
+            this.lbnumberSeats.AutoSize = true;
+            this.lbnumberSeats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.lbnumberSeats.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnumberSeats.ForeColor = System.Drawing.Color.White;
+            this.lbnumberSeats.Location = new System.Drawing.Point(278, 523);
+            this.lbnumberSeats.Name = "lbnumberSeats";
+            this.lbnumberSeats.Size = new System.Drawing.Size(44, 68);
+            this.lbnumberSeats.TabIndex = 97;
+            this.lbnumberSeats.Text = ".";
             // 
             // lbTime
             // 
@@ -64,7 +65,7 @@
             this.lbTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.lbTime.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(425, 583);
+            this.lbTime.Location = new System.Drawing.Point(287, 609);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(27, 42);
             this.lbTime.TabIndex = 98;
@@ -75,7 +76,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.label5.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(160, 530);
+            this.label5.Location = new System.Drawing.Point(145, 535);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 39);
             this.label5.TabIndex = 99;
@@ -97,7 +98,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(160, 582);
+            this.label3.Location = new System.Drawing.Point(145, 608);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 39);
             this.label3.TabIndex = 101;
@@ -109,7 +110,7 @@
             this.lbPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.lbPrice.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.White;
-            this.lbPrice.Location = new System.Drawing.Point(425, 474);
+            this.lbPrice.Location = new System.Drawing.Point(287, 461);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(27, 42);
             this.lbPrice.TabIndex = 102;
@@ -120,7 +121,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
             this.label2.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(160, 476);
+            this.label2.Location = new System.Drawing.Point(145, 463);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 39);
             this.label2.TabIndex = 103;
@@ -166,9 +167,9 @@
             // 
             this.lbMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(218)))));
             this.lbMovie.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMovie.Location = new System.Drawing.Point(931, 385);
+            this.lbMovie.Location = new System.Drawing.Point(931, 407);
             this.lbMovie.Name = "lbMovie";
-            this.lbMovie.Size = new System.Drawing.Size(313, 164);
+            this.lbMovie.Size = new System.Drawing.Size(313, 142);
             this.lbMovie.TabIndex = 107;
             this.lbMovie.Text = ".";
             this.lbMovie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -179,7 +180,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(218)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(966, 346);
+            this.label1.Location = new System.Drawing.Point(966, 355);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 37);
             this.label1.TabIndex = 108;
@@ -206,6 +207,17 @@
             this.pictureBox3.TabIndex = 96;
             this.pictureBox3.TabStop = false;
             // 
+            // lbSeats
+            // 
+            this.lbSeats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(11)))), ((int)(((byte)(23)))));
+            this.lbSeats.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSeats.ForeColor = System.Drawing.Color.White;
+            this.lbSeats.Location = new System.Drawing.Point(406, 525);
+            this.lbSeats.Name = "lbSeats";
+            this.lbSeats.Size = new System.Drawing.Size(429, 93);
+            this.lbSeats.TabIndex = 97;
+            this.lbSeats.Text = ".";
+            // 
             // frmTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -214,6 +226,7 @@
             this.ClientSize = new System.Drawing.Size(1325, 775);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbSeats);
+            this.Controls.Add(this.lbnumberSeats);
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbTimeBuy);
@@ -239,7 +252,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lbSeats;
+        private System.Windows.Forms.Label lbnumberSeats;
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbTimeBuy;
@@ -252,5 +265,6 @@
         private System.Windows.Forms.Label lbMovie;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lbSeats;
     }
 }
