@@ -16,6 +16,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
             automatic();
+            lbChangeName.BackColor = Color.Transparent;
         }
         private Timer timer;
         private int currentPosition = 0;
@@ -95,7 +96,27 @@ namespace AppBanVeRapChieuPhim_Group7
             this.plLoadForm.Controls.Add(frmTicket_View);
             frmTicket_View.Show();
         }
-       
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            plScroll.Height = btnSetting.Height;
+            plScroll.Top = btnSetting.Top;
+            plScroll.Left = btnSetting.Left;
+
+
+            lbChangeName.Text = "Setting";
+
+            this.plLoadForm.Controls.Clear();
+
+            frmSetting frmSetting_View = frmSetting.GetInStance();
+            frmSetting_View.FormBorderStyle = FormBorderStyle.None;
+            frmSetting_View.Dock = DockStyle.Fill;
+            frmSetting_View.TopLevel = false;
+            frmSetting_View.TopMost = true;
+
+            this.plLoadForm.Controls.Add(frmSetting_View);
+            frmSetting_View.Show();
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -129,5 +150,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
 
         }
+
+        
     }
 }

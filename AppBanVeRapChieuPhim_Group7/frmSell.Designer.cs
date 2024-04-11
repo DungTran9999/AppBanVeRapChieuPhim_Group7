@@ -74,7 +74,7 @@
             // 
             this.txtDataChair.Enabled = false;
             this.txtDataChair.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataChair.Location = new System.Drawing.Point(602, 667);
+            this.txtDataChair.Location = new System.Drawing.Point(622, 662);
             this.txtDataChair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDataChair.Multiline = true;
             this.txtDataChair.Name = "txtDataChair";
@@ -97,9 +97,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 616);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 35);
+            this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Movie";
+            this.label1.Text = "Movie:\r\n";
             // 
             // label2
             // 
@@ -107,9 +107,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(26, 673);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 35);
+            this.label2.Size = new System.Drawing.Size(87, 35);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Price";
+            this.label2.Text = "Price:\r\n";
             // 
             // label3
             // 
@@ -117,9 +117,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(516, 616);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 35);
+            this.label3.Size = new System.Drawing.Size(88, 35);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Time";
+            this.label3.Text = "Time:\r\n";
             // 
             // label4
             // 
@@ -127,9 +127,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(516, 673);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 35);
+            this.label4.Size = new System.Drawing.Size(92, 35);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Seats";
+            this.label4.Text = "Seats:";
             // 
             // cbbMovie
             // 
@@ -235,7 +235,7 @@
             "17:30 đến 19:30",
             "20:00 đến 22:00",
             "22:30 đến 00:30"});
-            this.cbbTime.Location = new System.Drawing.Point(602, 614);
+            this.cbbTime.Location = new System.Drawing.Point(622, 609);
             this.cbbTime.Name = "cbbTime";
             this.cbbTime.Size = new System.Drawing.Size(308, 37);
             this.cbbTime.TabIndex = 41;

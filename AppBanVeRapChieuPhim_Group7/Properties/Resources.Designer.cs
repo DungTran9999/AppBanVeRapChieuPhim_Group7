@@ -73,6 +73,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap galaxy2_pink {
+            get {
+                object obj = ResourceManager.GetObject("galaxy2 pink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_psd {
             get {
                 object obj = ResourceManager.GetObject("image.psd", resourceCulture);
@@ -93,9 +103,29 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap khung_cinema {
+            get {
+                object obj = ResourceManager.GetObject("khung cinema", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Marvel_Avengers1 {
             get {
                 object obj = ResourceManager.GetObject("Marvel Avengers1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nen_pink {
+            get {
+                object obj = ResourceManager.GetObject("nen pink", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

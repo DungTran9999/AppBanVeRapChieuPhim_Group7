@@ -71,7 +71,7 @@
             // 
             this.columnHeader2.Text = "Movie";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 230;
+            this.columnHeader2.Width = 250;
             // 
             // columnHeader3
             // 
@@ -89,13 +89,13 @@
             // 
             this.columnHeader4.Text = "Total";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 150;
+            this.columnHeader4.Width = 100;
             // 
             // txtDoanhThu
             // 
             this.txtDoanhThu.Enabled = false;
             this.txtDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoanhThu.Location = new System.Drawing.Point(1023, 596);
+            this.txtDoanhThu.Location = new System.Drawing.Point(1028, 596);
             this.txtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoanhThu.Name = "txtDoanhThu";
             this.txtDoanhThu.Size = new System.Drawing.Size(235, 41);
@@ -107,7 +107,7 @@
             this.lblDoanhThu.AutoSize = true;
             this.lblDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lblDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDoanhThu.Location = new System.Drawing.Point(1017, 518);
+            this.lblDoanhThu.Location = new System.Drawing.Point(1022, 518);
             this.lblDoanhThu.Name = "lblDoanhThu";
             this.lblDoanhThu.Size = new System.Drawing.Size(254, 36);
             this.lblDoanhThu.TabIndex = 2;
@@ -117,7 +117,7 @@
             // 
             this.btnDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnDoanhThu.Location = new System.Drawing.Point(1035, 671);
+            this.btnDoanhThu.Location = new System.Drawing.Point(1040, 671);
             this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Size = new System.Drawing.Size(211, 73);
@@ -132,9 +132,9 @@
             this.lbRank.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRank.FormattingEnabled = true;
             this.lbRank.ItemHeight = 20;
-            this.lbRank.Location = new System.Drawing.Point(1006, 114);
+            this.lbRank.Location = new System.Drawing.Point(981, 114);
             this.lbRank.Name = "lbRank";
-            this.lbRank.Size = new System.Drawing.Size(281, 204);
+            this.lbRank.Size = new System.Drawing.Size(335, 204);
             this.lbRank.TabIndex = 4;
             // 
             // lblRank
@@ -142,7 +142,7 @@
             this.lblRank.AutoSize = true;
             this.lblRank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lblRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRank.Location = new System.Drawing.Point(979, 38);
+            this.lblRank.Location = new System.Drawing.Point(984, 38);
             this.lblRank.Name = "lblRank";
             this.lblRank.Size = new System.Drawing.Size(328, 36);
             this.lblRank.TabIndex = 2;
@@ -152,7 +152,7 @@
             // 
             this.ptbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ptbRefresh.Image = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.refresh;
-            this.ptbRefresh.Location = new System.Drawing.Point(1044, 677);
+            this.ptbRefresh.Location = new System.Drawing.Point(1049, 677);
             this.ptbRefresh.Name = "ptbRefresh";
             this.ptbRefresh.Size = new System.Drawing.Size(60, 60);
             this.ptbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
