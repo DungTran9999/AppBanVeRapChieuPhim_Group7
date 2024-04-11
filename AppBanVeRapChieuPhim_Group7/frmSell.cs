@@ -263,7 +263,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 manager.RecieveData(data);
 
                 frmTicket ticket = frmTicket.GetInStance();
-                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, txtPrice.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
+                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, lbMoney.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
 
 
                 //lấy hàm đã lưu trong theater1AcceptEvent

@@ -76,12 +76,6 @@
     <Compile Include="frmSell.Designer.cs">
       <DependentUpon>frmSell.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSetting.Designer.cs">
-      <DependentUpon>frmSetting.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTheater1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSell.resx">
       <DependentUpon>frmSell.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSetting.resx">
-      <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTheater1.resx">
       <DependentUpon>frmTheater1.cs</DependentUpon>
@@ -207,9 +198,6 @@
     <None Include="Resources\rsz_khung_loginnnn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rsz_1spiderman_movieee.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\rsz_1spiderman_movieee1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -234,19 +222,16 @@
     <None Include="Resources\nen pink.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\khung cinema.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\setting.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dau X.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rsz_dau_x.png" />
+    <None Include="Resources\rsz_x_vuong.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rsz_x_vuong.png" />
+    <None Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

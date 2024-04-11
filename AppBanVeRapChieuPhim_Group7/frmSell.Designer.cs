@@ -64,7 +64,7 @@
             this.lblTheater.BackColor = System.Drawing.Color.Red;
             this.lblTheater.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTheater.ForeColor = System.Drawing.Color.Black;
-            this.lblTheater.Location = new System.Drawing.Point(115, 454);
+            this.lblTheater.Location = new System.Drawing.Point(681, 215);
             this.lblTheater.Name = "lblTheater";
             this.lblTheater.Size = new System.Drawing.Size(34, 39);
             this.lblTheater.TabIndex = 7;

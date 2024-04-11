@@ -96,29 +96,27 @@ namespace AppBanVeRapChieuPhim_Group7
             this.plLoadForm.Controls.Add(frmTicket_View);
             frmTicket_View.Show();
         }
-        private void btnSetting_Click(object sender, EventArgs e)
+
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
-            plScroll.Height = btnSetting.Height;
-            plScroll.Top = btnSetting.Top;
-            plScroll.Left = btnSetting.Left;
+            plScroll.Height = btnCustomer.Height;
+            plScroll.Top = btnCustomer.Top;
+            plScroll.Left = btnCustomer.Left;
 
 
-            lbChangeName.Text = "Setting";
+            lbChangeName.Text = "Customer";
 
             this.plLoadForm.Controls.Clear();
 
-            frmSetting frmSetting_View = frmSetting.GetInStance();
-            frmSetting_View.FormBorderStyle = FormBorderStyle.None;
-            frmSetting_View.Dock = DockStyle.Fill;
-            frmSetting_View.TopLevel = false;
-            frmSetting_View.TopMost = true;
+            frmCustomer frmCustomer_View = frmCustomer.GetInStance();
+            frmCustomer_View.FormBorderStyle = FormBorderStyle.None;
+            frmCustomer_View.Dock = DockStyle.Fill;
+            frmCustomer_View.TopLevel = false;
+            frmCustomer_View.TopMost = true;
 
-            this.plLoadForm.Controls.Add(frmSetting_View);
-            frmSetting_View.Show();
+            this.plLoadForm.Controls.Add(frmCustomer_View);
+            frmCustomer_View.Show();
         }
-
-        
-
 
         private void frmGiaoDien_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -149,5 +147,7 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             this.Close();
         }
+
+        
     }
 }

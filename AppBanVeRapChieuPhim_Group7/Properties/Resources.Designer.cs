@@ -73,6 +73,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Customer {
+            get {
+                object obj = ResourceManager.GetObject("Customer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dau_X {
             get {
                 object obj = ResourceManager.GetObject("dau X", resourceCulture);
@@ -106,16 +116,6 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         internal static System.Drawing.Bitmap image_psd__1_ {
             get {
                 object obj = ResourceManager.GetObject("image.psd (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap khung_cinema {
-            get {
-                object obj = ResourceManager.GetObject("khung cinema", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +173,16 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1refresh {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rsz_1screenshot_2024_04_11_031419 {
             get {
                 object obj = ResourceManager.GetObject("rsz_1screenshot_2024-04-11_031419", resourceCulture);
@@ -193,29 +203,9 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rsz_1spiderman_movieee {
-            get {
-                object obj = ResourceManager.GetObject("rsz_1spiderman_movieee", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap rsz_1spiderman_movieee1 {
             get {
                 object obj = ResourceManager.GetObject("rsz_1spiderman_movieee1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rsz_dau_x {
-            get {
-                object obj = ResourceManager.GetObject("rsz_dau_x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,16 +266,6 @@ namespace AppBanVeRapChieuPhim_Group7.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_04_03_004517 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-04-03 004517", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap setting {
-            get {
-                object obj = ResourceManager.GetObject("setting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

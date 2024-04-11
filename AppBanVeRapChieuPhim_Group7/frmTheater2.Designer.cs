@@ -143,7 +143,7 @@
             // plChairTheater2
             // 
             this.plChairTheater2.BackColor = System.Drawing.Color.Black;
-            this.plChairTheater2.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_1spiderman_movieee;
+            this.plChairTheater2.BackgroundImage = global::AppBanVeRapChieuPhim_Group7.Properties.Resources.rsz_1spiderman_movieee1;
             this.plChairTheater2.Controls.Add(this.label2);
             this.plChairTheater2.Controls.Add(this.label3);
             this.plChairTheater2.Controls.Add(this.label1);
