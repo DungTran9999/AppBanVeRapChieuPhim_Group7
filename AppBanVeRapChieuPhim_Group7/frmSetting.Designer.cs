@@ -28,33 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "001",
-            "Dark Witch",
-            "99000"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "002",
-            "SPIDER-MAN",
-            "110000"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
-            "003",
-            "THOR: The Dark World",
-            "125000"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
-            "004",
-            "Fast And Furious",
-            "200000"}, -1);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMovie = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnRepair = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtMovie = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnRepair = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.lvMVList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -85,43 +69,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Movie Editing";
             // 
-            // btnAdd
+            // label3
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(33, 399);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(128, 51);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(190, 72);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(294, 42);
-            this.txtID.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 35);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ID:";
-            // 
-            // txtMovie
-            // 
-            this.txtMovie.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovie.Location = new System.Drawing.Point(190, 151);
-            this.txtMovie.Name = "txtMovie";
-            this.txtMovie.Size = new System.Drawing.Size(294, 42);
-            this.txtMovie.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(37, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 35);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Price:";
             // 
             // label2
             // 
@@ -133,6 +89,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Movie:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 35);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ID:";
+            // 
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,33 +107,39 @@
             this.txtPrice.Size = new System.Drawing.Size(294, 42);
             this.txtPrice.TabIndex = 1;
             // 
-            // label3
+            // txtMovie
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 35);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Price:";
+            this.txtMovie.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovie.Location = new System.Drawing.Point(190, 151);
+            this.txtMovie.Name = "txtMovie";
+            this.txtMovie.Size = new System.Drawing.Size(294, 42);
+            this.txtMovie.TabIndex = 1;
             // 
-            // btnDelete
+            // txtID
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(165, 399);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(128, 51);
-            this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.txtID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.Location = new System.Drawing.Point(190, 72);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(294, 42);
+            this.txtID.TabIndex = 1;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Yellow;
+            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(415, 399);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(128, 51);
+            this.btnCancel.TabIndex = 0;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnRepair
             // 
             this.btnRepair.BackColor = System.Drawing.Color.Cyan;
             this.btnRepair.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRepair.Location = new System.Drawing.Point(298, 399);
+            this.btnRepair.Location = new System.Drawing.Point(282, 399);
             this.btnRepair.Name = "btnRepair";
             this.btnRepair.Size = new System.Drawing.Size(128, 51);
             this.btnRepair.TabIndex = 0;
@@ -175,17 +147,29 @@
             this.btnRepair.UseVisualStyleBackColor = false;
             this.btnRepair.Click += new System.EventHandler(this.btnRepair_Click);
             // 
-            // btnCancel
+            // btnDelete
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Yellow;
-            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(431, 399);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(128, 51);
-            this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(149, 399);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(128, 51);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Lime;
+            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(17, 399);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(128, 51);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lvMVList
             // 
@@ -197,11 +181,6 @@
             this.lvMVList.ForeColor = System.Drawing.Color.Black;
             this.lvMVList.GridLines = true;
             this.lvMVList.HideSelection = false;
-            this.lvMVList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
             this.lvMVList.Location = new System.Drawing.Point(0, 66);
             this.lvMVList.Name = "lvMVList";
             this.lvMVList.Size = new System.Drawing.Size(752, 707);

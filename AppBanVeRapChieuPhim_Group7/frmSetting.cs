@@ -25,8 +25,37 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             InitializeComponent();
         }
+        List<Film> listfilm = new List<Film>();
 
-        public bool checkinput()
+        public void test1()
+        {
+            string a= txtID.Text;
+            string b= txtMovie.Text;
+            int c= Convert.ToInt32(txtPrice.Text);
+
+            
+            Film film = new Film(a,b,c);
+            listfilm.Add(film);
+            
+            foreach(Film item in listfilm)
+            {
+                ListViewItem lv = new ListViewItem(film.ID);
+                lv.SubItems.Add(film.Movie);
+                lv.SubItems.Add(film.Price.ToString());
+                lvMVList.Items.Add(lv);
+            }
+        }
+        public List <string> test2()
+        {
+            List<string> Value = new List<string>();
+            foreach (ListViewItem item in lvMVList.Items)
+            {
+                Value.Add(item.SubItems[1].Text);
+            }
+            return Value;
+        }
+
+            public bool checkinput()
         {
             if (txtID.Text.Length != 3 )
             {
@@ -80,8 +109,10 @@ namespace AppBanVeRapChieuPhim_Group7
 
             else
             {
-                ListViewItem itemMovie = new ListViewItem(new string[] { txtID.Text, txtMovie.Text, txtPrice.Text });
-                lvMVList.Items.AddRange(new ListViewItem[] { itemMovie });
+                ListViewItem itemSinhVien = new ListViewItem(new string[]
+                  {txtID.Text,txtMovie.Text,txtPrice.Text});
+                lvMVList.Items.AddRange(new ListViewItem[] { itemSinhVien });
+
             }
         }
 

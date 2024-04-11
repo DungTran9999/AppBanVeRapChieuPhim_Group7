@@ -135,11 +135,6 @@
             // 
             this.cbbMovie.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMovie.FormattingEnabled = true;
-            this.cbbMovie.Items.AddRange(new object[] {
-            "SPIDER-MAN: No Way Home",
-            "THOR: The Dark World",
-            "Harry Potter: Dark Witch",
-            "Fast And Furious"});
             this.cbbMovie.Location = new System.Drawing.Point(133, 614);
             this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";

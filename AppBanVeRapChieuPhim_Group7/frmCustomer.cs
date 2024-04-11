@@ -12,6 +12,15 @@ namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmCustomer : Form
     {
+        private static frmCustomer instance;
+        public static frmCustomer GetInStance()
+        {
+            if (instance == null)
+            {
+                instance = new frmCustomer();
+            }
+            return instance;
+        }
         public frmCustomer()
         {
             InitializeComponent();
