@@ -35,11 +35,11 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public void XoaDuLieuForm()
         {
-            txtID.Text = txtAge.Text = txtName.Text = cbbAddress.Text = cbbGender.Text = "";
+            txtID.Text = txtAge.Text = txtName.Text = cbbAddress.Text = cbbGender.Text =txtDisCount.Text= "";
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (checkinput()==false)
+            if (checkinput())
             {
                 return;
             }
@@ -119,35 +119,43 @@ namespace AppBanVeRapChieuPhim_Group7
         }
         public bool checkinput()
         {
-            
-            if (string.IsNullOrWhiteSpace(txtAge.Text) || string.IsNullOrWhiteSpace(txtID.Text) ||
-                 string.IsNullOrWhiteSpace(cbbAddress.Text) || string.IsNullOrWhiteSpace(txtName.Text) ||
-                 string.IsNullOrWhiteSpace(cbbGender.Text))
+            string checkage=txtAge.Text;
+            if (int.TryParse(checkage, out int b) == false)
             {
-                MessageBox.Show("Yêu cầu nhập đầy đủ dữ liệu");
-                txtAge.Focus();
-                return false;
+                MessageBox.Show("Tuổi là 1 con số");
+                return true;
             }
-            else
+            else if (Convert.ToInt32(txtAge.Text) < 12 || Convert.ToInt32(txtAge.Text) > 100)
             {
-            
-                if (Convert.ToInt32(txtAge.Text) < 3 || Convert.ToInt32(txtAge.Text) > 100)
-                {
-                    MessageBox.Show("Tuổi không hợp lệ");
-                    txtAge.Focus();
-                    return false;
-                }
+                MessageBox.Show("Tuổi lớn 3 và nhỏ hơn 100");
+                return true;
+            }
+            else if (string.IsNullOrEmpty(txtAge.Text) ||
+                string.IsNullOrEmpty(txtDisCount.Text) ||
+                string.IsNullOrEmpty(txtID.Text) ||
+                    string.IsNullOrEmpty(txtName.Text) ||
+                string.IsNullOrEmpty(cbbAddress.Text) ||
+                string.IsNullOrEmpty(cbbGender.Text)
+                )
+            {
+                MessageBox.Show("Yêu cầu nhập đầy đủ thông tin");
+                return true;
             }
             foreach (ListViewItem item in lvCTMList.Items)
             {
-                if (item.SubItems[0].Text == txtID.Text)
-                {
-                    MessageBox.Show("Không được trùng ID", "Lỗi");
+                    if (item.SubItems[0].Text == txtID.Text)
+                    {
+                        MessageBox.Show("ID không được trùng", "Lỗi");
+                        return true;
+                    } 
+                    else if (item.SubItems[1].Text == txtName.Text)
+                    {
+                    MessageBox.Show("Name không được trùng", "Lỗi");
                     return true;
-                }
-            }
-            
-            return true;
+                    }
+            } 
+
+            return false;
         }
     } 
 }

@@ -45,6 +45,12 @@
             this.lbNumberOfChair = new System.Windows.Forms.Label();
             this.lbTheater = new System.Windows.Forms.Label();
             this.cbbTime = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbbID = new System.Windows.Forms.ComboBox();
             this.plLoadForm.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +91,7 @@
             // 
             this.txtPrice.Enabled = false;
             this.txtPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(133, 669);
+            this.txtPrice.Location = new System.Drawing.Point(133, 723);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(356, 34);
@@ -95,7 +101,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 616);
+            this.label1.Location = new System.Drawing.Point(26, 670);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 2;
@@ -105,7 +111,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 673);
+            this.label2.Location = new System.Drawing.Point(26, 727);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 35);
             this.label2.TabIndex = 2;
@@ -140,7 +146,7 @@
             "THOR: The Dark World",
             "Harry Potter: Dark Witch",
             "Fast And Furious"});
-            this.cbbMovie.Location = new System.Drawing.Point(133, 614);
+            this.cbbMovie.Location = new System.Drawing.Point(133, 668);
             this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbMovie.Name = "cbbMovie";
             this.cbbMovie.Size = new System.Drawing.Size(356, 33);
@@ -151,17 +157,17 @@
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(975, 636);
+            this.lbTotal.Location = new System.Drawing.Point(975, 577);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(76, 25);
+            this.lbTotal.Size = new System.Drawing.Size(84, 25);
             this.lbTotal.TabIndex = 4;
-            this.lbTotal.Text = "Total :";
+            this.lbTotal.Text = "gia tien";
             // 
             // lbMoney
             // 
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoney.Location = new System.Drawing.Point(1186, 636);
+            this.lbMoney.Location = new System.Drawing.Point(1186, 577);
             this.lbMoney.Name = "lbMoney";
             this.lbMoney.Size = new System.Drawing.Size(24, 25);
             this.lbMoney.TabIndex = 4;
@@ -171,7 +177,7 @@
             // 
             this.label111.AutoSize = true;
             this.label111.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.Location = new System.Drawing.Point(975, 594);
+            this.label111.Location = new System.Drawing.Point(698, 577);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(201, 25);
             this.label111.TabIndex = 4;
@@ -207,7 +213,7 @@
             // 
             this.lbNumberOfChair.AutoSize = true;
             this.lbNumberOfChair.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumberOfChair.Location = new System.Drawing.Point(1186, 594);
+            this.lbNumberOfChair.Location = new System.Drawing.Point(909, 577);
             this.lbNumberOfChair.Name = "lbNumberOfChair";
             this.lbNumberOfChair.Size = new System.Drawing.Size(24, 25);
             this.lbNumberOfChair.TabIndex = 4;
@@ -240,6 +246,72 @@
             this.cbbTime.Size = new System.Drawing.Size(327, 37);
             this.cbbTime.TabIndex = 41;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(975, 623);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "discount:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1186, 623);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 25);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(975, 666);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Total:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1186, 666);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(24, 25);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(26, 616);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 35);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "ID:";
+            // 
+            // cbbID
+            // 
+            this.cbbID.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbID.FormattingEnabled = true;
+            this.cbbID.Items.AddRange(new object[] {
+            "SPIDER-MAN: No Way Home",
+            "THOR: The Dark World",
+            "Harry Potter: Dark Witch",
+            "Fast And Furious"});
+            this.cbbID.Location = new System.Drawing.Point(133, 614);
+            this.cbbID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbID.Name = "cbbID";
+            this.cbbID.Size = new System.Drawing.Size(356, 33);
+            this.cbbID.TabIndex = 3;
+            this.cbbID.SelectedValueChanged += new System.EventHandler(this.cbbMovie_SelectedValueChanged);
+            // 
             // frmSell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -250,13 +322,19 @@
             this.Controls.Add(this.lbTheater);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbNumberOfChair);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.lbMoney);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label111);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lbTotal);
+            this.Controls.Add(this.cbbID);
             this.Controls.Add(this.cbbMovie);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrice);
@@ -293,5 +371,11 @@
         private System.Windows.Forms.Label lbTheater;
         private System.Windows.Forms.ComboBox cbbTime;
         private System.Windows.Forms.Label lblTheater;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbbID;
     }
 }

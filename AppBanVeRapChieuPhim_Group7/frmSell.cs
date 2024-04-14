@@ -13,17 +13,17 @@ namespace AppBanVeRapChieuPhim_Group7
 
     public partial class frmSell : Form
     {
-        public  Action theater1CancelEvent;
-        public  Action theater1AcceptEvent;
+        public Action theater1CancelEvent;
+        public Action theater1AcceptEvent;
 
-        public  Action theater2CancelEvent;
-        public  Action theater2AcceptEvent;
+        public Action theater2CancelEvent;
+        public Action theater2AcceptEvent;
 
-        public  Action theater3CancelEvent;
-        public  Action theater3AcceptEvent;
+        public Action theater3CancelEvent;
+        public Action theater3AcceptEvent;
 
-        public  Action theater4CancelEvent;
-        public  Action theater4AcceptEvent;
+        public Action theater4CancelEvent;
+        public Action theater4AcceptEvent;
 
         public int soluong;
         public int totalmoney;
@@ -65,7 +65,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 Film data = cb.SelectedValue as Film;
 
                 txtPrice.Text = data.Price.ToString();
-                
+
             }
 
         }
@@ -263,7 +263,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 manager.RecieveData(data);
 
                 frmTicket ticket = frmTicket.GetInStance();
-                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, lbMoney.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
+                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, lbMoney.Text, cbbTime.Text, "(" + lbNumberOfChair.Text + ")", txtDataChair.Text);
 
 
                 //lấy hàm đã lưu trong theater1AcceptEvent
@@ -271,7 +271,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 theater2AcceptEvent?.Invoke();
                 theater3AcceptEvent?.Invoke();
                 theater4AcceptEvent?.Invoke();
-                MessageBox.Show("Thanh Toán Thành Công!","THÔNG BÁO");
+                MessageBox.Show("Thanh Toán Thành Công!", "THÔNG BÁO");
                 Clear();
             }
         }
