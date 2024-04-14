@@ -33,17 +33,27 @@ namespace AppBanVeRapChieuPhim_Group7
         public frmSell()
         {
             InitializeComponent();
-            frmSetting setting =  frmSetting.GetInStance();
-            cbbMovie.DataSource = setting.test2();
+           
 
         }
 
 
-      
+        List<Film> listItem;
         private void frmSell_Load(object sender, EventArgs e)
         {
+            listItem = new List<Film>()
+            {
+                new Film(){Movie = "Harry Potter: Dark Witch", Price = 99000},
+                new Film(){Movie = "SPIDER-MAN: No Way Home", Price = 110000},
+                new Film(){Movie = "THOR: The Dark World", Price = 125000},
+                new Film(){Movie = "Fast And Furious", Price = 200000}
 
-            
+            };
+
+            // cbbmovie lấy data từ listItems
+            cbbMovie.DataSource = listItem;
+            cbbMovie.DisplayMember = "Movie";
+
 
         }
 
@@ -55,7 +65,7 @@ namespace AppBanVeRapChieuPhim_Group7
             {
                 //chuyển cb sang Film để sử dụng thuộc tính của Film
                 Film data = cb.SelectedValue as Film;
-
+                txtPrice.Text = data.Price.ToString();
                 
                 
             }
@@ -255,7 +265,7 @@ namespace AppBanVeRapChieuPhim_Group7
                 manager.RecieveData(data);
 
                 frmTicket ticket = frmTicket.GetInStance();
-                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, txtPrice.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
+                ticket.RecieveData(lblTheater.Text, cbbMovie.Text, lbMoney.Text, cbbTime.Text, "("+lbNumberOfChair.Text+")", txtDataChair.Text);
 
 
                 //lấy hàm đã lưu trong theater1AcceptEvent
@@ -276,11 +286,6 @@ namespace AppBanVeRapChieuPhim_Group7
         public string ID { get; set; }
         public int Price { get; set; }
 
-        public Film(string id, string movie, int price)
-        {
-            this.ID= id;
-            this.Movie= movie;
-            this.Price = price;
-        }
+        
     }
 }

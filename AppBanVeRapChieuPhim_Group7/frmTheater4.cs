@@ -69,7 +69,12 @@ namespace AppBanVeRapChieuPhim_Group7
                 return;
             }
 
-         
+            if (listSupport.Count >= 15)
+            {
+                MessageBox.Show("Giới hạn chọn ghế là 15", "Thông Báo");
+                return;
+            }
+
             buttonStates[btn] = !buttonStates[btn];
 
             if (buttonStates[btn])
