@@ -3,26 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace AppBanVeRapChieuPhim_Group7
 {
     public partial class frmLogin : Form
     {
-        private string[] imagePaths = 
-        {
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_1ironnn.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_1spidermann.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_thorr.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\harry login.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\fastandfurious.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\rsz_captain_american.png",
-            @"C:\Users\ASUS\source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\Marvel Avengers1.jpg"
-
-        };
+        
+        
         private int currentIndex = 0;
         private Timer timer;
         public frmLogin()
@@ -30,6 +23,7 @@ namespace AppBanVeRapChieuPhim_Group7
             InitializeComponent();
             txtPassWord.UseSystemPasswordChar = true;
             doianh();
+            
         }
         public void doianh()
         {
@@ -102,15 +96,37 @@ namespace AppBanVeRapChieuPhim_Group7
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            
+            string[] imagePaths =
+            {
+                @".\Resources\rsz_1ironnn.png",
+                @".\Resources\rsz_1spidermann.png",
+                @".\Resources\rsz_captain_american.png",
+                @".\Resources\rsz_1screenshot_2024-04-11_032607.png",
+                @".\Resources\rsz_thorr.png",
+                @".\Resources\fastandfurious.png",
+                @".\Resources\Marvel Avengers1.jpg"
+
+            };
+            
+
             // Đảm bảo rằng chỉ số không vượt quá số lượng ảnh
             if (currentIndex >= imagePaths.Length)
             {
                 currentIndex = 0; // Quay lại ảnh đầu tiên nếu đã hiển thị hết tất cả ảnh
             }
-
-            // Hiển thị ảnh tiếp theo trong PictureBox
-            ptbAnh.Image = Image.FromFile(imagePaths[currentIndex]);
-
+            string currentpath = Directory.GetCurrentDirectory();
+            string parentDirectory = Directory.GetParent(currentpath)?.Parent?.FullName;
+            string imagePath = Path.Combine(parentDirectory, imagePaths[currentIndex]);
+            if (File.Exists(imagePath))
+            {
+                ptbAnh.Image = Image.FromFile(imagePath);
+            }
+            else
+            {
+                // Xử lý khi tệp ảnh không tồn tại
+                // Ví dụ: Hiển thị một hình ảnh mặc định hoặc không thực hiện gì cả
+            }
             // Tăng chỉ số để hiển thị ảnh tiếp theo trong lần kích hoạt tiếp theo của Timer
             currentIndex++;
         }
@@ -119,7 +135,16 @@ namespace AppBanVeRapChieuPhim_Group7
         {
             Application.Exit();
         }
+         
+        public void doianh2()
+        {
+            string My = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 
+            string c = @"source\repos\DungTran9999\AppBanVeRapChieuPhim_Group7\AppBanVeRapChieuPhim_Group7\Resources\";
+
+            string appDataFolderPath = Path.Combine(My, c);
+
+        }
         
     }
 }
